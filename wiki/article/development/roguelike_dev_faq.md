@@ -715,3 +715,37 @@ How do you process monsters? Just pass through the linked list and run some or o
 One problem that could occur is that you get dangling pointers: each spell/person/monster/item attacking/working on/flying towards the current monster points to the monster. When the monster dies, you delete the monster from the list, and those pointers point to who knows where. Unpredictable things could happen. Use "reference counting" (see www.memorymanagement.org). Basically, each monster keeps a count of its "users", initially set to zero. When something new points to the monster, increment the monster's user count by 1. Each turn, those items/spells/whatevers pointing to the monster must check if the monster is dead (marked somehow on the monster without removing it from memory), and if so, stop pointing to the monster, and decrease the monster's user count by 1. Only when the monster's user count is zero can it be safely deleted from the list and removed from memory.
 
 Another problem you might run into is how to deal with monsters which have different speeds. A monster that takes 3 actions per turn can either make all 3 when it is processed, or you can use the more realistic (and difficult) system where those turns are spread out among everyone else's turns. For this, you might want to keep a separate list for monsters of different speeds, and pass through the linked lists with different speeds more than once, taking only one action each time. Then there are the "haste" and "slow" types of spells that change the number of actions you normally take...
+
+## SPELLS
+
+### How do you represent a magic system?
+
+You plan it very well in advance first. Don't make magic a black box device - explain it somehow, and integrate it into your story. Decide on the magic system, categories of spells, all of that.
+
+### What is a good magic system to use?
+
+Your own. I would not copy from "Dungeons and dragons", other roguelikes, other games, New Age books, Internet websites on magic and paganism, and whatever other sources you might think are good. Maybe get ideas from them, but don't copy spell names or statistics.
+
+Traditionally, most roguelikes work magic similarly to "Dungeons and Dragons", with a few exceptions. Each spell has a level. You have to be on the same or higher level (experience wise) to learn it, and you have to be a class that can learn spells, and have the appropriate spell book. You have a certain amount of magic points. They increase when you level up. Each spell uses some magic points, and when you run out, you can't cast spells. Magic points are restored by resting and with some potions.
+
+### How do you enchant objects or make "enchanted" objects?
+
+With great difficulty.
+
+### How do you make random spells?
+
+Similarly to random items.
+
+## Can you make any money from your roguelike?
+
+Of course you can. Look at "Dungeon Hack" or "Diablo" for example. Real-time combat and nice looking graphics are heavily recommend if you want to reach out for a broader (paying) audience, though. But all the major roguelikes are free of charge, and all except Adom also permit free distribution and modification of the source code - something that is probably necessary unless you plan to write your game by yourself.
+
+## Contributors
+
+* David Damarell (NetHack description, question about money from roguelikes)
+* Bridget (list of newsgroups)
+* Jens Baader (list of roguelikes and newsgroups)
+* Philip Swartzleonard (who makes roguelikes)
+* Kornel Kisielewicz (wikified)
+
+If your name isn't here, and you see your text somewhere on this, please raise an issue, with what you wrote, so I can add you in.
