@@ -718,7 +718,7 @@ Another problem you might run into is how to deal with monsters which have diffe
 
 ## SPELLS
 
-### How do you represent a magic system?
+### How do you represent a [magic](../magic.md) system?
 
 You plan it very well in advance first. Don't make magic a black box device - explain it somehow, and integrate it into your story. Decide on the magic system, categories of spells, all of that.
 
@@ -746,6 +746,6 @@ Of course you can. Look at "Dungeon Hack" or "Diablo" for example. Real-time com
 * Bridget (list of newsgroups)
 * Jens Baader (list of roguelikes and newsgroups)
 * Philip Swartzleonard (who makes roguelikes)
-* Kornel Kisielewicz (wikified)
+* [Kornel Kisielewicz](../kornel_kisielewicz.md) (wikified)
 
 If your name isn't here, and you see your text somewhere on this, please raise an issue, with what you wrote, so I can add you in.
