@@ -255,3 +255,67 @@ The [curses libraries](../curses_library.md) are a better choice. [Ncurses](../n
 The article [Output libraries](../implementation/portability/output_libraries.md) discusses this in more detail.
 
 One solution for Java is a [Java Curses Implementation](../implementation/java-roguelike-development-guide/java_curses_implementation.md).
+
+## STORY AND SETTING
+
+### Which stories are possible for a roguelike?
+
+[Moria](../moria.md) and [Angband](../angband.md) are (loosely) based on J.R.R. Tolkien's "Lord of the rings", but they implement very little story. NetHack has hardly any story at all, mostly just "Your god has sent you on a quest to fetch the Amulet of Yendor", with a little elaboration in the Guidebook.
+
+In general, role playing games are the ones where story is important. For a roguelike, it is nice to have a story, and a good one will keep your player interested and provide more to the game, but it isn't the game's biggest component.
+
+Some unexplored ideas that would be good for a roguelike might be:
+
+* You are trapped in an out-of-control computer, and it's making deadly monsters. The goal is to stay alive and find a way out.
+
+* You are in a post-apocalyptic future (no/limited guns). There is a war between humans and robots. You are on the losing side...
+
+### What [themes](../design/setting-story-and-mood/theme.md) and settings are possible for a roguelike?
+
+Ones that involve killing a great number of enemies.
+
+Most roguelikes are set in the middle ages. There are ones in a science fiction setting in the future, but they aren't very popular.
+
+Relatively unexplored themes are:
+
+* The Wild West
+* The Far East
+* The distant past (stone ages)
+* Alternative histories (e.g. Atlantis)
+* The modern era
+* Science fiction settings
+
+### What is / how do I make a good atmosphere?
+
+Atmosphere, (noun): the psychological environment, the feeling and tone created by something. The atmosphere in roguelikes varies. In Angband it is often dark and desperate, because you're kilometers under the earth with a failing source of light, near death and with no way to escape your foes. In [NetHack](../nethack.md), it is quite challenging but somewhat humorous. In [Diablo](../diablo.md), it can be very dark and ominous - your cause is basically hopeless.
+
+Another way to create atmosphere is music, although it can be difficult to port. Example roguelikes that use music are [DoomRL](../doomrl.md) and [DrashRL](../drashrl.md). If the roguelike has a graphical output, the images can be used to create atmosphere. The story also goes a long way towards creating an atmosphere.
+
+Often a change in game mechanics can change the atmosphere substantially. If the character heals swiftly during play, and the game feels like a silly romp no matter what else you've tried, cutting the rate of healing to a tenth or less of what it has been can suddenly make the mood deadly serious and addictively engaging.
+
+### What are quests and how are they different from other forms of plot?
+
+A [quest](../quests.md) is a set of actions you have to do in order for something to happen. For instance, once you've completed the quest "kill Morgoth", you've finished Angband. Quests have some sort of reward, or story element with them. Most roguelike games are based on one primary quest which must be completed to win. Although the value of secondary quests is debated, many have additional quests during the game, which players undertake for score, equipment, or sheer style.
+
+### What are the standard types of quests?
+
+* Assassination quests:
+  * "Kill X"
+  * "Capture X alive"
+* Searching quests:
+  * "Find X"
+  * "Get to X"
+  * "Gather X of gold"
+* Competition quests:
+  * Do any of the above quests, but before your adversary (e.g. get to a town before your adversary)
+* Story quests:
+  * "Talk to X"
+* Any of the above, but they do something special (e.g. there is a story associated with finding a special item)
+
+### How do I make good quests?
+
+Make them relevant and provide a good reason to do them. Integrate them with the story. Give good rewards. Avoid repetition.
+
+Example: Avoid quests like "kill 5 orcs", because they have no reason or emotional connection. It would be better to say the orcs have been killing members of the player's village and the remaining people are pleading for help. Then the player is given a logical reason to kill the orcs and will be more likely to want to complete the quest.
+
+To add to replayability, elements of the quests could be randomised.
