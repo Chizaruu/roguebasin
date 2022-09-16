@@ -28,7 +28,7 @@ By Damjan Jovanovic and many contributors on Roguebasin
 
 ### What is Rogue?
 
-[Rogue](../rogue.md) is a text-based game made in the 1970s that started it all. You explored a dungeon, gathering items, fighting monsters and getting stronger. There was initially no point to this all, but eventually they made it so the main quest was to find the Amulet of Yendor.
+[Rogue](../../game/rogue.md) is a text-based game made in the 1970s that started it all. You explored a dungeon, gathering items, fighting monsters and getting stronger. There was initially no point to this all, but eventually they made it so the main quest was to find the Amulet of Yendor.
 
 What separated Rogue from most similar text-based games of its time was how it handled the output. Most adventure games described the environment (e.g. "You are in a small room, with a passage out behind you"); Rogue "drew" it using text. For instance, if you were standing in the room described above, this is how it would look (the "@" being you):
 
@@ -69,29 +69,29 @@ Briefly then, "roguelike" is more of a feeling you get in a game rather than a s
 
 ### What are the major roguelikes today?
 
-#### [ADOM](major-roguelikes/adom.md)
+#### [ADOM](../../game/adom.md)
 
-Website: [http://www.adom.de/](http://www.adom.de/)
+Website: <http://www.adom.de/>
 ADOM is Thomas Biskup's one-man effort. Inspired by the D&D universe, ADOM is a fantasy romp with a quaintly humorous mood. It has a handmade overworld map called the Drakalor Chain. It's player's job to track down the source of Chaos overtaking the land. The closer the player gets to the source, the more tainted with Chaos he becomes.
 
-#### [Moria](major-roguelikes/moria.md)
+#### [Moria](../../game/moria.md)
 
 "Mines of Moria" or just "Moria" is around. It is loosely set in Tolkien's mines of Moria in "Lord of the Rings". It is not being developed any more; only "maintained".
 
-#### [Angband](major-roguelikes/angband.md)
+#### [Angband](../../game/angband.md)
 
-Website: [http://rephial.org/](http://rephial.org/)
+Website: <http://rephial.org/>
 "Angband", is a newer roguelike based on Moria but even more loosely based on "Lord of the Rings". There are probably more variants to this one than to any other roguelike. The variants often used entirely different monsters and goals; not all of them involve Tolkien's works.
 
-#### [Nethack](major-roguelikes/nethack.md)
+#### [Nethack](../../game/nethack.md)
 
-Website: [http://www.nethack.org/](http://www.nethack.org/)
+Website: <http://www.nethack.org/>
 NetHack is the modern roguelike which is by far the most similar to the original Rogue. NetHack offers a varied and humorous playing experience; a favourite saying amongst players is that the DevTeam "thinks of everything". The focus of the game is relatively narrow - there's no town or wilderness, just a single dungeon to get down to the bottom of and retrieve the Amulet of Yendor from - however, individual levels are more varied than is typical of many roguelikes. The game is relatively short; it's possible to win in 8 hours of play if you put your mind to it - partly because the dungeon levels are static during the game, so unlike Angband for example, you're forced to move on to unexplored levels deeper in the dungeon.
 
-#### [Dungeon Crawl](major-roguelikes/dungeon_crawl.md)
+#### [Dungeon Crawl](../../game/dungeon_crawl.md)
 
-Website: [http://www.dungeoncrawl.org/](http://www.dungeoncrawl.org/)
-Dungeon Crawl Stone Soup: [http://crawl.develz.org/](http://crawl.develz.org/)
+Website: <http://www.dungeoncrawl.org/>
+Dungeon Crawl Stone Soup: <http://crawl.develz.org/>
 Dungeon Crawl is a roguelike with a strong emphasis on the "rogue" part of the genre. It's a game of stealth and cunning, with a strong emphasis on traps and stealth. It's also a game of exploration, with a huge number of different monsters and items to discover. The game is set in a fantasy world, with a strong emphasis on the "dungeon" part of the genre. The game is a single-player game, with no multiplayer or online play.
 
 ### What roguelike websites / newsgroups are there?
@@ -216,7 +216,7 @@ Basically, have a plan. Decide in which order to program it, and stick to the pl
 
 ### Do roguelikes have to be done in [ASCII](../ascii.md) text?
 
-It depends on preference. [Utumno](../utumno.md) is an [Angband](../angband.md) variant (according to the Angband variants FAQ, and I doubt the writers of it don't know what a roguelike is), and when people want to argue that things with graphics can't be roguelike, I always quote it as an example of a roguelike with graphics. Now compare Utumno and [Diablo](../diablo.md) or Diablo 2. You will notice they are not that different (graphically).
+It depends on preference. [Utumno](../../game/utumno.md) is an [Angband](../../game/angband.md) variant (according to the Angband variants FAQ, and I doubt the writers of it don't know what a roguelike is), and when people want to argue that things with graphics can't be roguelike, I always quote it as an example of a roguelike with graphics. Now compare Utumno and [Diablo](../../game/diablo.md) or Diablo 2. You will notice they are not that different (graphically).
 
 If roguelikes don't need to be in ASCII, why are most of them?
 
@@ -238,7 +238,7 @@ Then there is 3D graphics...
 
 ### How do you make a 3D roguelike?
 
-There is only one game so far that uses this: [Egoboo](../egoboo.md) (<http://egoboo.sourceforge.net>). Even [Diablo](../diablo.md) and Diablo 2, although they look 3D, are really only 2D. All the monsters and characters for Diablo 2 were modeled in a 3D package, and snapshots were taken in different positions and at different times to create the animations. So good luck making one of the world's only 3D roguelikes.
+There is only one game so far that uses this: [Egoboo](../../game/egoboo.md) (<http://egoboo.sourceforge.net>). Even [Diablo](../../game/diablo.md) and Diablo 2, although they look 3D, are really only 2D. All the monsters and characters for Diablo 2 were modeled in a 3D package, and snapshots were taken in different positions and at different times to create the animations. So good luck making one of the world's only 3D roguelikes.
 
 But here are some ideas. A good cross-platform 3D library is [OpenGL](../opengl.md). You generally program it in C or C++. It is easy to learn, but requires hardware 3D acceleration for good performance. Good free modeling / animation software is difficult to come by. Try Blender and Anim8or.
 
@@ -260,7 +260,7 @@ One solution for Java is a [Java Curses Implementation](../implementation/java-r
 
 ### Which stories are possible for a roguelike?
 
-[Moria](../moria.md) and [Angband](../angband.md) are (loosely) based on J.R.R. Tolkien's "Lord of the rings", but they implement very little story. NetHack has hardly any story at all, mostly just "Your god has sent you on a quest to fetch the Amulet of Yendor", with a little elaboration in the Guidebook.
+[Moria](../../game/moria.md) and [Angband](../../game/angband.md) are (loosely) based on J.R.R. Tolkien's "Lord of the rings", but they implement very little story. NetHack has hardly any story at all, mostly just "Your god has sent you on a quest to fetch the Amulet of Yendor", with a little elaboration in the Guidebook.
 
 In general, role playing games are the ones where story is important. For a roguelike, it is nice to have a story, and a good one will keep your player interested and provide more to the game, but it isn't the game's biggest component.
 
@@ -287,9 +287,9 @@ Relatively unexplored themes are:
 
 ### What is / how do I make a good atmosphere?
 
-Atmosphere, (noun): the psychological environment, the feeling and tone created by something. The atmosphere in roguelikes varies. In Angband it is often dark and desperate, because you're kilometers under the earth with a failing source of light, near death and with no way to escape your foes. In [NetHack](../nethack.md), it is quite challenging but somewhat humorous. In [Diablo](../diablo.md), it can be very dark and ominous - your cause is basically hopeless.
+Atmosphere, (noun): the psychological environment, the feeling and tone created by something. The atmosphere in roguelikes varies. In Angband it is often dark and desperate, because you're kilometers under the earth with a failing source of light, near death and with no way to escape your foes. In [NetHack](../../game/nethack.md), it is quite challenging but somewhat humorous. In [Diablo](../../game/diablo.md), it can be very dark and ominous - your cause is basically hopeless.
 
-Another way to create atmosphere is music, although it can be difficult to port. Example roguelikes that use music are [DoomRL](../doomrl.md) and [DrashRL](../drashrl.md). If the roguelike has a graphical output, the images can be used to create atmosphere. The story also goes a long way towards creating an atmosphere.
+Another way to create atmosphere is music, although it can be difficult to port. Example roguelikes that use music are [DoomRL](../../game/doomrl.md) and [DrashRL](../../game/drashrl.md). If the roguelike has a graphical output, the images can be used to create atmosphere. The story also goes a long way towards creating an atmosphere.
 
 Often a change in game mechanics can change the atmosphere substantially. If the character heals swiftly during play, and the game feels like a silly romp no matter what else you've tried, cutting the rate of healing to a tenth or less of what it has been can suddenly make the mood deadly serious and addictively engaging.
 
@@ -746,6 +746,6 @@ Of course you can. Look at "Dungeon Hack" or "Diablo" for example. Real-time com
 * Bridget (list of newsgroups)
 * Jens Baader (list of roguelikes and newsgroups)
 * Philip Swartzleonard (who makes roguelikes)
-* [Kornel Kisielewicz](../kornel_kisielewicz.md) (wikified)
+* [Kornel Kisielewicz](../../developer/kornel_kisielewicz.md) (wikified)
 
 If your name isn't here, and you see your text somewhere on this, please raise an issue, with what you wrote, so I can add you in.

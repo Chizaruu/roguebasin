@@ -18,7 +18,7 @@ Comic authors are clearly harder core than us wimpy roguelike developers. (:
 
 Programming isn't an activity that I'd recommend be done in 24-hour marathons. Sure, it can be fun. But you don't learn much out of it, except maybe that programming with little sleep makes unreadable code.
 
-Just look at the [1DRL Challenge, December 2011](../../events/1drl_challenge_december_2011.md!
+Just look at the [1DRL Challenge, December 2011](../../event/1drl_challenge_december_2011.md)!
 
 ## Why seven days? Why not one month?
 
@@ -50,7 +50,7 @@ It is recommended one has some design idea going into the project.
 
 You should say what pre-existing code you used. The goal isn't to see who can retype existing algorithms the fastest. The goal is for people to write playable and complete roguelikes.
 
-Remember: if you spend seven days patching [NetHack](../nethack.md), you likely will end up with something that looks a lot like [NetHack](../nethack.md), so it would thus not be considered very impressive. However, if you spend seven days patching [NetHack](../nethack.md) and create an amazing new roguelike, you will be suitably honored.
+Remember: if you spend seven days patching [NetHack](../../game/nethack.md), you likely will end up with something that looks a lot like [NetHack](../../game/nethack.md), so it would thus not be considered very impressive. However, if you spend seven days patching [NetHack](../../game/nethack.md) and create an amazing new roguelike, you will be suitably honored.
 
 To be specific, writing a new [T-Engine](../t-engine.md) module or a [libtcod](../libtcod.md)-based game in seven days would be a 7DRL.
 
@@ -76,7 +76,7 @@ Source code does not have to be released, but it is strongly encouraged that you
 
 ## So, I've done a 7DRL, but now I want to make it better!
 
-You'll note under the "winners" section that the author is encouraged not to release another version. This isn't because we don't want to see bug fixes, or don't want to see the framework written for the **7DRL** extended into an even better game. It is to try and push the participants to have something done and polished on day seven rather than "that will be added later..." It is quite sensible and good if people want to take their 7DRL (or, license depending, someone else's!) and extend/modify it into a full-fledged roguelike. For example, [Martin Read](../martin_read.md)'s **MPR7DRL** formed the basis for [Martin's Dungeon Bash](../martins_dungeon_bash.md) and [Slash](../slash.md)'s [CastlevaniaRL:Prelude](../castlevaniarl-prelude.md) evolved into [CastlevaniaRL](../castevaniarl.md).
+You'll note under the "winners" section that the author is encouraged not to release another version. This isn't because we don't want to see bug fixes, or don't want to see the framework written for the **7DRL** extended into an even better game. It is to try and push the participants to have something done and polished on day seven rather than "that will be added later..." It is quite sensible and good if people want to take their 7DRL (or, license depending, someone else's!) and extend/modify it into a full-fledged roguelike. For example, [Martin Read](../../developer/martin_read.md)'s **MPR7DRL** formed the basis for [Martin's Dungeon Bash](../../game/martins_dungeon_bash.md) and [Slash](../../developer/slash.md)'s [CastlevaniaRL:Prelude](../../game/castlevaniarl-prelude.md) evolved into [CastlevaniaRL](../../game/castevaniarl.md).
 
 ## How many 7DRLs have been done?
 
