@@ -45,16 +45,16 @@ Back at the time, PCs were virtually unheard of, and most computers were just du
 
 ### What is a Roguelike?
 
-This is a topic that has caused vehement debates in the [rec.games.roguelike.development](../rgrd.md) newsgroup. I will just explain it as simply as possible.
+This is a topic that has caused vehement debates in the [rec.games.roguelike.development](communities/rgrd.md) newsgroup. I will just explain it as simply as possible.
 
 Let's see about the features of rogue:
 
 * Single player
 * [Text based](../ascii.md)
-* [Randomly](../random.md) generated [dungeon](../dungeon.md) levels
+* [Randomly](../random.md) generated [dungeon](fundamentals/dungeon.md) levels
 * Turn based (i.e. nothing happens until you press a key that does something)
 * The emphasis is on good gameplay rather than good graphics
-* [Death is permanent](../permadeath.md). No loading saved games, no coming back to life. Once you die, you can only start from the beginning with a new character.
+* [Death is permanent](fundamentals/permadeath.md). No loading saved games, no coming back to life. Once you die, you can only start from the beginning with a new character.
 
 Firstly, you have to realise that games are not as easy to classify into genres as books or films are. There are a lot of games that don't belong into any one genre. Purists may argue that any game that is graphical and real-time (as opposed to turn-based) cannot be a roguelike, but not everyone agrees.
 
@@ -108,7 +108,7 @@ rec.games.roguelike.adom
 rec.games.roguelike.misc
     Discusses all roguelikes which don't have a newsgroup of their own yet.
 
-[rec.games.roguelike.development](../rgrd.md)
+[rec.games.roguelike.development](communities/rgrd.md)
     Discusses all topics which are related to the development of roguelikes.
 
 rec.games.roguelike.announce
@@ -141,7 +141,7 @@ Usually by people learning computer programming; originally it was students of c
 
 ### Which programming language are roguelikes generally made in?
 
-Traditionally, C, because of its portability and because other programming languages weren't available at the time. Nowadays, a variety: [Java](languages/java.md), [C++](languages/cpp.md), [Pascal](languages/pascal.md), scripting languages etc. The best language for your roguelike is the one you know well.
+Traditionally, C, because of its portability and because other programming languages weren't available at the time. Nowadays, a variety: [Java](../implementation/programming-languages/java.md), [C++](../implementation/programming-languages/cpp.md), [Pascal](../implementation/programming-languages/pascal.md), scripting languages etc. The best language for your roguelike is the one you know well.
 
 ### Do you have to know programming to make your own roguelike?
 
@@ -189,7 +189,7 @@ Often when you start to make a roguelike game, you won't even know what the desi
 * The world. How it will look. How big it will be.
 * The [terrain](../terrain.md) (e.g. town, wilderness, dungeons, special places...)
 * The Scheduling system (eg, how turns and speed work, whether and how actions can be interrupted by other actions, etc).
-* The [items](../items.md). Major categories (e.g. weapons, armour, potions, scrolls, food...). Leave detail (e.g. how much the minor healing potion heals you by) for later. Think about how the items will be used and by whom. Plan the basic rules (e.g. you can only wield 2 weapons if you are a fighter, you need space for arrows if you equip a bow, how many rings can someone wear, etc).
+* The [items](fundamentals/items.md). Major categories (e.g. weapons, armour, potions, scrolls, food...). Leave detail (e.g. how much the minor healing potion heals you by) for later. Think about how the items will be used and by whom. Plan the basic rules (e.g. you can only wield 2 weapons if you are a fighter, you need space for arrows if you equip a bow, how many rings can someone wear, etc).
 * The [magic](../magic.md) system. Spell types. Who uses spells and when. How you learn spells. What they cost. Which classes can use them. How to implement permanent spells (e.g. enchantments that last, like recharging a staff).
 * Shopping. If your game will have shops, how will they work? Will the Player be able to rob them? If so how does that work?
 * Interaction with other creatures (maybe negotiating your way out of battles?).
