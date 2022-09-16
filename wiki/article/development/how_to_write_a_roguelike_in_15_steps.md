@@ -4,7 +4,7 @@ This is a rough route map for the creators of roguelikes. I'm well aware that th
 
 Please add your comments -- maybe we could make this article really helpful. What are your own routes?
 
-* There is a school of thought in programming that data structures are more important than code: once you have the data structures right, the code will be self-evident. It may be useful to [think before embarking](../implementation/code_design_basics.md) about how you want to structure spatial information, a [list of map tiles and their properties](../implementation/map/data_structures_for_the_map.md), character information, monster/NPC information, and information regarding objects and marks/sound/scent/footprints or tracks on the map (if at all). Cases where these types of decisions may become significant include conflict between monsters/NPCs, invisibility, flying, falling, gradients (like climbing hills), line of sight, transmogrify (becoming another being), save/restore, any situation in which map tiles are modified (burned, tunneled, teleported, melted, duplicated, scorched, etc.), and area transitions. Overground/wilderness areas often present different requirements to traditional dungeons. - pratyeka
+* There is a school of thought in programming that data structures are more important than code: once you have the data structures right, the code will be self-evident. It may be useful to [think before embarking](../implementation/code_design_basics.md) about how you want to structure spatial information, a [list of map tiles and their properties](../implementation/map/data_structures_for_the_map.md), character information, monster/NPC information, and information regarding objects and marks/sound/scent/footprints or tracks on the map (if at all). Cases where these types of decisions may become significant include conflict between monsters/NPCs, invisibility, flying, falling, gradients (like climbing hills), line of sight, transmogrify (becoming another being), save/restore, any situation in which map tiles are modified (burned, tunneled, teleported, melted, duplicated, scorched, etc.), and area transitions. Overground/wilderness areas often present different requirements to traditional dungeons. - [pratyeka](../../developer/pratyeka.md)
 
 ## Step 1 - Decide to write a game
 
@@ -126,4 +126,4 @@ Start adding and testing all the 'unique' features you thought were so cool mont
 
 Write your pet random plot generator, factions system, infinite wilderness generator, neural network AI, or other unique feature, since you can now test it in a working game.
 
-Original version submitted to [rec.games.roguelike.development](../rgrd_wiki_project.md) by Radomir '[The Sheep](../the_sheep.md)(' Dopieralski
+Original version submitted to [rec.games.roguelike.development](../rgrd_wiki_project.md) by Radomir '[The Sheep](../../developer/the_sheep.md)' Dopieralski

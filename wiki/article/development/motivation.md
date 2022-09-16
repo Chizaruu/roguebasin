@@ -1,6 +1,6 @@
 # Motivation
 
-"I couldn't get my friends to play it anymore. So I posted about it to the newsgroups, hoping to get response. The first version didn't get any. After I fixed some bugs I got a response from a person in Holland. That encouraged me to keep going." ~ [Thomas Biskup](../thomas_biskup.md) (author of [ADOM](../adom.md))
+"I couldn't get my friends to play it anymore. So I posted about it to the newsgroups, hoping to get response. The first version didn't get any. After I fixed some bugs I got a response from a person in Holland. That encouraged me to keep going." ~ [Thomas Biskup](../../developer/thomas_biskup.md(author of [ADOM](../../game/adom.md))
 
 Given the fact that most roguelikes are non-commercial motivation frequently becomes an issue.
 
@@ -21,4 +21,4 @@ However there are some things you can do to increase the amount of feedback at a
 There are two yearly events that help roguelike developers to reach the release stage :
 
 * [7DRL](7drl.md) The seven days roguelike contest.
-* [The annual roguelike release party (ARRP)](../The_annual_roguelike_release_party.md)
+* [The annual roguelike release party (ARRP)](../../event/The_annual_roguelike_release_party.md)
