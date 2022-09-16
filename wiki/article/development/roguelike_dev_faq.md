@@ -162,3 +162,52 @@ Secondly, play the game A LOT. Decide what exactly you would like to change. Mak
 Then go through the source files. Find the section you want to change. Make small changes first, then recompile and see what happens. Then make progressively bigger changes until you have what you wanted.
 
 Variants usually never reach the fame and glory of the original game, but they are a good way to learn about how roguelikes work, and making them is usually easier and faster than starting from the beginning.
+
+## DESIGN ISSUES
+
+### Do you have to design a roguelike before you program it?
+
+Typically, roguelikes are written without much design or planning. Once the programming is complete, you decide what you can do with your program (e.g. what items/monsters/spells you can support) and go ahead and make those. Some people believe this is still the way to do things.
+
+Others believe differently. If you ever do a course in computer programming at school, college or university, the first thing they teach you is how to make an algorithm, how to plan your program, and how to design before you start programming. For some kinds of commercial games, the designers make a 300 page design brief before the artists or the programmers even start work! Games that rely intensively on story usually have a complete play script written before the design brief. Of course, most roguelikes are free, and nowhere near this amount of work is invested in them, so this amount of design is ridiculous. But note that most roguelikes in development have a design document on their web pages.
+
+I believe that planning is essential to any program, particularly a big one like a roguelike. Before you start programming (at least, programming anything big or particular), make a list of things you want in the game. What kinds of items do you want? Spells? Monsters? How will your game world look? You don't have to plan the particulars like the colour of your orcs or the exact number of your spells; just look at general categories (e.g. "some of my monsters will use spells on the player", "there will be plants growing in the wilderness that you can eat" and so on), and then decide how you are going to implement those things.
+
+Often when you start to make a roguelike game, you won't even know what the design issues are. You can spend a lot of sweat trying to figure out in advance how you're going to use each data structure and selecting data structures that efficiently support that use, but then, once you're actually in the middle of it, you'll find things you haven't allowed for, and which you cannot accommodate within your current design. So yes, do spend time planning your program. But be aware that actually coding it and playing it is your only real way of becoming intimately familiar with the design space and the problems your design needs to solve. Once you have this familiarity, you can do a much better job of planning.
+
+### Why do many roguelikes later undergo a major rewrite?
+
+* Poor design. If you planned enough from the beginning, you would cater for everything, or at least most of the things, that you want to implement. Then you might only need a small rewrite.
+* Change of maintainer. Most popular roguelikes go through long chains of maintainers and dev teams. As soon as one guy gets the source code, the first thing he does is rewrite it so that it fits his ideas.
+* Poor programming techniques. I would say most of the rewrites are there to fix bugs. Some programming languages are better structured and better suited for use for long programs like roguelikes. It has been shown that when your code exceeds 100000 lines, the cost of maintaining it and debugging it exceeds the cost of programming new things. Object Oriented programming, functions and splitting up into files help to reduce this problem.
+* The developer has gained knowledge about designing roguelikes from the initial effort and has undertaken a rewrite in order to put it to use.
+* When the developer decides to extend the game in an unanticipated way it often requires fundamental redesign. For example, an extension like having spells take effect after some delay may require a complete redesign and rewrite of the scheduling system.
+
+### What needs to be planned in advance?
+
+* The [story](../story.md), [theme](../theme.md) and setting. These determine practically everything.
+* The world. How it will look. How big it will be.
+* The [terrain](../terrain.md) (e.g. town, wilderness, dungeons, special places...)
+* The Scheduling system (eg, how turns and speed work, whether and how actions can be interrupted by other actions, etc).
+* The [items](../items.md). Major categories (e.g. weapons, armour, potions, scrolls, food...). Leave detail (e.g. how much the minor healing potion heals you by) for later. Think about how the items will be used and by whom. Plan the basic rules (e.g. you can only wield 2 weapons if you are a fighter, you need space for arrows if you equip a bow, how many rings can someone wear, etc).
+* The [magic](../magic.md) system. Spell types. Who uses spells and when. How you learn spells. What they cost. Which classes can use them. How to implement permanent spells (e.g. enchantments that last, like recharging a staff).
+* Shopping. If your game will have shops, how will they work? Will the Player be able to rob them? If so how does that work?
+* Interaction with other creatures (maybe negotiating your way out of battles?).
+* Saving and restoring games Level loading system.
+* Win Conditions How to finish the game and what happens when you do.
+
+### What do people like about roguelikes?
+
+Replayability - If the game is [random](../random.md) enough, it is always fun to play and replay, because every time it is like a different game.
+
+Freedom - There is a lot of it. You can kill just about anything. There are a lot of actions you can take. Many strategies.
+
+Complexity - There are a lot of items, skills, classes, areas, spells.
+
+Difficulty - While this can be off-putting, it gives you a tremendous sense of achievement to finish a roguelike or even to get far. You always have to be careful, because it is easy to die.
+
+How do you make people like your roguelike? Make it easy to get into and play; no reading through 50 page files to learn how to play. Keep the controls simple. The gameplay must be good. This generally distinguishes roguelikes from other games - the emphasis is on the gameplay. Once your character dies, that's it - no coming back to life (or maybe you are reincarnated back without items and with reduced skills). This makes the game exciting when you are in danger. Keep it balanced. If it gets too difficult, people are discouraged. If it is too easy, there isn't much fun in it. Make a big world, with plenty of different items and monsters so it is interesting to explore. Make an interesting story. And, most of all, don't make it like some or other roguelike that already exists. Use fresh, new ideas. Make it original and different.
+
+### How do you finish making your roguelike?
+
+Basically, have a plan. Decide in which order to program it, and stick to the plan as much as possible. Keep it fun for yourself. If you get bored, work on another aspect. If you are bored on programming, work on the story, or on the graphics (if you use them). Take a break. It should be fun. If it isn't, ask yourself why, and do something about it. If you are stuck, get other people to help you.
