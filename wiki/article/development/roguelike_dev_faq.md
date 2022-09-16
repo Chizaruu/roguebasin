@@ -65,7 +65,7 @@ Briefly then, "roguelike" is more of a feeling you get in a game rather than a s
 * "Dungeons and dragons" style of skills
 * The maker is usually 1 person. The more popular games have "dev teams" which work on them later
 * [Magic](../magic.md) systems usually implemented
-* Usually set in [fantasy](../fantasy.md) middle ages (exceptions exist; sci-fi roguelikes do exist, see [Theme](../theme.md))
+* Usually set in [fantasy](../fantasy.md) middle ages (exceptions exist; sci-fi roguelikes do exist, see [Theme](../design/setting-story-and-mood/theme.md)
 
 ### What are the major roguelikes today?
 
@@ -185,7 +185,7 @@ Often when you start to make a roguelike game, you won't even know what the desi
 
 ### What needs to be planned in advance?
 
-* The [story](../story.md), [theme](../theme.md) and setting. These determine practically everything.
+* The [story](../story.md), [theme](../design/setting-story-and-mood/theme.md) and setting. These determine practically everything.
 * The world. How it will look. How big it will be.
 * The [terrain](../terrain.md) (e.g. town, wilderness, dungeons, special places...)
 * The Scheduling system (eg, how turns and speed work, whether and how actions can be interrupted by other actions, etc).
@@ -211,3 +211,47 @@ How do you make people like your roguelike? Make it easy to get into and play; n
 ### How do you finish making your roguelike?
 
 Basically, have a plan. Decide in which order to program it, and stick to the plan as much as possible. Keep it fun for yourself. If you get bored, work on another aspect. If you are bored on programming, work on the story, or on the graphics (if you use them). Take a break. It should be fun. If it isn't, ask yourself why, and do something about it. If you are stuck, get other people to help you.
+
+## OUTPUT AND REPRESENTATION
+
+### Do roguelikes have to be done in [ASCII](../ascii.md) text?
+
+It depends on preference. [Utumno](../utumno.md) is an [Angband](../angband.md) variant (according to the Angband variants FAQ, and I doubt the writers of it don't know what a roguelike is), and when people want to argue that things with graphics can't be roguelike, I always quote it as an example of a roguelike with graphics. Now compare Utumno and [Diablo](../diablo.md) or Diablo 2. You will notice they are not that different (graphically).
+
+If roguelikes don't need to be in ASCII, why are most of them?
+
+* Text is very portable.
+* It's ~~ridiculous~~ traditional. Most people programming roguelikes come from a tradition of playing other roguelikes, and they are done the same way.
+* It's fast. A museum style computer can probably show text at the same speed as the latest one.
+* It's quick and easy to make. You don't have to have lots of artist friends to draw for you. You don't have to spend hours modeling.
+* Letters are very readable, even when they are small - they were designed for just that. They are more readable than (most) graphical tiles, especially isometric ones. Real 3D models successfully compete with letters, but only if the dungeon view can be freely rotated, tilted and zoomed.
+
+### How do you add graphics?
+
+There are several different graphical systems you might consider.
+
+The simplest and most often used method is with square tiles. Basically, instead of filling rows and columns of the screen with text, they are filled with small bitmap pictures. No animation is used, i.e. when you hit a monster, you don't see a swinging sword. You can make an animation system, but it will get difficult. To properly animate a character, you need pictures of every single action from at least 4 different position (facing front, back, right and left) and the sizes of your picture / animation files get big very quickly. To produce smooth animations, you need even more pictures... It is obvious why Angband and NetHack use only front facing pictures with no animation.
+
+The other method uses isometric tiles. These are like square tiles rotated 45 degrees, like they are seen from above and to the side. Just look at Utumno or Diablo to see what I mean. They are harder to program and to make, but they look better. Here you run into an even bigger problem if you want to implement animation - you really need 8 different direction (up, up-right, right, down-right, down, down-left, left and up-left) to face in, and you need every frame of every action in each of those directions. Nevertheless, Utumno, Falcon's eye and Diablo all use this.
+
+Then there is 3D graphics...
+
+### How do you make a 3D roguelike?
+
+There is only one game so far that uses this: [Egoboo](../egoboo.md) (<http://egoboo.sourceforge.net>). Even [Diablo](../diablo.md) and Diablo 2, although they look 3D, are really only 2D. All the monsters and characters for Diablo 2 were modeled in a 3D package, and snapshots were taken in different positions and at different times to create the animations. So good luck making one of the world's only 3D roguelikes.
+
+But here are some ideas. A good cross-platform 3D library is [OpenGL](../opengl.md). You generally program it in C or C++. It is easy to learn, but requires hardware 3D acceleration for good performance. Good free modeling / animation software is difficult to come by. Try Blender and Anim8or.
+
+In a way, designing monsters / characters in 3D is easier than in 2D, because you don't need to draw actions from all directions; only from one, then you can rotate them by any angle you like. Also, you don't need to draw every frame of an animation, just the key frames, and your software calculates the rest.
+
+However, the mathematics of 3D is difficult, and includes linear algebra, vectors, matrices, quarternions, geometry and trigonometry.
+
+### Which libraries let you position the cursor and change text colours?
+
+Most programming languages come with a library of their own. In C and C++, you can use conio.h. This is DOS specific, however, and not portable to other systems.
+
+The [curses libraries](../curses_library.md) are a better choice. [Ncurses](../ncurses.md) is the standard on [Linux](../implementation/portability/linux.md), [Mac OS X](../mac_os_x.md) and most [UNIX](../implementation/portability/unix.md)/UNIX-like systems. On [Windows](../implementation/portability/windows.md) [PDCurses](../pdcurses.md) works better than ncurses.
+
+The article [Output libraries](../implementation/portability/output_libraries.md) discusses this in more detail.
+
+One solution for Java is a [Java Curses Implementation](../implementation/java-roguelike-development-guide/java_curses_implementation.md).
