@@ -7,10 +7,10 @@ Articles under "design" will help the developer make decisions about gameplay. A
 ## Development
 
 * [Roguelike Dev FAQ](article/development/Roguelike_Dev_FAQ.md)
-* How to Write a Roguelike in 15 Steps
-* 7DRL
-* Motivation
-* Open Source
+* [How to Write a Roguelike in 15 Steps](article/development/how_to_write_a_roguelike_in_15_steps.md)
+* [7DRL](article/development/7drl.md)
+* [Motivation](article/development/motivation.md)
+* [Open Source](article/development/open_source.md)
 * [Dynamic World Design (XPS doc)](http://alun.myftp.org/Appz/DynamicWorldDesign.xps)
 * [MMO Game balance issues (XPS doc)](http://alun.myftp.org/Appz/MMOGameBalanceIssues.xps)
 
@@ -32,17 +32,17 @@ Articles under "design" will help the developer make decisions about gameplay. A
 
 Roguelike developments are complicated projects to handle; if you have weak goals, the project will slip out of your control and its success may be compromised.
 
-* Rewrite
-* Bug and Bug Report
-* RFE
+* [Rewrite](article/development/project-management/rewrite.md)
+* [Bug](article/development/project-management/bug.md) and [Bug Report](article/development/project-management/bug_report.md)
+* [RFE](article/development/project-management/rfe.md)
 
-Game modification
+### Game modification
 
-* Translation
-* Localization Project
+* [Translation](article/development/game-modification/translation.md)
+* [Localization Project](article/development/game-modification/localization_project.md)
 
-Communities
+### Communities
 
 * [rgrd](article/development/communities/rgrd.md)
 * [Game Programming Wiki](http://wiki.gamedev.net/)
-* rgrd chatroom
+* [rgrd chatroom](article/development/communities/rgrd_chatroom.md)
