@@ -319,3 +319,399 @@ Make them relevant and provide a good reason to do them. Integrate them with the
 Example: Avoid quests like "kill 5 orcs", because they have no reason or emotional connection. It would be better to say the orcs have been killing members of the player's village and the remaining people are pleading for help. Then the player is given a logical reason to kill the orcs and will be more likely to want to complete the quest.
 
 To add to replayability, elements of the quests could be randomised.
+
+## [DUNGEON](fundamentals/dungeon.md) MECHANICS
+
+### How are dungeons represented?
+
+This is a question worthy of a long article or maybe even a small book. Nevertheless, you can get the basics from this FAQ.
+
+This FAQ only discusses traditional systems, i.e. simple 2D tile-based dungeons. If you're making something different (e.g. a 3D roguelike) you can still use this, though.
+
+Firstly, dungeons are made of rows and columns of tiles. If you plan to have variable sized dungeons, use dynamic arrays instead of the usual static kind.
+
+The tiles store:
+
+* The type of tile (e.g. wall, grass, floor, river)
+* The properties of the tile (Can you walk through it? Is it illuminated? Has it been explored by the player?)
+* A list of items on the tile
+* The monster on the tile
+* Any other data (e.g. a trap, a hole in the floor, stairs)
+
+You should keep your tiles as small as possible. Angband has around 16 bytes per tile. Don't go much further than that; you'll see why in a moment.
+
+### How does this work?
+
+The type of tile is a small variable (typically a single byte) that determines what the tile is. The type determines what is drawn - if you are on a river, you draw a blue letter or graphic. A fast way to do this is to store an array of the letter / colours / graphics of all the types, and just substitute the type into this array to determine what to draw.
+
+The properties should be set per-bit; use bit fields or bit flags. How are properties used? Initially set the "explored" flag of all tiles to false, then when the tile is explored, set it to true. Only explored tiles are drawn. If the tile can be walked through (i.e. it is not a wall or something), set the "passable" flag to true. When the player tries to walk somewhere, check the tile in that direction. If it is not "passable", don't allow the player to move there. This allows you to make illusionary walls if you want - i.e. walls which aren't really there and you can walk through them.
+
+For the list of items, use a linked list. This allows many items to exist on the same tile. Store a pointer to the beginning of the list.
+
+For the monsters, it depends. If you have more than one monster per tile, you also need a linked list. Otherwise, just keep a pointer to the monster, or some way to quickly find the monster occupying the tile. This is vital in combat.
+
+There's no reason, in fact, why you can't use the same linked list to store items and monsters in. It will help you keep your tiles small, and many things that can happen in the dungeon affect both monsters and items anyway so it can be handy to find them on the same list.
+
+What other data is needed? I would use another byte to determine any special dungeon features the tile carries, such as traps, stairs, glyphs, chests and so on. Store all of these in an array, and substitute this value into the array to find what, if anything, is at the tile. Alternatively you could just store these things in the tile's linked list too.
+
+If your system uses 11 bytes, then to make a dungeon that is 100 by 100 tiles, you would need 100*100*11 ~= 100K of memory. This increase is quadratic as width and height increase, so be careful that you don't run out of memory. If you need to squeeze your tile size further, and you're using a programming language that supports them, consider using bit fields. They let you use less than 1 byte of memory for a variable.
+
+### How are dungeons generated?
+
+In most games, levels or stages are designed and hard coded in advance. In a roguelike, you want as much randomness and variety as possible (you may also want to make walkthroughs impossible to create), so you need to generate the dungeon randomly during gameplay.
+
+There are many algorithms that will generate a dungeon. What they do is to fill a dungeon with rooms passages, stairs, traps, doors, items, and monsters, often in that order. Which comes first can be an interesting decision. If you know where the stairs from the level above came down, or where the stairs to the level below came up from, then you may want to start with the stairs and build the map around them. If you generate rooms suited to the monsters that inhabit them, then you may want to start with generating monsters so you know what kind of lairs you need to place on the map. If you regard the dungeon as a preexisting place built by someone else, that the monsters moved into later, you may want to generate the map first and place monsters and treasure in them randomly.
+
+This all sounds very simple, but if you've tried to program it you will know it is not.
+
+The first thing you have to decide if you are going to recreate each level every time you visit it, or if you are going to store a level once it is generated and use it afterwards until the end of the game. The latter system is more realistic, but the former ensures you never run out of variety. Angband uses the former system. NetHack uses the latter. The latter system will be described in question 6.7.
+
+How do you fill a dungeon with rooms and passages? There are all kinds of algorithms to do it. You can just start with solid rock, then randomly "dig out" rectangles until you think there are enough. Of course, the results will be disappointing. You not only need to generate the dungeon, but you also need to make it look good. The algorithm I just described will make one huge hole in the middle of the map with rough edges, and some rooms which cannot be reached. Also, there is no limit to the size of the room, and no overlapping with other rooms is checked.
+
+The improved "digging rectangle" algorithm would then look like this:
+
+1. Fill the dungeon with impassable walls.
+2. Pick a random number for the number of rooms.
+3. Select a random location in the dungeon (x, y).
+4. Randomly select the room length (RoomLength).
+5. Randomly select the room height (RoomHeight).
+6. If the area of this room (calculated by RoomLength*RoomHeight) is greater than the maximum area for a room, go back to step 4.
+7. If the room cannot fit in the dungeon, or overlaps with other rooms, go back to step 3.
+8. Fill the rectangle given by (x, y) and (x + RoomLength, y + RoomHeight) with empty space.
+9. Go back to step 3 until all the rooms are created.
+10. Randomly select walls in 2 randomly selected rooms or passages.
+11. A pathfinding algorithm traces a path (passage) from one wall to the other. If no path exists, go back to step 10.
+12. Repeat from step 10 until every room is reachable.
+
+This still has several errors. For instance, you might come into a situation where no further rooms can be added to your dungeon, and your dungeon generation procedure would go into an infinite loop. But the biggest problem is the speed - it can be very slow. While the dungeons it makes look good, they aren't very realistic - it isn't how anybody digs a dungeon. The pathfinding algorithm used to trace passages is slow and difficult to program. The biggest imperfection is that you don't know whether a room is reachable. There are ways (discussed later) to tell whether a room is reachable from elsewhere in the dungeon, but some algorithms always make rooms that are linked to the rest of the dungeon anyway, and this simplifies the whole thing.
+
+How do they do it? Before a room is created, an already-existing room is randomly selected. A passage is drawn from that room to the new room, and then the new room is added at the end of that passage. Mike Anderson's "Dungeon building algorithm" at the Roguelike News sites describes it quite well, the following is just a summary.
+
+1. Fill the dungeon with solid walls.
+2. Make a room in the dungeon.
+3. Randomly select a room (or passage) wall in the dungeon.
+4. Decide on whether to build a passage or a room.
+5. Check there is enough space to make the passage or room. If rooms are in the way, reduce the passage/room length so that it joins the room(s). If the passage/room runs out the dungeon, go back to step 3.
+6. Draw the passage/room (by filling it with empty space).
+7. Go back to step 3 until enough rooms/passages are drawn.
+
+Passages that zigzag or twist can simply be handled by selecting a wall at end of the passage when you reach the end of step 6, and going to step 5 and building a passage from that wall.
+
+Good looking dungeons can also be made with a fractal algorithm. The fractal algorithm will produce any kind of pattern - for landscapes, forests, rivers, islands, coastlines or whatever else you plan to use. I don't recommend using fractals for dungeon generation, as they can make rooms that are unreachable from somewhere in the dungeon. But have a look at question 7.5 if you are interested.
+
+### How do you make dungeons with a theme?
+
+TBC
+
+### How do you make sure all your rooms and passages are reachable?
+
+Some algorithms always generate rooms and passages that are reachable from every other room and passage. If yours does not, you need a way to check this specifically. This is one.
+
+The flood-fill algorithm is probably the best way to do it. It involves recursively calling a procedure that fills all empty tiles until it encounters a boundary (like a wall). When the flood-fill is complete, just check all the rooms for having a tile which is filled. Those that do not are unreachable from the tile where you started the flood-fill (as well as from the rooms which are filled).
+
+An example ([C](../implementation/programming-languages/c.md)) is:
+
+```c
+void FloodFill(int x, int y)
+{
+  if ((Dungeon[x][y].Content == FLOOR) && (Dungeon[x][y].Flags != 1))
+    Dungeon[x][y].Flags = 1;
+  else
+    return;
+  FloodFill(x+1, y);
+  FloodFill(x-1, y);
+  FloodFill(x, y+1);
+  FloodFill(x, y-1);
+}
+
+bool AreAllRoomsFilled(void)
+{
+  for (int Count1 = 0; Count1 < DungeonWidth; Count1++)
+    for (int Count2 = 0; Count2 < DungeonHeight; Count2++)
+      if ((Dungeon[Count1][Count2].Content == FLOOR) && (Dungeon[Count1][Count2].Flags != 1))
+        return false;
+  return true;
+}
+```
+
+In some cases you might *want* a secret room or passage which is cut off from the rest of the dungeon, and to which you can only get through a special spell or complicated digging. If so, make provisions for it.
+
+### How do you make a town?
+
+The simplest way to make a town is to create an empty dungeon level and fill it with buildings. A building can just be a rectangle of undiggable wall - so that the player can't accidentally mess up your town level - along with a shop doorway on one side of the rectangle. To keep the level looking the same if you don't use persistent levels, save a random seed of the town, and use this seed to regenerate the town level every time you return to it.
+
+Depending on how you want to interact with the stores, stepping on a shop doorway should either allow the player to enter the shop, or bring up a menu allowing the player to interact with the shop. Having the shop contents inside the building makes for a more 'realistic' interface, but it forces the player to sift through the shop contents to find what they want, as well as possible for them to steal items from the shop by picking something up and leaving with it. Having a shop menu allows the player to buy and sell items more quickly, which is important for games which feature more shopping, such as Angband.
+
+### How do you make wilderness?
+
+There are a wide variety of different wilderness generation algorithms. However, the simplest is to create wilderness levels is to have a variety of different terrain types, such as trees, water and sand, and use these in combination to create a wilderness level.
+
+* Pick one terrain type that the player can move through and fill a dungeon level completely with this terrain type.
+* Then pick an impassable terrain type, and draw this around the edge of the dungeon level. You may want this terrain type to have rough edges. In this case, pick a y for the top left hand corner. Fill the first column from the edge to the y with the impassable terrain. Then move east in one grid increments and randomly increase or decrease y by one at each step, filling in the columns as you do. Limit y between 1 and some maximum value that ensures that your map is not completely filled with impassable terrain. As you reach the top right hand corner, you'll do the same, but working the rows going south, then columns going west from the bottom right corner, then rows going north from the bottom left corner.
+* Pick two to three more terrain types, and drunken walk these around the map, to create natural looking terrain. It is not important at this stage that you worry about connectivity.
+* Finally, to ensure connectivity, place the dungeon entrance, the player's starting point and other interesting areas on the map, and connect these using the tunnelling algorithm you used for building the dungeon. You'll need to change terrain differently than you would for the tunnelling algorithm through the dungeon: for instance, tunnelling through ice might result in snow. This can still result in disconnected areas on the map, but all the interesting points should be connected. Getting into these disconnected areas should just serve as a reminder that the player shouldn't risk getting lost in the wilderness.
+
+If you want multiple wilderness areas, allow the player to travel from one of these wilderness areas to another. This could be done by having a travel command which presents a choice of adjacent wilderness locations to travel to, when you are near the edge of the map, or by having stairs which connect to different adjacent wilderness locations depending on which edge of the map they are on.
+
+### How do you make persistent dungeons / worlds?
+
+A persistent dungeon, as mentioned earlier, is a dungeon that doesn't change. In Angband, every time you visit level 1 it will look completely different. In NetHack, the levels are stored, so level 1 always looks the same.
+
+Obviously you have to save the levels to disk to ensure they don't change. But is it realistic for levels never to change at all? Sure, the walls should keep the same shape and the dungeon features should be in the same place, but should an item be where you left it months ago? Should all monsters "freeze up" and stay in exactly the same place, ready to do exactly what they were doing when you last visited that level? Should spells that affect the dungeon, e.g. "destroy trap", still be in effect when you re-enter a level? You need to think carefully about what should be stored, and what should not.
+
+To save a dungeon, all you do is create a file and then write to it, in order, everything that needs to be written to file. To load it, just read everything back from the file in the same order that it was written.
+
+Of course, it isn't as straightforward as that. When you don't know how many structures (e.g. items, monsters) will be written to the file, you should count them, then write the count before you write those structures. That way, when you read from the file, you just read the count, and so you know exactly how many structures you need to read from the file.
+
+Pointers are another problem. When you read a structure containing pointers from file, you have to reassign new memory addresses to those pointers. In most computers, a program can be loaded into memory starting at any address, and so the memory addresses contained by your pointers will be wrong if your program is loaded at some other address. In fact, try to avoid writing any pointers to file - they waste disk space, and do nothing useful. Instead, write a data structure to file field by field instead of just writing it as a whole.
+
+You can use serialization to store it in a file. Look at (<http://en.wikipedia.org/wiki/Serialization>) for more information.
+
+### How do you store a really BIG world?
+
+You might be encouraged to make a big world and make it "persistent" (i.e. the levels don't change every time you visit them), but this takes up a lot of disk space. For instance, if each tile in your game is 20 bytes, and your dungeon is 256 by 256 tiles, and you have 100 dungeons, they will take up about 131 megabytes of disk space, items and monsters and other things excluded.
+
+So how do you reduce the disk space taken up? Well, you can either compress your level files, or you can change the way levels are stored and generated.
+
+The simplest way to apply compression to your world involves dividing the world into "active" and "dormant" parts. The conventional approach is to let the "active" part be the dungeon level that the player is currently on, and consider all other dungeon levels "dormant" (meaning e.g. that no monsters actually move on those levels, though movement might be simulated when the player reenters them later).
+
+The easiest way to do the actual technical compression of a string of bytes (representing, e.g., a dungeon level) into another, hopefully shorter, string of bytes is to use an external library. [zlib](http://zlib.net/) is by far the most common choice, being very portable, and open source with a [liberal license](http://zlib.net/zlib_license.html) that allows use even in commercial closed-source projects. zlib is well established and rather efficient in terms of speed and compression ratio, and you're very unlikely to beat it with a self-implemented general-purpose compression algorithm.
+
+If you do not wish to depend on an external library, there's a bit more work to do, but it is possible to implement a simple compression algorithm "by hand". There are many compression methods, but I will discuss one that reduces your file size considerably while at the same time not taking too long to do. It's called RLE (Run Length Encoding), and it is used in many file types. What it basically is, is replacing a repeating sequence of data, with a count and one sample of that data. For instance, the string "AAAAA" would be stored as "5A".
+
+So to RLE compress a structure, count the number of repetitions and store it with whatever is repeated. Repeat until you've stored the entire structure. To decompress an RLE compressed file, simply read in the count, and set that many data structures to whatever comes after the count. Repeat until you've loaded the entire structure.
+
+This method works best on:
+
+1. Large quantities
+2. Similar data
+
+In other words, small quantities of data with lots of variety will not work well, and may even get bigger with RLE compression ("ABC" would be stored as "1A1B1C", which is double the size!).
+
+Since most things in your roguelike should be stored as structures or classes, it might seem like you should compress / store structures as a whole. But there are usually a lot more differences between structures as a whole than there are between the fields those structures contain. In this case, it is better to RLE compress and store the fields separately. On the other hand, in some cases it is better to compress whole structures. You have to try it out and see what works better.
+
+If there is a lot of similar data, with very few exceptions, leave out those exceptions and store them later with the location they should be at. For instance, if the string was "-*-------", you could just store "9- 2*", which means the string contains 9 minus signs, and the sign at the second position is a star. If you decide to use this, find some way to separate the exceptions from the rest of the data. In this case I used a space. You could just assume that the exceptions will be read in when the string has been filled completely. Remember to count the exceptions and write the count to the file before them so that you know how many to expect.
+
+One last tip. You can use a bit-packed array, with 1's where there are unusual values, followed by those values, in order. If you want, you can compress those values or even the bit-packed array, but remember to decompress them somewhere before you try to decipher them.
+
+The best data type to store the count is a 1 byte variable, but that can only store a maximum value of 255. You can handle that case by just starting a new count at zero.
+
+While this method works well, there is an even better way to store levels, which takes up far less space. Firstly, how do you generate a level? You randomly select a number of things, like room and passage location and size, directions your passages run in, locations of your items and features and so on. But the numbers you should use are not actually random. Your game should include a [random number generator](../implementation/useful-algorithms-and-code/random_number_generator.md) with a state. If you save the state, then when you load that state back into the random number generator, it will produce the same sequence of "random" numbers all over again. So if you use a sequence of random numbers to generate your level, then all you need to save is the state of the random number generator. When you need to reload the level, you just reload the same state into the generator and make the level the same way you made it the first time.
+
+Now this really helps you reduce the size of your save file. The state of your random number generator can be stored in only a few bytes. If you decide to use this method, remember not to use random numbers seed for your monsters and items (i.e. reset the random number generator after the dungeon layout is generated), because you don't want to have the exact same monsters in exact same places every time you walk into the level, and also to have the exactly same items in the exact same places.
+
+Why would you NOT want to use this method? Well, while every random number seed has a unique sequence of numbers associated with it, the reverse is not true. This method therefore assumes that the dungeon layout hasn't changed, i.e. that you haven't dug holes in the walls, that you haven't destroyed any doors or changed any features. If you have, the changes will be lost. You can, of course, save the changes to file with the random number seed, even compress the changes, but if a lot of changes are made, the file size can exceed that of a normally stored file.
+
+There is a way to fix that too, of course. You can decide only to store a certain number of changes, and whatever changes occur after those, undo the changes that occur furthest back in time. For instance, if you store 10 changes, when you make the 11th change, the first change is undone (lost). One problem is that this can be exploited. For instance, if you dig though 10 walls, and you dig 1 wall further, the first wall will reappear and trap you. You can probably use this to trap monsters or do other things. This can be fixed by storing a lot of changes (like 100 or more) so the player will probably never encounter this situation. Even if you store 1000 changes, and each requires 20 bytes, you will use up about 20 kilobytes at most, which is still far smaller than 1.3 megabytes that you would have without any compression.
+
+### How Should I Make Random Numbers?
+
+As mentioned above, the random number generator your program uses will have a state, and when a state gets reloaded into the generator, it will produce the same sequence of numbers again. Such numbers, which are all predetermined as soon as the state is loaded into the generator, are not really random. They are called "Pseudorandom" numbers, and the routine you get them from is called a Pseudorandom Number Generator.
+
+In C, if you include stdlib.h in your program, you get the srand() procedure, which takes as its state or "seed" a number between 0 and RAND_MAX, and the rand() procedure which returns a random number in the same range. Do not use it.
+
+You should definitely use a random number generator that's better defined and known than srand() and rand(). Because the C standard does not define exactly how these functions work, there are variations from one system to the next and even from one compiler version to the next. The value of RAND_MAX can be different, and the pseudorandom sequences generated will definitely be different. When this happens your players will load a savefile on a new build or on a different machine, and find the "persistent" levels unrecognizable.
+
+There are also well-known buggy implementations of rand and srand where the number sequence repeats on short periods, and the number sequence within particular bitfields of the result repeat in even shorter periods. All told, there are many good reasons to make the random number generator part of your program instead of relying on a system library.
+
+Fortunately, there are also a lot of good third-party libraries that you can use which have consistent behavior on all platforms and operating systems they support. The Mersenne Twister is popular and fast. If you want to code your own, I recommend a lagged-fibonacci generator as described in Knuth volume 2. It's easy to code and runs fast.
+
+In Java, creating random is much easier as they're are several implementations for this in the Java Standard-Library API. For simple random numbers the java.lang.Math class has the static random() method which returns a random double value between 0 and 1. It can be used to generate some simple random numbers by multiplying the returned value with the upper-bound.
+
+For "seed-based" and complex random numbers (as described above), there is the java.util.Random class which can be used to get accurate random numbers to some degree. It can be instantiated with a seed, for reproducible effects. If instantiated with no seed, it will use a random seed. You can also instantiate it to use the system-time (`System.currentTimeMillis()`) as the seed but I would advise against this, as the default constructor of the Random class ensures the seed to be completely different from any other invocation of the constructor (See the source-code of the java.util.Random class's constructor). The random number generator of the Random class is very good (and fast) so you don't need to opt for native or third-partly alternatives like Mersenne-Twister. A value between 0 and a constant can be easily retrieved using: `Math.round(nextDouble() * upperBound)`. For a value between a lower-bound and an upper-bound use: `nextDouble() * (high - low + 1)) + low` .
+
+As of Java-7u60, Instances of java.util.Random are threadsafe. "However, the concurrent use of the same java.util.Random instance across threads may encounter contention and consequent poor performance. Consider instead using ThreadLocalRandom in multithreaded designs". (-from Jdk7u60 Javadoc)
+
+### How do you deal with stuff happening far from the player?
+
+#### Monsters
+
+Monsters on the same level as the player should be "processed" (i.e. decide whether to move, attack, pick up items or whatever) each turn. You simply keep a list of all the monsters on the level, and every turn you go through the list and decide what should be done for each monster.
+
+Monsters on different levels usually do nothing. When the level is loaded, you can decide to process the monsters say 50 times (without them being able to sense the player, or they will kill him!) just to make it realistic. This way, monsters will not end up in the same place and involved in the same actions they were in when the player last visited that level. You could also keep the levels above and below the level the player is on (as well as any other levels that can be reached through say teleport traps) in memory, and process the monsters on those levels. This makes it more realistic: the longer the player is not on a level, the greater the amount of changes made to that level and the more the monsters change / disperse.
+
+The exact monster processing will be discussed later.
+
+### What is LoS, and why and how do you do it?
+
+LoS ([Line of Sight](../implementation/line-of-sight-field-of-vision/line_of_sight.md)) algorithms are ways to determine whether a particular place is visible to the player / monster. These are related to FoV ([Field of Vision](../implementation/line-of-sight-field-of-vision/field_of_view.md)) algorithms, which are used to determine every place which is visible to a player / monster. The former may be a subroutine of the latter.
+
+The most common use of these algorithms is to determine what the player or monsters can currently see. The second most common use of these algorithms is to determine what is lit given a light source at a particular location. In most roguelikes, the dungeon starts in complete darkness. When you walk around, you reveal some of it. But you only see monsters or terrain that are lit and within your FoV.
+
+Another common use is in ranged combat. Can the player shoot at the monster? Are there any obstacles in the middle that the player might hit? Does the monster have any cover from nearby walls? Usually, attackers can only shoot enemies which they have a LoS to. Obstacles and cover are between the attacker and defender. If you want to print a message along the lines of 'You miss the Orc and hit the Goblin by mistake', then you need to make sure that the player has a LoS to the goblin as well.
+
+The final purpose that LoS and FoV algorithms are frequently used for is to determine who is affected by an area effect ability. An explosion may harm all nearby creatures, but you want the possibility of an enemy being sheltered from the blast by an intervening wall. Similarly, a gaze of petrification may affect many enemies at once, but should certainly not pass through walls.
+
+The methods for determining LoS and FoV range from simple to extremely subtle. Simple techniques involve simply allowing sight of everything nearby or everything in the current room. [Ray casting](../ray_casting.md) algorithms are a bit more complex. They use a simple LoS algorithm, such as [Breshenham's Line Algorithm](../breshenhams_line_algorithm.md), and then use it to calculate FoV by checking LoS on nearby squares.
+
+The more subtle algorithms include [Shadow casting](../shadow_casting.md), which simulates a light from a point source and [Permissive Field of View](../permissive_field_of_view.md), which simulates a light from a volume source to determine FoV. These more complicated methods are difficult to correctly implement. But both have freely available libraries which can be incorporated into your roguelike.
+
+A detailed evaluation of popular LOS algorithms (along with a new, better algorithm) can be found at Adam Milazzo's page here: <http://www.adammil.net/blog/v125_roguelike_vision_algorithms.html>.
+
+### How do you store the list of all the items in the game?
+
+You should know what kinds of items you are going to have in the game. You should also have your magic system well planned, and any other systems involving items (battles, shopping, stealing) also well planned.
+
+Decide on the exact categories of items, and the similarities and differences between them. Decide what each item category needs to contain. For instance, while most items should be able to carry enchantments, foods and potions should not (unless, of course, a potion works the same way as a spell does). Your weapons and armor should store info relevant to the battle system (like attack power, damage type, defensive rating and so on), but scrolls should not. I think a good way to represent all the different item categories is to use object oriented programming, because that allows inheritance, polymorphism and so on, which is very useful.
+
+Now one way to store the item list is to just keep a huge list of all the items in the game, in some kind of array, and to represent an item, you just store a number, which is the position of that item in this array. While this system works well for some kinds of items where there is no difference between two items of the same kind, the problem arises when you want to store something individual about an item. For instance, you might want items to carry an enchantment that makes them do extra damage, or that heals you faster. You might want a damage system, where as you use your items, they take damage, and when that damage reaches zero, they fall apart and become unusable. You might want to allow the player to name objects as in Nethack or attach macros to them, as in Angband. In such cases, the items have to carry individual enchantments damage ratings, and other information. So you can't just store such items in the array. You would have to store all the settings for each item with the item.
+
+The best way to do it, then, is to split up your items into 2 categories. In the first category are items which carry no individual properties. These are simply represented by a number which is substituted into the item array to find out about them. In the second category are items which have some individual properties. They are represented by both a number which get substituted into the item array, and by the individual settings they carry.
+
+Since you will most likely end up with different sizes for different item types, you can't use 1 massive array for all the items. You will most likely have to use an array for each item category. You store these arrays in a file, and read them in from the file when the game is started.
+
+### How do you store the items in the player's inventory?
+
+The previous question discusses how to generally store the items. One more thing to remember is that if the player / monster is carrying more than one item that is the same (e.g. 5 arrows), you should allow the items to stack. So you need one more structure per item, and that is the number (for the arrows, it would be 5). If you want to check total inventory weight, remember to multiply each item's weight by its number to get the correct weight, otherwise you will just get the weight of 1 item.
+
+But now how do you store all those items in the player's inventory? You can use:
+
+1. A static array
+2. A dynamic array
+3. A linked list
+
+A static array is simply array with a fixed number of elements. It is easy to read and write to a file, because it is one continuous structure and you always know how long it is. You only need to still store the number of items in the array so that you know where the stop reading the items back from file. It is also very easy to sort. The disadvantage is that memory is always wasted. If the array has 50 elements, and you only carry 5 items, 45 elements worth of memory is sitting there unused. Also, you can't carry more than 50 items, so you constantly have to check this when buying / picking up / doing anything that adds items to the inventory.
+
+A dynamic array is an array that can be of any size, because it can be created and destroyed at any point in your program (using "new" and "delete" in C++, and "malloc()" and "free()" in C). When you create it, you specify the size. Unfortunately, you can't change the size of the array after it is created. So when you decide to add or remove the item from the inventory, you need to create another array with the right number of elements, and then copy everything from the old array, and delete the old array. This is slow. If you use C, you can use realloc(), which does the same thing. Sorting a dynamic array and writing it to file is just as simple as sorting a static one, though.
+
+A linked list is a more advanced programming structure. It consists of a bunch of "nodes" created dynamically (i.e. whenever you like, not all at a specific time like with arrays), and each one containing a pointer to the next one in the list (and sometimes the previous) and containing data (like your item info). The cool thing about linked lists is that there can be as many as you like, they will never waste any memory, and adding and removing items is easy and quick. They can only be accessed sequentially, i.e. you have to go through them in order from beginning to end. However, sorting linked lists, although harder to program, is even faster than sorting arrays, because you don't need to swap the actual data, only the pointers' memory addresses. Writing this to file is slightly harder, as you have to do it item by item, you can't just write the whole list at once, and you don't know how many items you've got (unless you keep count). Linked lists can be used for a whole lot of other things too. This is the recommended structure for those who know about it and how to use it. If you don't, it's quite difficult, learn pointers and dynamic memory allocation first.
+
+### How do you make randomly generated items?
+
+* Decide what percentage of items in the game should be random
+* Decide what categories of items should be randomly generated
+* Decide what things should be random in each category
+* Decide what the range for those random values should be
+* At the start of a game, generate the random items and put them in the big item array
+
+### Which kinds of monsters should I use in my roguelike?
+
+It depends on the setting and story. Most roguelikes use monsters taken out of Tolkien's work: orcs, trolls, wargs, hobbits, dwarves, elves, dragons and so on. Traditional creatures taken out of various mythologies and religions are also used: nagas, medusas, gorgons, angels, demons and so on. Some are taken out of "Dungeons and dragons", such as the infamous kobold. Plenty of animals are used: from the normal cave-dwelling creatures like bats and spiders, to the ridiculous lice and ants.
+
+Make up your own if these are not enough.
+
+### How do you create a monster AI?
+
+AI (artificial intelligence) is not so easy to create. There is several different techniques you might want to use.
+
+State machines are probably the easiest way to do AI. Firstly, get a piece of paper. Then write a set of states (e.g. attacking, walking somewhere, running away, stealing), circle those states, and draw arrows (with directions) from each state to every state you can get to from that state. These arrows are called transitions. Label each transition with the circumstances under which it occurs. An example:
+
+```text
+     +-----------------+    +---------------+
+     | player runs away|    | healthy again |
+     |                 v    v               |
++-- ATTACK        APPROACH PLAYER       RUN AWAY
+|    ^                 |                    ^
+|    |  close enough   |                    |
+|    +-----------------+   likely to die    |
++-------------------------------------------+
+```
+
+Of course, it would be a lot more complicated. There is far more decisions to be made, and there is more actions (one for each item / spell). Now how do you implement this? Instead of using the usual massive nested "if" or "switch" statement, you make a 2 dimensional array, with the number of states being its width and height. This is the state transition table.
+
+```text
+            ATTACK        APPROACH              RUN
+ATTACK                    Player runs away      Likely to die
+APPROACH    Close enough                       
+RUN                       Healthy again
+```
+
+You keep a variable with each monster that tells you which state it is in. This tells you about the row of the state transition table. You then go through that row, and run tests to see if the circumstances in it are fulfilled. If they are, pick the one with the highest priority, and switch to that state. For instance, you are in the "ATTACK" state. Look in the left-most column for "ATTACK" (it's at the top). Right, now look along the row. Under the first column ("ATTACK") there is a blank space, so there is nothing to check there. Under the "APPROACH" column there is "Player runs away". Say that is true - the player is leaving. Under the "RUN" column there is "Likely to die". Say that is also true - the monster is badly hurt. The monster's life takes priority over the player's pursuit, so the state machine switches to the "RUN" state (you could of course make the monster's life less important :-). Behavior is then based on the states. This is also where big "if" statements can come in. If you want to avoid them, use function pointers as well in your state transition table, and make a function for each action / state.
+
+State machines are very good, and unlike a quick AI you make using hacks, they stand up well to difficult situations and don't require a lot of processing or calculation. They are used in many programming situations, so it is worthwhile to learn them.
+
+Other techniques, like neural networks are described in question 8.x.
+
+### How do you create a good monster AI?
+
+The previous question describes how you make an AI. This one will discuss how to improve it and make it interesting.
+
+Firstly, plan. Do you want some monsters to attack each other? Do you want to make some co-operate with the player? Do you want group tactics? Various strategies?
+
+### How do they find / follow the player?
+
+Let's see. The player is always moving. The monster is always moving. The other monsters are always moving. Doors are opening and closing, new obstacles are coming around. This seemingly simple problem of "now the monster follows the player" is actually a real challenge.
+
+Different roguelikes have tried different things. In Angband, the monsters sleep (do nothing) when they are created. When the player comes around making noise, they wake up. This way, far away monsters don't constantly have to look for the player. Also, monsters only move to attack you if they see you (I think), and if you temporarily disappear, they go to where they last saw you.
+
+How do they move closer to you if they know where you are (i.e. can see you)? If their X value on the map is smaller than yours, they take a step that increases their X value; if their X value is bigger than yours, they take a step that decreases it, and if it is the same, they don't take a step which changes the X value. The same thing happens with the Y value. The combination of X and Y changes makes the monsters walk the best possible way (i.e. diagonally or in a straight line, depending on the situation). This, of course, doesn't help when it comes to obstacles. How do you get around obstacles? Several ways will be discussed here.
+
+I am going to assume the monsters want to find you, and you are far away. A good way to mark a path toward the player is to use the player's Line of sight code to mark squares the player has seen. Each time a square is found to be visible to the player, mark the square with a "scent value" X, where X is 32 times the current turn number, minus the distance from which the player saw the square (this presumes that 32 is larger than your maximum sight radius. If that's not true, then use your maximum sight radius instead).
+
+Now, any time a monster is on a square that the player has seen, it can just check the scent values on the surrounding squares. If it keeps moving into the adjacent square with the highest chase value, it will effectively find its way through squares the player has seen to the player. When the player's in view, it will act like it's tracking him by sight. You probably want to limit this method depending on the monster's abilities. Scent tracking monsters could be limited to squares seen from a very short distance of one or two squares, while stupid monsters could be limited to not noticing any scent values that are from more than 50 turns ago and sighted monsters don't get to follow the "scent" values until they have actually seen the player at least once. The great benefit of this method is that it's very simple and very fast and allows you to simulate several different related kinds of monster tracking. It will make the monsters baffled anytime the player teleports or (if the monster can't open doors) when the player closes doors. But, that's sort of what teleporting and closing doors are for, so you may decide that's all right.
+
+Tracking by sound also works. For each action that makes a sound, start with a number representing how loud the sound was and mark the square the player's on with that noise level. Then move outward from the player marking each new radius with a noise level one less than the one before, until you get to zero.
+
+Monsters who remember the sound then go in the direction of the tiles with the highest amount of sound. Maybe every time they hear sound, they start listening better for new sounds, and becoming more aware of smells? What is nice about sound and smell is how you magic and items which change them bring in all kinds of new strategies (e.g. an invisibility spell isn't enough any more, because some monsters can sniff you out and attack anyway).
+
+You may want to do pathfinding with a general pathfinding algorithm like A* or Dijkstra. These will find the shortest path (if any) between two points on the map. You might want to use these for some special monsters that know the location of the player (through magic or something). The problem with general pathfinding algorithms is that they are slow, and may be difficult to learn and program (unless you know a lot of Graph Theory). Also, since the player is moving, and monsters are moving, and new obstacles are coming around, you would have to trace a path every few turns to make sure it is still possible (no new obstacles). This is very computationally expensive, so like I said, it isn't good to use for every single monster, only for some. It can also be used for moving the player; in some games (a.k.a. Diablo/2), you click with the mouse where you want the player to go, and he walks there using the shortest path and avoiding obstacles and everything else in the way.
+
+A quick algorithm and explanation of pathfinding (since I couldn't find any and had to learn the hard way): This is something like Djkstra's algorithm. What happens is there are 2 lists: OPEN and CLOSED. The OPEN list stores a list of tiles which are possible candidates for a shortest path, and the CLOSED list stores the tiles we've been through, so they aren't unnecessarily repeated. The "movement cost" is the number of steps the monster has to take to get to that tile, walking on the path associated with that tile. New tiles are only added to the OPEN list if they don't exist, and tiles only replace other tiles if they have shorter paths. Anyway, the algorithm is:
+
+1. Find the destination tile (where the player is).
+2. Put the starting tile (where the monster is) on the OPEN list. It's starting cost is zero.
+3. While the OPEN list is not empty, and a path isn't found:
+    1. Get the tile from the OPEN list with the lowest movement cost. Let's call it the CURRENT tile.
+    2. If this is the destination tile, the path has been found. Exit the loop now.
+    3. Find the tiles to which you can immediately walk to from this tile. These would the tiles around this tile, which don't contain obstacles. Call these tiles "successors".
+    4. For each successor:
+        1. Set the successor's parent to the CURRENT tile.
+        2. Set the successor's movement cost to the parent's movement cost, plus 1 (for diagonal movements, add more if it takes longer to go diagonally in your game).
+        3. If the successor doesn't exist on either the OPEN list or the CLOSED list, add it to the OPEN list. Otherwise, if the successor's movement cost is lower than the movement cost of the same tile on one of the lists, delete the occurrences of the successor from the lists add the successor to the OPEN list Otherwise, if the successor's movement cost is higher than that of the same tile on one of the lists, get rid of the successor
+    5. Delete the CURRENT tile from the OPEN list, and put it on the CLOSED list.
+4. If the while loop has been ended because the OPEN list is empty, there is no path.
+5. If this is not the case, the last tile pulled from the OPEN list, and its parents, describe the shortest path (in reverse order - i.e. from the player to the monster - you should read the list of tiles back to front).
+
+### How do you add variety to your monsters?
+
+A big problem with monsters in roguelikes is that they are just too predictable. You know one hit with a sword will kill every mouse, one arrow will kill every yeek, and it takes a lot from both weapons and spells to kill a dragon. Even though there are often lots of monsters, once you've seen each one, that's it, you've seen it all.
+
+A number of different techniques therefore exist to make monsters more unique and add more variety to them. Making monsters carry items is one of them. So is a good monster AI. There is several more. Here I will discuss genetics and neural networks.
+
+In real life, animals and people carry genes, which add a lot of differences between them. Some are faster, some are smarter, some are healthier and so on. What happens over a period of time is that the fittest survive and the rest die out. So when your player walks into the dungeon and starts killing monsters, he will find they are not all the same, and they get stronger over time, because as the weaker die, the stronger live on to reproduce and have stronger children. How do you make monster genetics? Decide what the "genes" should be. Maybe extra health points. Resistances to various elements and spells. Stronger attack and defence. Intelligence and eventually the ability to use magic? Then decide what each gene does. For instance, each health gene affects health points by 5%. For each good health gene, the health points go up 5%, and with a bad health gene, they go down 5%. So if you gave an orc 4 health genes, and they all turned out "good", the orc would have 120% of its normal health points. If they all turned out "bad", he would only have 80%.
+
+Now, using genetic algorithms, when you create a monster, randomly select 2 parents. Somehow combine the parent's genes (usually using random selection and averaging). If there isn't enough parents, randomly create genes. How does this help? Well, the orcs with 80% hit points will get killed more by the player, and so fewer will survive to have sickly children. The children will thus become healthier, because only healthy parents have survived to reproduce. As they grow healthier, they are more of challenge for the player.
+
+Neural nets are a way for a computer to learn. They are a difficult and complicated topic, which is why they are rarely used in any games, but simple ones should be manageable with a little research. What basically happens is that a neural net takes a number of inputs, and produces a number of outputs. Unlike a program which you make, however, a neural net learns from experience and corrects its mistakes, so a good one should make a really challenging opponent.
+
+The inputs to a monster neural net could be:
+
+* Current state of health (hit point percentage)
+* Current opponent's state of health (probably also a percentage)
+* Distance from opponent
+* Damage done by previous attack
+
+The outputs:
+
+* Movement towards the opponent
+* Movement away from the opponent (running away :-)
+* Some or other attack
+* A spell
+
+You train the net by comparing the damage done to the opponent, with the damage received from the opponent. With a little practise, the neural net would learn to run when it is near dead, to go closer to the opponent when it is far, to use attacks which do the most damage and so on. One thing to remember, is that if you plan to have neural nets for each creature, don't destroy the net when the creature dies. Then all the learning is lost. Rather use a net for all kinds of that creature (e.g. a neural net for all orcs).
+
+### How do you make your battle system?
+
+The heart of any roguelike is the battle system. What makes most roguelikes fun, is killing thousands of monsters. The better the battles, the better the game. So a good battle system is not only nice to have, it is essential.
+
+Planning a battle system, however, is no easy job. Every single spell, every usable item, every monster type, and many other things, can completely change the way battle works. For instance, say you have this spell called "haste" that makes the player take one extra action per turn. That's easy: one "if" statement checks if haste is active, and if so, the player takes another action. But now say you decide to change the haste spell so monsters can use it too. Now things can really complicated when you have multiple monsters and the player with "haste". Your entire battle system might have to change. So the point is, you need to start with a good design that's capable of modeling the kinds of things that you're going to make important in combat. If you have something like "haste", it means speeds can vary by creature, so you need to start with a system where speeds can vary by monster. Then the complexity of the "if" statements checking each turn for another action never comes up because the player and monsters are simply taking turns at different rates.
+
+Basically, combat works like this. Everybody gets a certain number of turns, they do what they think will inflict the most damage on their opponent while minimising their own damage taken. Damage is inflicted with weapons, and it is reduced (or blocked entirely) with armor.
+
+The point of combat is very simple. Kill as many opponents as possible while staying alive yourself. When do you die? Every roguelike (and most other games) I've seen use a "hit point" (or "health point") rating, abbreviated HP. You have a certain amount of HP, and a maximum. The maximum grows when you reach the next level, and the current HP grows when you rest/drink healing potions/use healing spells and so on. When your current HP is maxed out, you are completely healthy. When it drops to 0, you are dead. Damage reduces it by the amount of damage taken, and healing increases it by the amount of health points gained. How do you calculate this? Instead of the slow and problematic way of checking overflows like roguelikes usually do it, do this: When a hit occurs: If the damage is greater than or equal to the current HP, the HP drops to zero and you die. Otherwise subtract the damage from the current HP. When you are healed: If the health gained is greater than the difference between your maximum and your current HP, your current HP takes on the value of the maximum HP. Otherwise, you add the health gained to the current HP.
+
+When you process monsters, the monster AI decides what action to take.
+
+### How do you represent, store and process monsters?
+
+This is a good question, but I don't think very many articles have been written on this.
+
+Firstly, to represent the monster, you need to take everything into consideration (which is why this is the last article about monsters). Does each monster have a name, or do only some? How do you deal with different AI's? How do you store and use spells? How does your monster carry items? And can all monsters do all of these things? If not, how do you know and what do you do about it? Planning (at least each kind of monster), object oriented programming and good structures should do the job for a large variety system such as this. For the items section in this FAQ, a system was discussed where items were split into 2 categories: properties unique to each item, and properties which are the same throughout the same item (e.g. two ordinary swords will do the same damage, but one might have a spell acting on it that the other does not). This system works well for monsters too - all orcs have so many maximum hit points, but each one can have different current hit points (because they have been hurt). So splitting up monsters this way can be a good idea.
+
+Most monsters are stored in some kind of data (or text) file. They are read in when you play the game. Inside the game, monsters will change often - the player will kill them, they might multiply, more will be created, reading a scroll of monster summoning will call up more and so on. So you must make considerations for this from the start. A linked list is very good for storing the monsters inside the game; arrays are going to run into size problems very quickly. If you are programming using object oriented programming, linked lists can store any object derived from a base class, and the right virtual method will still be activated for each monster. Adding new monsters to a linked list is a piece of cake, removing dead ones is just as easy. So linked lists are the storage system of choice.
+
+How do you process monsters? Just pass through the linked list and run some or other function or method for each monster in it. Alternatively, since each map tile points to a monster (if any is standing on it), go through each map tile and process the monster on it.
+
+One problem that could occur is that you get dangling pointers: each spell/person/monster/item attacking/working on/flying towards the current monster points to the monster. When the monster dies, you delete the monster from the list, and those pointers point to who knows where. Unpredictable things could happen. Use "reference counting" (see www.memorymanagement.org). Basically, each monster keeps a count of its "users", initially set to zero. When something new points to the monster, increment the monster's user count by 1. Each turn, those items/spells/whatevers pointing to the monster must check if the monster is dead (marked somehow on the monster without removing it from memory), and if so, stop pointing to the monster, and decrease the monster's user count by 1. Only when the monster's user count is zero can it be safely deleted from the list and removed from memory.
+
+Another problem you might run into is how to deal with monsters which have different speeds. A monster that takes 3 actions per turn can either make all 3 when it is processed, or you can use the more realistic (and difficult) system where those turns are spread out among everyone else's turns. For this, you might want to keep a separate list for monsters of different speeds, and pass through the linked lists with different speeds more than once, taking only one action each time. Then there are the "haste" and "slow" types of spells that change the number of actions you normally take...
