@@ -71,7 +71,7 @@ Briefly then, "roguelike" is more of a feeling you get in a game rather than a s
 
 #### [ADOM](../../game/adom.md)
 
-Website: <http://www.adom.de/>
+Website: <http://www.adom.de/>  
 ADOM is Thomas Biskup's one-man effort. Inspired by the D&D universe, ADOM is a fantasy romp with a quaintly humorous mood. It has a handmade overworld map called the Drakalor Chain. It's player's job to track down the source of Chaos overtaking the land. The closer the player gets to the source, the more tainted with Chaos he becomes.
 
 #### [Moria](../../game/moria.md)
@@ -80,18 +80,18 @@ ADOM is Thomas Biskup's one-man effort. Inspired by the D&D universe, ADOM is a 
 
 #### [Angband](../../game/angband.md)
 
-Website: <http://rephial.org/>
+Website: <http://rephial.org/>  
 "Angband", is a newer roguelike based on Moria but even more loosely based on "Lord of the Rings". There are probably more variants to this one than to any other roguelike. The variants often used entirely different monsters and goals; not all of them involve Tolkien's works.
 
 #### [Nethack](../../game/nethack.md)
 
-Website: <http://www.nethack.org/>
+Website: <http://www.nethack.org/>  
 NetHack is the modern roguelike which is by far the most similar to the original Rogue. NetHack offers a varied and humorous playing experience; a favourite saying amongst players is that the DevTeam "thinks of everything". The focus of the game is relatively narrow - there's no town or wilderness, just a single dungeon to get down to the bottom of and retrieve the Amulet of Yendor from - however, individual levels are more varied than is typical of many roguelikes. The game is relatively short; it's possible to win in 8 hours of play if you put your mind to it - partly because the dungeon levels are static during the game, so unlike Angband for example, you're forced to move on to unexplored levels deeper in the dungeon.
 
 #### [Dungeon Crawl](../../game/dungeon_crawl.md)
 
-Website: <http://www.dungeoncrawl.org/>
-Dungeon Crawl Stone Soup: <http://crawl.develz.org/>
+Website: <http://www.dungeoncrawl.org/>  
+Dungeon Crawl Stone Soup: <http://crawl.develz.org/>  
 Dungeon Crawl is a roguelike with a strong emphasis on the "rogue" part of the genre. It's a game of stealth and cunning, with a strong emphasis on traps and stealth. It's also a game of exploration, with a huge number of different monsters and items to discover. The game is set in a fantasy world, with a strong emphasis on the "dungeon" part of the genre. The game is a single-player game, with no multiplayer or online play.
 
 ### What roguelike websites / newsgroups are there?
