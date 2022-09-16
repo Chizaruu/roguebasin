@@ -6,7 +6,7 @@ Articles under "design" will help the developer make decisions about gameplay. A
 
 ## Development
 
-* [Roguelike Dev FAQ](article/development/Roguelike_Dev_FAQ.md)
+* [Roguelike Dev FAQ](article/development/roguelike_dev_faq.md)
 * [How to Write a Roguelike in 15 Steps](article/development/how_to_write_a_roguelike_in_15_steps.md)
 * [7DRL](article/development/7drl.md)
 * [Motivation](article/development/motivation.md)
