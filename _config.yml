@@ -5,7 +5,7 @@ title: "RogueBasin"
 # with your folder name, otherwise leave it empty
 baseurl: "/roguebasin"
 # (string) Description of your wiki
-description:
+description: The Roguelike information resource that you can edit. 
 # (boolean) disable edit functionalities (edit/delete/add pages)
 disable_edit: false
 # (boolean) Enable/disable wiki page list in sidebar
@@ -23,11 +23,11 @@ paginate: 5
 paginate_path: "/blog/page:num"
 permalink: /blog/posts/:year/:month/:day/:title:output_ext
 # (boolean) Enable/disable download buttons in sidebar
-show_downloads: true
+show_downloads: false
 # (string) Specify branch rendered by gitpages allowing wiki tool buttons to work
 git_branch: "main"
 # (string) Url of logo image, it can be full, absolute or relative.
-logo_url: 
+logo_url: assets/images/rogueBasinLogoSmall.png
 # (string) The UA-XXXXX-Y code from google analytic to enable GA on your wiki
 google_analytics: 
 # (string) folder where wiki pages are stored, it's needed for tool buttons
@@ -44,6 +44,7 @@ use_prose_io: true
 # - github : it uses internal github repository search
 # - google : it uses cse search bar, you need to configure google_cse_token
 #
+service: github
 search_engine : "js"
 # Setting google custom search engine for google
 # cse search bar (https://cse.google.it/cse/)
@@ -132,7 +133,7 @@ inc_after_content :
 inc_before_footer : 
 inc_after_footer : 
 inc_before_head : 
-inc_after_head : 
+inc_after_head : head.html
 inc_before_meta : 
 inc_after_meta : 
 inc_before_scripts : 
