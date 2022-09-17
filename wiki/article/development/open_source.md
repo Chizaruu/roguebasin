@@ -1,6 +1,10 @@
 # Open Source
 
+---
+
 ## Definition
+
+---
 
 The various Free Software/Open Source licenses are covered in brief under [Licensing](../licensing.md).
 
@@ -9,6 +13,8 @@ The various Free Software/Open Source licenses are covered in brief under [Licen
 * Source code available, can make derivatives, little other restrictions (non-copyleft free software/open source). This is the BSD/MIT interpretation of Open Source. Note it allows a third party to release a closed source version of your game, hiding from you and others any changes they performed. This is a useful option if you produce an engine where you see the majority of the work being done by the secondary developer. It then lets the person who does the most work decide on licensing.
 
 ## Pros
+
+---
 
 * Attracting Contributors. Publishing your source code under and appropriate liscense is your best chance to attract other developers to your project (other than actually paying them). You might attract people with skills and abilities that you lack.
 * [Portability Issues](../implementation/portability_issues.md). You do not need to own all the platforms that you want to port to. People on those platforms can do their own ports and give you the needed changes.
@@ -21,6 +27,8 @@ The various Free Software/Open Source licenses are covered in brief under [Licen
 * Community Approval. There is a strong pro-open source component to the roguelike community that will favour any roguelike with sources and disfavour ones that lack sources.
 
 ## Cons
+
+---
 
 * The Pros Don't Apply. Many of the Pros only apply to already successful projects. Variants, New Features, Bug Fixes, will only be submitted if you have an active userbase large enough to contain technically qualified people.
 * Rejecting Changes is Hard. You have your own vision for the game. It is hard enough dealing with requests to change the game in ways you didn't envision, without having to deal with requests containing the correct source code to make the changes.

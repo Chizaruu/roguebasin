@@ -1,10 +1,14 @@
 # Motivation
 
+---
+
 "I couldn't get my friends to play it anymore. So I posted about it to the newsgroups, hoping to get response. The first version didn't get any. After I fixed some bugs I got a response from a person in Holland. That encouraged me to keep going." ~ [Thomas Biskup](../../developer/thomas_biskup.md(author of [ADOM](../../game/adom.md))
 
 Given the fact that most roguelikes are non-commercial motivation frequently becomes an issue.
 
 ## Issue: Lack of feedback
+
+---
 
 **Solution:** Look at the quote on top of this page. Even the author of one of the most successful roguelikes recieved no feedback at first. In general you cannot expect much feedback until your game is at least somewhat mature. A lack of feedback means your game is not there yet, but it does not mean that it is a failed attempt. It takes years to write a full-fledged roguelike (but only one week to write a 7DRL) and during most of that time span you will probably recieve little feedback.
 
@@ -17,6 +21,8 @@ However there are some things you can do to increase the amount of feedback at a
 * Explicitly ask for feedback.
 
 ## The wonders of deadlines
+
+---
 
 There are two yearly events that help roguelike developers to reach the release stage :
 

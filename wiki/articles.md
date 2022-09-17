@@ -1,10 +1,14 @@
 # Articles
 
+---
+
 This is a listing of articles, arranged by subject.
 
 Articles under "design" will help the developer make decisions about gameplay. Articles under "implementation" will help with algorithm design, and offer various methods of implementing features. Headings are arranged in a general chronological order of development. Large lists of ideas (items, spells, themes, etc.) are in bold.
 
 ## Development
+
+---
 
 * [Roguelike Dev FAQ](article/development/roguelike_dev_faq.md)
 * [How to Write a Roguelike in 15 Steps](article/development/how_to_write_a_roguelike_in_15_steps.md)
