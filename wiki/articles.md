@@ -25,7 +25,7 @@ Articles under "design" will help the developer make decisions about gameplay. A
 * [Class](article/development/fundamentals/class.md)
 * [Skill](article/development/fundamentals/skill.md)
 * [Permadeath](article/development/fundamentals/permadeath.md)
-* [Shops](article/development/fundamentals/shops.md)
+* [Shops](article/development/fundamentals/shop.md)
 * [Random generation](article/development/fundamentals/random_generation.md)
 
 ### Project management
