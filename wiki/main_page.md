@@ -3,15 +3,17 @@ redirect_from: /
 published: true
 ---
 
-# Welcome to RogueBasin
-
 ## What is a Roguelike?
+
+___
 
 One does not simply ask "What is a Roguelike".
 
 The term "roguelike" is still growing in popularity to describe any game with procedural content generation, or punishing difficulty, it is important to note that roguebasin is meant to serve as a repository of knowledge mostly for **Traditional Roguelikes**.
 
 ## What is a Traditional Roguelike?
+
+___
 
 <img align="right" src="../assets/images/CTctB.png">
 
@@ -23,6 +25,8 @@ Of course, the best way to understand what Roguelikes are is to download and pla
 [--more--](article/development/fundamentals/what_a_roguelike_is.md)
 
 ## Roguelikes
+
+___
 
 Many Roguelikes are freely available online. The most influential ones from the 00's decade are known as the Major Roguelikes:  
 
@@ -69,6 +73,8 @@ Before their rise in popularity in the late 80s and 90s, the genre was dominated
 Since the control systems of these Roguelikes are geared towards "expert" players, the novice player may be interested in trying a 'lighter' game like some of the [coffeebreak roguelikes](category/coffeebreak_roguelikes.md) or just dive in at the deep end and find a [roguelike game](category/roguelike_games.md) to suit you.
 
 ## Roguelike Community
+
+___
 
 There are several other important places in the roguelike community that you should consider visiting:
 
