@@ -1,5 +1,7 @@
 # Roguelike Dev FAQ
 
+---
+
 ```text
                      #                 #              ##           #
 ###         ##      ##    ##   ##    ###    ##    ##   #         ###
@@ -25,6 +27,8 @@
 By Damjan Jovanovic and many contributors on Roguebasin
 
 ## General
+
+---
 
 ### What is Rogue?
 
@@ -133,6 +137,8 @@ Some places are more newbie-friendly than others. The developers at rec.games.ro
 
 ## GENERAL DEVELOPMENT QUESTIONS
 
+---
+
 ### How and by whom are roguelikes generally made?
 
 By a selection of people from all over the world, with too much free time on their hands. People looking to learn a programming language, people who play games for a while and end up wanting to make it their way, people who want to make a game by themselves and have no artistic talent (for those using ASCII that is).
@@ -164,6 +170,8 @@ Then go through the source files. Find the section you want to change. Make smal
 Variants usually never reach the fame and glory of the original game, but they are a good way to learn about how roguelikes work, and making them is usually easier and faster than starting from the beginning.
 
 ## DESIGN ISSUES
+
+---
 
 ### Do you have to design a roguelike before you program it?
 
@@ -214,6 +222,8 @@ Basically, have a plan. Decide in which order to program it, and stick to the pl
 
 ## OUTPUT AND REPRESENTATION
 
+---
+
 ### Do roguelikes have to be done in [ASCII](../ascii.md) text?
 
 It depends on preference. [Utumno](../../game/utumno.md) is an [Angband](../../game/angband.md) variant (according to the Angband variants FAQ, and I doubt the writers of it don't know what a roguelike is), and when people want to argue that things with graphics can't be roguelike, I always quote it as an example of a roguelike with graphics. Now compare Utumno and [Diablo](../../game/diablo.md) or Diablo 2. You will notice they are not that different (graphically).
@@ -257,6 +267,8 @@ The article [Output libraries](../implementation/portability/output_libraries.md
 One solution for Java is a [Java Curses Implementation](../implementation/java-roguelike-development-guide/java_curses_implementation.md).
 
 ## STORY AND SETTING
+
+---
 
 ### Which stories are possible for a roguelike?
 
@@ -321,6 +333,8 @@ Example: Avoid quests like "kill 5 orcs", because they have no reason or emotion
 To add to replayability, elements of the quests could be randomised.
 
 ## [DUNGEON](fundamentals/dungeon.md) MECHANICS
+
+---
 
 ### How are dungeons represented?
 
@@ -718,6 +732,8 @@ Another problem you might run into is how to deal with monsters which have diffe
 
 ## SPELLS
 
+---
+
 ### How do you represent a [magic](../design/magic/magic.md) system?
 
 You plan it very well in advance first. Don't make magic a black box device - explain it somehow, and integrate it into your story. Decide on the magic system, categories of spells, all of that.
@@ -738,9 +754,13 @@ Similarly to random items.
 
 ## Can you make any money from your roguelike?
 
+---
+
 Of course you can. Look at "Dungeon Hack" or "Diablo" for example. Real-time combat and nice looking graphics are heavily recommend if you want to reach out for a broader (paying) audience, though. But all the major roguelikes are free of charge, and all except Adom also permit free distribution and modification of the source code - something that is probably necessary unless you plan to write your game by yourself.
 
 ## Contributors
+
+---
 
 * David Damarell (NetHack description, question about money from roguelikes)
 * Bridget (list of newsgroups)
