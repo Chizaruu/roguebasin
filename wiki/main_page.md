@@ -15,7 +15,7 @@ The term "roguelike" is still growing in popularity to describe any game with pr
 
 ___
 
-<img align="right" src="../assets/images/CTctB.png">
+<img align="right" src="/assets/images/CTctB.png">
 
 A traditional Roguelike is usually described as a computer game with a strong focus on intricate gameplay and replayability, where the player has an indefinite amount of time in which to make a move, making gameplay comparable more to chess than to reflex-based games like first-person shooters, and where the game provides new content and challenges on every run, using procedural content generation techniques.
 
@@ -32,19 +32,19 @@ Many Roguelikes are freely available online. The most influential ones from the 
 
 [//]: # (Can't center with markdown, so we use html)
 <p align="center">
-    <a href="./game/adom.md">
+    <a href="/wiki/game/adom.md">
         ADOM
     </a> |
-    <a href="./game/angband.md">
+    <a href="/wiki/game/angband.md">
         Angband
     </a> |
-    <a href="./game/linleys_dungeon_crawl.md">
+    <a href="/wiki/game/linleys_dungeon_crawl.md">
         Crawl
     </a> |
-    <a href="./game/nethack.md">
+    <a href="/wiki/game/nethack.md">
         NetHack
     </a>
-    <a href="./game/tome.md">
+    <a href="/wiki/game/tome.md">
         ToME
     </a>
 </p>
@@ -53,19 +53,19 @@ Before their rise in popularity in the late 80s and 90s, the genre was dominated
 
 [//]: # (Can't center with markdown, so we use html)
 <p align="center">
-    <a href="./game/rogue.md">
+    <a href="/wiki/game/rogue.md">
         Rogue
     </a> |
-    <a href="./game/hack.md">
+    <a href="/wiki/game/hack.md">
         Hack
     </a> |
-    <a href="./game/moria.md">
+    <a href="/wiki/game/moria.md">
         Moria
     </a> |
-    <a href="./game/larn.md">
+    <a href="/wiki/game/larn.md">
         Larn
     </a> |
-    <a href="./game/omega.md">
+    <a href="/wiki/game/omega.md">
         Omega
     </a>
 </p>
