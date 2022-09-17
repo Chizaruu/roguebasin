@@ -28,19 +28,19 @@ Many Roguelikes are freely available online. The most influential ones from the 
 
 [//]: # (Can't center with markdown, so we use html)
 <p align="center">
-    <a href="game/adom.md">
+    <a href="./game/adom.md">
         ADOM
     </a> |
-    <a href="game/angband.md">
+    <a href="./game/angband.md">
         Angband
     </a> |
-    <a href="game/linleys_dungeon_crawl.md">
+    <a href="./game/linleys_dungeon_crawl.md">
         Crawl
     </a> |
-    <a href="game/nethack.md">
+    <a href="./game/nethack.md">
         NetHack
     </a>
-    <a href="game/tome.md">
+    <a href="./game/tome.md">
         ToME
     </a>
 </p>
@@ -49,19 +49,19 @@ Before their rise in popularity in the late 80s and 90s, the genre was dominated
 
 [//]: # (Can't center with markdown, so we use html)
 <p align="center">
-    <a href="game/rogue.md">
+    <a href="./game/rogue.md">
         Rogue
     </a> |
-    <a href="game/hack.md">
+    <a href="./game/hack.md">
         Hack
     </a> |
-    <a href="game/moria.md">
+    <a href="./game/moria.md">
         Moria
     </a> |
-    <a href="game/larn.md">
+    <a href="./game/larn.md">
         Larn
     </a> |
-    <a href="game/omega.md">
+    <a href="./game/omega.md">
         Omega
     </a>
 </p>
