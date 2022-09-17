@@ -8,7 +8,7 @@ Some of the most common elements in roguelikes are:
 
 * The [User Interface](../../user_interface.md): ASCII display of a tiled world has become a distinctive feature of roguelikes.
 * The Game World: random world generation may be the most common feature of roguelike games. They usually provide little plot, and instead focus on creating unique layouts.
-* The [Gameplay](../../../articles.md): turn-based gameplay and dungeon hack are most often proposed.
+* The [Gameplay](../../../articles.md): turn-based gameplay and dungeon hack are most often proposed.  
 
 Even among the "[major roguelikes](../../major_roguelikes.md)", it is not uncommon for one or several of the above guidelines to be broken, such as ASCII character display (Many offer a sprite mode and options.) or plotlessness. ([ADOM](../../../game/adom.md) is heavy on plot.)  
 
@@ -19,7 +19,7 @@ Even among the "[major roguelikes](../../major_roguelikes.md)", it is not uncomm
 * [ASCII](../../ascii.md) [character display](../../design/interface/user_inteface_features.md): games use no sprites or wireframe models but rather a two-dimensional character grid viewed from above, in which each [character](character.md) represents an entity. For example, a human may be plotted as a '@', a dragon as a 'D', etc.
 * Narrated action: short text descriptions are given for almost all game events except ordinary movement.
 * Front-loaded commands: the player has knowledge of and access to all (or almost all) commands at the start of the game, often long before acquiring the objects or powers that make the command useful.
-* Keyboard-based interaction: The keyboard is the traditional way to interact with the game world, as it provides the quickest way to access the several commands that a roguelike may have. There are certain [popular schemas](../../design/interface/preferred_key_controls.md) of keyboard usage.
+* Keyboard-based interaction: The keyboard is the traditional way to interact with the game world, as it provides the quickest way to access the several commands that a roguelike may have. There are certain [popular schemas](../../design/interface/preferred_key_controls.md) of keyboard usage.  
 
 ## Game world
 
@@ -29,7 +29,7 @@ Even among the "[major roguelikes](../../major_roguelikes.md)", it is not uncomm
 * [Spatial consistency](../../design/general/spatial_consistency.md): all the actions happen in a definite space. No warping to fight scenes or minigames on a different reality.
 * Little [storyline](../../plot.md): a gripping plot is not typically the selling point of any roguelike. The story is usually kept to a minimum to enhance replayability.
 * World interaction: few or no objects adorn the world; most of them have a use in the game.
-* Setting: some of the common settings for the world include the personification of a [character](character.md) fighting whose way into a [dungeon](dungeon.md) and acquiring [items](items.md) via monster treasures or [town](../../town.md) supply. The world commonly has [magic](../../magic.md) forces of different kinds to increase the possible interactions.
+* Setting: some of the common settings for the world include the personification of a [character](character.md) fighting whose way into a [dungeon](dungeon.md) and acquiring [items](items.md) via monster treasures or [town](../../town.md) supply. The world commonly has [magic](../../magic.md) forces of different kinds to increase the possible interactions.  
 
 ## Gameplay
 
