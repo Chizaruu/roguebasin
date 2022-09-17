@@ -64,7 +64,7 @@ Briefly then, "roguelike" is more of a feeling you get in a game rather than a s
 
 * "Dungeons and dragons" style of skills
 * The maker is usually 1 person. The more popular games have "dev teams" which work on them later
-* [Magic](../magic.md) systems usually implemented
+* [Magic](../design/magic/magic.md) systems usually implemented
 * Usually set in [fantasy](../fantasy.md) middle ages (exceptions exist; sci-fi roguelikes do exist, see [Theme](../design/setting-story-and-mood/theme.md)
 
 ### What are the major roguelikes today?
@@ -190,7 +190,7 @@ Often when you start to make a roguelike game, you won't even know what the desi
 * The [terrain](../terrain.md) (e.g. town, wilderness, dungeons, special places...)
 * The Scheduling system (eg, how turns and speed work, whether and how actions can be interrupted by other actions, etc).
 * The [items](fundamentals/items.md). Major categories (e.g. weapons, armour, potions, scrolls, food...). Leave detail (e.g. how much the minor healing potion heals you by) for later. Think about how the items will be used and by whom. Plan the basic rules (e.g. you can only wield 2 weapons if you are a fighter, you need space for arrows if you equip a bow, how many rings can someone wear, etc).
-* The [magic](../magic.md) system. Spell types. Who uses spells and when. How you learn spells. What they cost. Which classes can use them. How to implement permanent spells (e.g. enchantments that last, like recharging a staff).
+* The [magic](../design/magic/magic.md) system. Spell types. Who uses spells and when. How you learn spells. What they cost. Which classes can use them. How to implement permanent spells (e.g. enchantments that last, like recharging a staff).
 * Shopping. If your game will have shops, how will they work? Will the Player be able to rob them? If so how does that work?
 * Interaction with other creatures (maybe negotiating your way out of battles?).
 * Saving and restoring games Level loading system.
@@ -718,7 +718,7 @@ Another problem you might run into is how to deal with monsters which have diffe
 
 ## SPELLS
 
-### How do you represent a [magic](../magic.md) system?
+### How do you represent a [magic](../design/magic/magic.md) system?
 
 You plan it very well in advance first. Don't make magic a black box device - explain it somehow, and integrate it into your story. Decide on the magic system, categories of spells, all of that.
 

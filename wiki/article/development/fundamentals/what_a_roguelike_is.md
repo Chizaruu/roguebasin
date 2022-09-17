@@ -29,7 +29,7 @@ Even among the "[major roguelikes](../../major_roguelikes.md)", it is not uncomm
 * [Spatial consistency](../../design/general/spatial_consistency.md): all the actions happen in a definite space. No warping to fight scenes or minigames on a different reality.
 * Little [storyline](../../plot.md): a gripping plot is not typically the selling point of any roguelike. The story is usually kept to a minimum to enhance replayability.
 * World interaction: few or no objects adorn the world; most of them have a use in the game.
-* Setting: some of the common settings for the world include the personification of a [character](character.md) fighting whose way into a [dungeon](dungeon.md) and acquiring [items](items.md) via monster treasures or [town](../../town.md) supply. The world commonly has [magic](../../magic.md) forces of different kinds to increase the possible interactions.  
+* Setting: some of the common settings for the world include the personification of a [character](character.md) fighting whose way into a [dungeon](dungeon.md) and acquiring [items](items.md) via monster treasures or [town](../../town.md) supply. The world commonly has [magic](../../design/magic/magic.md) forces of different kinds to increase the possible interactions.  
 
 ## Gameplay
 
