@@ -15,7 +15,7 @@ The term "roguelike" is still growing in popularity to describe any game with pr
 
 ___
 
-<img align="right" src="/assets/images/CTctB.png">
+<img align="right" src="./assets/images/CTctB.png">
 
 A traditional Roguelike is usually described as a computer game with a strong focus on intricate gameplay and replayability, where the player has an indefinite amount of time in which to make a move, making gameplay comparable more to chess than to reflex-based games like first-person shooters, and where the game provides new content and challenges on every run, using procedural content generation techniques.
 
@@ -30,45 +30,11 @@ ___
 
 Many Roguelikes are freely available online. The most influential ones from the 00's decade are known as the Major Roguelikes:  
 
-[//]: # (Can't center with markdown, so we use html)
-<p align="center">
-    <a href="/wiki/game/adom.md">
-        ADOM
-    </a> |
-    <a href="/wiki/game/angband.md">
-        Angband
-    </a> |
-    <a href="/wiki/game/linleys_dungeon_crawl.md">
-        Crawl
-    </a> |
-    <a href="/wiki/game/nethack.md">
-        NetHack
-    </a>
-    <a href="/wiki/game/tome.md">
-        ToME
-    </a>
-</p>
+[ADOM](game/adom.md) | [Angband](game/angband.md) | [Crawl](game/linleys_dungeon_crawl.md) | [NetHack](game/nethack.md) | [ToME](game/tome.md)
 
 Before their rise in popularity in the late 80s and 90s, the genre was dominated by the Major Classic Roguelikes:  
 
-[//]: # (Can't center with markdown, so we use html)
-<p align="center">
-    <a href="/wiki/game/rogue.md">
-        Rogue
-    </a> |
-    <a href="/wiki/game/hack.md">
-        Hack
-    </a> |
-    <a href="/wiki/game/moria.md">
-        Moria
-    </a> |
-    <a href="/wiki/game/larn.md">
-        Larn
-    </a> |
-    <a href="/wiki/game/omega.md">
-        Omega
-    </a>
-</p>
+[Rogue](game/rogue.md) | [Hack](game/hack.md) | [Moria](game/moria.md) | [Larn](game/larn.md) | [Omega](game/omega.md)
 
 Since the control systems of these Roguelikes are geared towards "expert" players, the novice player may be interested in trying a 'lighter' game like some of the [coffeebreak roguelikes](category/coffeebreak_roguelikes.md) or just dive in at the deep end and find a [roguelike game](category/roguelike_games.md) to suit you.
 
