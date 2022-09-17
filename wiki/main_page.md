@@ -25,10 +25,46 @@ Of course, the best way to understand what Roguelikes are is to download and pla
 ## Roguelikes
 
 Many Roguelikes are freely available online. The most influential ones from the 00's decade are known as the Major Roguelikes:  
-[ADOM](game/adom.md) | [Angband](game/angband.md) | [Crawl](game/linleys_dungeon_crawl.md) | [NetHack](game/nethack.md) | [ToME](game/tome.md)
+
+[//]: # (Can't center with markdown, so we use html)
+<p align="center">
+    <a href="game/adom.md">
+        ADOM
+    </a> |
+    <a href="game/angband.md">
+        Angband
+    </a> |
+    <a href="game/linleys_dungeon_crawl.md">
+        Crawl
+    </a> |
+    <a href="game/nethack.md">
+        NetHack
+    </a>
+    <a href="game/tome.md">
+        ToME
+    </a>
+</p>
 
 Before their rise in popularity in the late 80s and 90s, the genre was dominated by the Major Classic Roguelikes:  
-[Rogue](game/rogue.md) | [Hack](game/hack.md) | [Moria](game/moria.md) | [Larn](game/larn.md) | [Omega](game/omega.md)
+
+[//]: # (Can't center with markdown, so we use html)
+<p align="center">
+    <a href="game/rogue.md">
+        Rogue
+    </a> |
+    <a href="game/hack.md">
+        Hack
+    </a> |
+    <a href="game/moria.md">
+        Moria
+    </a> |
+    <a href="game/larn.md">
+        Larn
+    </a> |
+    <a href="game/omega.md">
+        Omega
+    </a>
+</p>
 
 Since the control systems of these Roguelikes are geared towards "expert" players, the novice player may be interested in trying a 'lighter' game like some of the [coffeebreak roguelikes](category/coffeebreak_roguelikes.md) or just dive in at the deep end and find a [roguelike game](category/roguelike_games.md) to suit you.
 
