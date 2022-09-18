@@ -2,7 +2,7 @@
 
 ---
 
-The #rgrd chatroom is an IRC chatroom where various roguelike developers and players from Temple of the Roguelike and the rgrd newsgroup hang out. The topic is quite often roguelikes and roguelike development, but chat concerning everything comes up at some time or another.
+The #rgrd chatroom is an IRC chatroom where various roguelike developers and players from Temple of the Roguelike and the [rgrd](rgrd.md) newsgroup hang out. The topic is quite often roguelikes and roguelike development, but chat concerning everything comes up at some time or another.
 
 Ultimately the #rgrd channel is a general chatroom for members of the roguelike community.
 
