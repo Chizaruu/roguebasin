@@ -50,3 +50,22 @@ Roguelike developments are complicated projects to handle; if you have weak goal
 * [rgrd](article/development/communities/rgrd.md)
 * [Game Programming Wiki](http://wiki.gamedev.net/)
 * [rgrd chatroom](article/development/communities/rgrd_chatroom.md)
+
+## Design
+
+---
+
+### General
+
+* [Alternatives to Permadeath](article/design/general/alternatives_to_permadeath.md)
+* [Aspects of playing](article/design/general/aspects_of_playing.md)
+* [Fun Factor](article/design/general/fun_factor.md)
+* [Power Curve](article/design/general/power_curve.md)
+* [Quests in Roguelikes](article/design/general/quests_in_roguelikes.md)
+* [Religious Constraints](article/design/general/religious_constraints.md)
+* [Roguelike Alphabet](article/design/general/roguelike_alphabet.md)
+* [Spatial Consistency](article/design/general/spatial_consistency.md)
+* [The Role of Hunger](article/design/general/the_role_of_hunger.md)
+* [Third Dimension in an ASCII-based Roguelike](article/design/general/third_dimension_in_an_ascii-based_roguelike.md)
+* [Time Systems](article/design/general/time_systems.md)
+* [What a RL should be](article/design/general/what_a_rl_should_be.md)
