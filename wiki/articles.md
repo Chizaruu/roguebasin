@@ -62,6 +62,7 @@ Roguelike developments are complicated projects to handle; if you have weak goal
 * [Fun Factor](article/design/general/fun_factor.md)
 * [Power Curve](article/design/general/power_curve.md)
 * [Quests in Roguelikes](article/design/general/quests_in_roguelikes.md)
+* [RL Terrain](article/design/general/rl_terrain.md)
 * [Religious Constraints](article/design/general/religious_constraints.md)
 * [Roguelike Alphabet](article/design/general/roguelike_alphabet.md)
 * [Spatial Consistency](article/design/general/spatial_consistency.md)
