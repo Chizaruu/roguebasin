@@ -58,12 +58,12 @@ Finally, I like a plot and game development. I like tangible evidence that I'm p
 
 ---
 
-* A rich, interactive, consistent, persistent world - not necessarily huge though ([Rogue](../../../game/rogue.md/[ADOM](../../../game/adom.md) have relatively small but feature-rich levels)
+* A rich, interactive, consistent, persistent world - not necessarily huge though ([Rogue](../../../game/rogue.md)/[ADOM](../../../game/adom.md) have relatively small but feature-rich levels)
 * Many skills to learn/apply that affect gameplay
 * Nice language/text not just "a sword +1/-2", "you hit the orc. the orc hits you", "a town", etc... -> a bit more flavour
 * Quests that depend on each other, making your decisions more complex  
 
-As a player I like to play games that feel unique and suck me to their world: [ADOM](../../../game/adom.md's chaos-infested Ancardia, [Nethack](../../../game/nethack.md's dungeons that everything can (and will) happen, [GearHead](../../../game/gearhead.md)'s mechaworld, [Crawl](../../../game/linleys_dungeon_crawl.md's dungeons of tension.  
+As a player I like to play games that feel unique and suck me to their world: [ADOM](../../../game/adom.md)'s chaos-infested Ancardia, [Nethack](../../../game/nethack.md)'s dungeons that everything can (and will) happen, [GearHead](../../../game/gearhead.md)'s mechaworld, [Crawl](../../../game/linleys_dungeon_crawl.md)'s dungeons of tension.  
 
 Grabbing the player's attention is the first thing a game worthy of its code should be able to do.  
 

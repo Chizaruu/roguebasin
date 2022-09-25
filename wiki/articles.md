@@ -70,3 +70,21 @@ Roguelike developments are complicated projects to handle; if you have weak goal
 * [Third Dimension in an ASCII-based Roguelike](article/design/general/third_dimension_in_an_ascii-based_roguelike.md)
 * [Time Systems](article/design/general/time_systems.md)
 * [What a RL should be](article/design/general/what_a_rl_should_be.md)
+
+### Combat
+
+* [Implicit Facing](article/design/combat/implicit_facing.md)
+* [Interesting Critical Hits](article/design/combat/interesting_critical_hits.md)
+* [Monster attacks](article/design/combat/monster_attacks.md)
+
+### Dungeons
+
+* [Basic BSP Dungeon Generation](article/design/dungeons/basic_bsp_dungeon_generation.md)
+* [Basic directional dungeon generation](article/design/dungeons/basic_directional_dungeon_generation.md)
+* [Brogue dungeon terrain](https://www.rockpapershotgun.com/2015/07/28/how-do-roguelikes-generate-levels/) and [level](http://brogue.wikia.com/wiki/Level_Generation) generation
+* [Dungeon persistence](article/design/dungeons/dungeon_persistence.md)
+* [List of dungeon features](http://ancardia.wikia.com/wiki/Dungeon_Features) from the [ADOM](game/adom.md) wiki.
+* [List of dungeon features](http://crawl.chaosforge.org/Dungeon_features) from the [Crawl](game/linleys_dungeon_crawl.md) wiki.
+* [List of dungeon features](https://nethackwiki.com/wiki/Category:Dungeon_features) from the [NetHack](game/nethack.md) wiki.
+* [Template Dungeon themeing/generation](article/design/dungeons/template_dungeon_themeing_generation.md)
+* [Unangband Dungeon Generation](http://roguelikedeveloper.blogspot.com/2007/11/unangband-dungeon-generation-part-one.html)
