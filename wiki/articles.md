@@ -70,3 +70,9 @@ Roguelike developments are complicated projects to handle; if you have weak goal
 * [Third Dimension in an ASCII-based Roguelike](article/design/general/third_dimension_in_an_ascii-based_roguelike.md)
 * [Time Systems](article/design/general/time_systems.md)
 * [What a RL should be](article/design/general/what_a_rl_should_be.md)
+
+### Combat
+
+* [Implicit Facing](article/design/combat/implicit_facing.md)
+* [Interesting Critical Hits](article/design/combat/interesting_critical_hits.md)
+* [Monster attacks](article/design/combat/monster_attacks.md)
