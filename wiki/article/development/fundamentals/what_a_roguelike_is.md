@@ -16,7 +16,7 @@ Even among the "[major roguelikes](../../major_roguelikes.md)", it is not uncomm
 
 ---
 
-* [ASCII](../../ascii.md) [character display](../../design/interface/user_inteface_features.md): games use no sprites or wireframe models but rather a two-dimensional character grid viewed from above, in which each [character](character.md) represents an entity. For example, a human may be plotted as a '@', a dragon as a 'D', etc.
+* [ASCII](../../ascii.md) [character display](../../design/interface/user_interface_features.md): games use no sprites or wireframe models but rather a two-dimensional character grid viewed from above, in which each [character](character.md) represents an entity. For example, a human may be plotted as a '@', a dragon as a 'D', etc.
 * Narrated action: short text descriptions are given for almost all game events except ordinary movement.
 * Front-loaded commands: the player has knowledge of and access to all (or almost all) commands at the start of the game, often long before acquiring the objects or powers that make the command useful.
 * Keyboard-based interaction: The keyboard is the traditional way to interact with the game world, as it provides the quickest way to access the several commands that a roguelike may have. There are certain [popular schemas](../../design/interface/preferred_key_controls.md) of keyboard usage.  
