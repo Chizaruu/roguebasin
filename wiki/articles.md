@@ -88,3 +88,19 @@ Roguelike developments are complicated projects to handle; if you have weak goal
 * [List of dungeon features](https://nethackwiki.com/wiki/Category:Dungeon_features) from the [NetHack](game/nethack.md) wiki.
 * [Template Dungeon themeing/generation](article/design/dungeons/template_dungeon_themeing_generation.md)
 * [Unangband Dungeon Generation](http://roguelikedeveloper.blogspot.com/2007/11/unangband-dungeon-generation-part-one.html)
+
+### Interface
+
+* [Icons in Roguelikes](article/design/interface/icons_in_roguelikes.md)
+* [Morgue files](http://www.gridsagegames.com/blog/2015/10/morgue-files/), from [Cogmind](game/cogmind.md)
+* [Preferred Key Controls](article/design/interface/preferred_key_controls.md)
+* [Roguelike Interface](article/design/interface/roguelike_interface.md)
+* [User interface features](article/design/interface/user_interface_features.md)  
+
+### Magic
+
+* [Designing a Magic System](http://roguelikedeveloper.blogspot.com/2008/05/unangband-magic-system-part-one.html)
+* [Magic](article/design/magic/magic.md)
+* [Magic Systems](article/design/magic/magic_systems.md)
+* [Spell](article/design/magic/spell.md)
+* [The_Gramarye_A_Magic_System_for_FUDGE](article/design/magic/the_gramarye_a_magic_system_for_fudge.md)
