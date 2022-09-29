@@ -20,4 +20,5 @@ Magic is activated via Spellcasting, which can be performed in several ways:
 Wizards are commonly weak at the beginning, but grow more powerful than warrior classes in the long run.  
 
 **See also**
+
 * [Magic systems](magic_systems.md)
