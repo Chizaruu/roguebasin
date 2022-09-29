@@ -96,3 +96,11 @@ Roguelike developments are complicated projects to handle; if you have weak goal
 * [Preferred Key Controls](article/design/interface/preferred_key_controls.md)
 * [Roguelike Interface](article/design/interface/roguelike_interface.md)
 * [User interface features](article/design/interface/user_interface_features.md)  
+
+### Magic
+
+* [Designing a Magic System](http://roguelikedeveloper.blogspot.com/2008/05/unangband-magic-system-part-one.html)
+* [Magic](article/design/magic/magic.md)
+* [Magic System](article/design/magic/magic_system.md)
+* [Spell](article/design/magic/spell.md)
+* [The_Gramarye_A_Magic_System_for_FUDGE](article/design/magic/the_gramarye_a_magic_system_for_fudge.md)
