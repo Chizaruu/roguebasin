@@ -69,7 +69,7 @@ Briefly then, "roguelike" is more of a feeling you get in a game rather than a s
 * "Dungeons and dragons" style of skills
 * The maker is usually 1 person. The more popular games have "dev teams" which work on them later
 * [Magic](../design/magic/magic.md) systems usually implemented
-* Usually set in [fantasy](../fantasy.md) middle ages (exceptions exist; sci-fi roguelikes do exist, see [Theme](../design/setting-story-and-mood/theme.md)
+* Usually set in [fantasy](../fantasy.md) middle ages (exceptions exist; sci-fi roguelikes do exist, see [Theme](../design/setting-story-and-mood/themes.md)
 
 ### What are the major roguelikes today?
 
@@ -193,7 +193,7 @@ Often when you start to make a roguelike game, you won't even know what the desi
 
 ### What needs to be planned in advance?
 
-* The [story](../story.md), [theme](../design/setting-story-and-mood/theme.md) and setting. These determine practically everything.
+* The [story](../story.md), [theme](../design/setting-story-and-mood/themes.md) and setting. These determine practically everything.
 * The world. How it will look. How big it will be.
 * The [terrain](../terrain.md) (e.g. town, wilderness, dungeons, special places...)
 * The Scheduling system (eg, how turns and speed work, whether and how actions can be interrupted by other actions, etc).
@@ -282,7 +282,7 @@ Some unexplored ideas that would be good for a roguelike might be:
 
 * You are in a post-apocalyptic future (no/limited guns). There is a war between humans and robots. You are on the losing side...
 
-### What [themes](../design/setting-story-and-mood/theme.md) and settings are possible for a roguelike?
+### What [themes](../design/setting-story-and-mood/themes.md) and settings are possible for a roguelike?
 
 Ones that involve killing a great number of enemies.
 
