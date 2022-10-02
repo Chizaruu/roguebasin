@@ -2,9 +2,9 @@
 
 ---
 
-wants cleaning up
+wants cleaning up  
 
-By Archibald and [R.Dan Henry](../../../developer/r_dan_henry.md) (wikied by abcgi)
+By Archibald and [R.Dan Henry](../../../developer/r_dan_henry.md) (wikied by abcgi)  
 
 ```text
 On Fri, 4 Feb 2005 22:59:41 +0100, Archibald <usenet0@poczta.onet.pl>
