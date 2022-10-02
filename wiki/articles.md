@@ -103,4 +103,33 @@ Roguelike developments are complicated projects to handle; if you have weak goal
 * [Magic](article/design/magic/magic.md)
 * [Magic Systems](article/design/magic/magic_systems.md)
 * [Spell](article/design/magic/spell.md)
-* [The_Gramarye_A_Magic_System_for_FUDGE](article/design/magic/the_gramarye_a_magic_system_for_fudge.md)
+* [The_Gramarye_A_Magic_System_for_FUDGE](article/design/magic/the_gramarye_a_magic_system_for_fudge.md)  
+
+### Setting, story, and mood
+
+* [Plot](article/design/setting-story-and-mood/plot.md)
+* [Creating a Story](article/design/setting-story-and-mood/creating_a_story.md)
+* [Horror in Roguelike Games](article/design/setting-story-and-mood/horror_in_roguelike_games.md)
+* [Gore](article/design/setting-story-and-mood/gore.md)
+* [Roguelike Mood](article/design/setting-story-and-mood/roguelike_mood.md)
+* [Roguelike Themes](article/design/setting-story-and-mood/roguelike_themes.md)
+* [Theme](article/design/setting-story-and-mood/themes.md)  
+
+### Game ideas
+
+Ideas for roguelikes are posted regularly on [rgrd](article/development/communities/rgrd.md), but over time are forgotten. In an attempt to preserve the more interesting ideas these pages were created:  
+
+* [Fire Brigade RL](article/design/game-ideas/fire_brigade_rl.md) by Antonie
+* [GalaxyRL](article/design/game-ideas/galaxyrl.md) by tongHoAnh
+* [God's 7DRL](http://groups.google.com/group/rec.games.roguelike.development/browse_thread/thread/35a94c69af62ac95?fwc=1)
+* [Magic Tower](article/design/game-ideas/magic_tower.md)
+* [Magical Dungeon](article/design/game-ideas/magical_dungeon.md) by Patashu
+* [Modern Dungeon Exploration](article/design/game-ideas/modern_dungeon_exploration.md)
+* [Murder Mystery RL](article/design/game-ideas/murder_mystery_rl.md) by Shedletsky
+* [OrcRL](article/design/game-ideas/orcrl.md) by DrGong
+* [Poisoned Character Roguelike](article/design/game-ideas/poisoned_character_roguelike.md)
+* [Roguelike DM](article/design/game-ideas/roguelike_dm.md) by [Timothy Pruett](developer/timothy_pruett.md)
+* [Shopkeeper RL](article/design/game-ideas/shopkeeper_rl.md) by Antonie
+* [Time-gate roguelike](article/design/game-ideas/time-gate_roguelike.md) by anchor0057
+* [TraderRL](article/design/game-ideas/traderrl.md) by alsagoz
+* [World of Rogue](article/design/game-ideas/world_of_rogue.md) by [Gamer_2k4](developer/gamer_2k4.md)  
