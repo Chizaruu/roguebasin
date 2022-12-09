@@ -305,3 +305,20 @@ A list of articles specific to Java roguelike development
 * [Items in Java](article/implementation/java-roguelike-development-guide/items_in_java.md)
 * [Java Roguelike Tutorial](article/implementation/java-roguelike-development-guide/java_roguelike_tutorial.md)
 * [Roguelike Iterative Test-Driven Development in Java](article/implementation/java-roguelike-development-guide/roguelike_iterative_test-driven_development_in_java.md)
+
+## Game Reviews
+
+May give some idea of what people like and don't like in other games.
+
+* [Rank RLs you have played a lot](article/game-reviews/rank_rls_you_have_played_a_lot.md)
+* [Personalities of different roguelikes](article/game-reviews/personalities_of_different_roguelikes.md)
+* See: [Category:Reviews](category/reviews.md)
+
+## Other
+
+* [Increasing Challenge in Roguelikes](https://blog.roguetemple.com/articles/increasing-challenge-in-roguelikes/)
+* [Stat Balancing in Roguelikes](https://blog.roguetemple.com/articles/stat-balancing-in-roguelikes/)
+
+The original Dungeondweller articles are archived at [[1]](http://web.archive.org/web/20060114055601/http://roguelikedevelopment.org/). Please do not move them to RogueBasin without permission from the original author.
+
+There are more articles at [[2]](http://arns.freeservers.com/workshop.html). Most of these are duplicates of articles here.
