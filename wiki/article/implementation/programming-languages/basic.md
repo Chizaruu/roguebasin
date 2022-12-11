@@ -29,7 +29,9 @@ BASIC can be valuable to beginner programmers as a forgiving first language, as 
 * [Telengard](../../../game/telengard.md)
 * [The Tomb of Drewan](../../../game/the_tomb_of_drewan.md)
 
-See also
+## See also
+
+---
 
 * [Bcx Basic](../../bcx_basic.md)
 * [FreeBASIC](freebasic.md)
