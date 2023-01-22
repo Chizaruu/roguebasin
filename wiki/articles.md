@@ -107,13 +107,13 @@ Roguelike developments are complicated projects to handle; if you have weak goal
 
 ### Setting, story, and mood
 
--   [Plot](setting-story-and-mood/plot.md)
--   [Creating a Story](setting-story-and-mood/creating_a_story.md)
--   [Horror in Roguelike Games](setting-story-and-mood/horror_in_roguelike_games.md)
--   [Gore](setting-story-and-mood/gore.md)
--   [Roguelike Mood](setting-story-and-mood/roguelike_mood.md)
--   [Roguelike Themes](setting-story-and-mood/roguelike_themes.md)
--   [Theme](setting-story-and-mood/themes.md)
+-   [Plot](plot.md)
+-   [Creating a Story](creating_a_story.md)
+-   [Horror in Roguelike Games](horror_in_roguelike_games.md)
+-   [Gore](gore.md)
+-   [Roguelike Mood](roguelike_mood.md)
+-   [Roguelike Themes](roguelike_themes.md)
+-   [Theme](themes.md)
 
 ### Game ideas
 
