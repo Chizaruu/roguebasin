@@ -153,7 +153,7 @@ RogueBasin has articles about these [programming languages](category/programming
 
 * [BASIC](article/implementation/programming-languages/basic.md)
 * [C](article/implementation/programming-languages/c.md)
-* [C#](article/implementation/programming-languages/c#.md)
+* [C#](article/implementation/programming-languages/c_sharp.md)
 * [Common Lisp](article/implementation/programming-languages/common_lisp.md)
 * [C++](article/implementation/programming-languages/c++.md)
 * [D](article/implementation/programming-languages/d.md)
