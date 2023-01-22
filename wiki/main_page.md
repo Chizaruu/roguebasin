@@ -22,7 +22,7 @@ A traditional Roguelike is usually described as a computer game with a strong fo
 There are many other factors one may consider as relevant for traditional roguelikes, including them having an abstract world representation using characters or simple sprites, as opposed to detailed graphics, requiring the player's imagination to come into play (gameplay is more like reading a book than watching a movie). Modern traditional roguelikes often shun this aspect, in favor of accessibility for less hardcore players.
 
 Of course, the best way to understand what Roguelikes are is to download and play one.  
-[--more--](article/development/fundamentals/what_a_roguelike_is.md)
+[--more--](what_a_roguelike_is.md)
 
 ## Roguelikes
 
@@ -30,13 +30,13 @@ ___
 
 Many Roguelikes are freely available online. The most influential ones from the 00's decade are known as the Major Roguelikes:  
 
-[ADOM](game/adom.md) | [Angband](game/angband.md) | [Crawl](game/linleys_dungeon_crawl.md) | [NetHack](game/nethack.md) | [ToME](game/tome.md)
+[ADOM](adom.md) | [Angband](angband.md) | [Crawl](linleys_dungeon_crawl.md) | [NetHack](nethack.md) | [ToME](tome.md)
 
 Before their rise in popularity in the late 80s and 90s, the genre was dominated by the Major Classic Roguelikes:  
 
-[Rogue](game/rogue.md) | [Hack](game/hack.md) | [Moria](game/moria.md) | [Larn](game/larn.md) | [Omega](game/omega.md)
+[Rogue](rogue.md) | [Hack](hack.md) | [Moria](moria.md) | [Larn](larn.md) | [Omega](omega.md)
 
-Since the control systems of these Roguelikes are geared towards "expert" players, the novice player may be interested in trying a 'lighter' game like some of the [coffeebreak roguelikes](category/coffeebreak_roguelikes.md) or just dive in at the deep end and find a [roguelike game](category/roguelike_games.md) to suit you.
+Since the control systems of these Roguelikes are geared towards "expert" players, the novice player may be interested in trying a 'lighter' game like some of the [coffeebreak roguelikes](coffeebreak_roguelikes.md) or just dive in at the deep end and find a [roguelike game](roguelike_games.md) to suit you.
 
 ## Roguelike Community
 
