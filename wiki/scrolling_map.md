@@ -3,6 +3,7 @@
 ---
 
 ![Scrolling_map_image](./assets/images/articles/scrolling-map/512px-Camera_vectors.png)
+
 _If we know that D is in world-space at (5, 6) then we can subtract the camera position at (3, 2) to get its position in screen-space at (2, 4). For things we know the position of in screen-space we can do the inverse and add the camera position to get the world-space position. The camera is placed on a world-space position about half a screen away from the players world-space position, which causes the screen-space area to be centered around the player._
 
 A **scrolling map** is a term used in graphical 2D games, including roguelikes, for a map with a "camera" that follows the player. It is used for maps that are larger than that can be displayed on a single screen.

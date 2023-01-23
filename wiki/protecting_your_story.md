@@ -16,7 +16,7 @@ First, we will stablish organization of our storyline in a linear way, i will le
 
 The story will be divided in Acts, which in turn will have Journal Entries on each actor's Journal. We will consider a journalized story for simplicity's sake, but this can be extended to any other form of storytelling, be it NPCs, books, inscriptions, etc.
 
-![ProtectingStorylines](./assets/images/protecting-storylines/ProtectingStorylines.png)
+![ProtectingStorylines](./assets/images/articles/protecting-storylines/ProtectingStorylines.png)
 
 We will refer to each chunk of the storyline as a tuple of the form (Actor,Entry) on the table: (1,3) refers to actor 1 entry 3 and so on.
 
