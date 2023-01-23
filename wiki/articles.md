@@ -303,7 +303,6 @@ A list of articles specific to Java roguelike development
 - [The Choice of Java](the_choice_of_java.md)
 - [Java Curses Implementation](java_curses_implementation.md)
 - [Items in Java](items_in_java.md)
-- [Java Roguelike Tutorial](java_roguelike_tutorial.md)
 - [Roguelike Iterative Test-Driven Development in Java](roguelike_iterative_test-driven_development_in_java.md)
 
 ## Game Reviews
