@@ -58,7 +58,7 @@ There are a number of articles describing different methods:
     <td colspan="1">Java</td>
   </tr>
   <tr>
-    <td colspan="1"><a href= "ruby_implementation.md">Ruby implementation</a></td>
+    <td colspan="1"><a href= "ruby_precise_permissive_FOV_implementation.md">Ruby implementation</a></td>
     <td colspan="1">Ruby</td>
   </tr>
   <tr>
