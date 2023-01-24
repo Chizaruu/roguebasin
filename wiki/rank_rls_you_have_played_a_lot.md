@@ -2,48 +2,48 @@
 
 ---
 
-This was originally a compilation by [Kornel Kisielewicz](kornel_kisielewicz.md) of a thread on [rgrd](rgrd.md) (he only included the posts that provided explanations).  
+This was originally a compilation by [Kornel Kisielewicz](kornel_kisielewicz.md) of a thread on [rgrd](rgrd.md) (he only included the posts that provided explanations).
 
-Roguebasin users have since then added their own rankings and explanations.  
+Roguebasin users have since then added their own rankings and explanations.
 
 ## Original post by Herold
 
 ---
 
-Its simple, if you played some RLs a lot - rank them! You can also wrote, why you ranked so (I hope it will help to developers).  
+Its simple, if you played some RLs a lot - rank them! You can also wrote, why you ranked so (I hope it will help to developers).
 
-My suggestion is this:  
+My suggestion is this:
 
-1. [ADOM](adom.md) (for challenge, skill system (including horoscopes and talents), incredible replayability, tactic and plot)  
-1. Entroband (for nice interface and challenge)  
-1. [Nethack](nethack.md) (which I don't like much - too many non-homogeneous things together)  
+1. [ADOM](adom.md) (for challenge, skill system (including horoscopes and talents), incredible replayability, tactic and plot)
+1. Entroband (for nice interface and challenge)
+1. [Nethack](nethack.md) (which I don't like much - too many non-homogeneous things together)
 
 ## Timofei Shartov
 
 ---
 
-1. [Crawl](linleys_dungeon_crawl.md) - very replayable, characters die fast  
+1. [Crawl](linleys_dungeon_crawl.md) - very replayable, characters die fast
 1. [ADOM](adom.md) - got me started on RLs in the first place, but the games take too long before the character dies
 1. [IVAN](ivan.md) - great fun, but some things are too random (wand explosions etc.)
 1. [DoomRL](doomrl.md) - fun, fast, but not very replayable
-1. [Rogue](rogue.md) - special mention - great fun game, but not much variety  
+1. [Rogue](rogue.md) - special mention - great fun game, but not much variety
 
-RLs that I played, but didn't like:  
+RLs that I played, but didn't like:
 
-1. [Nethack](nethack.md) - I don't like the interface and the flavor is totally non-existant with seemingly random classes and items (samurais, valkyries, tourists, kitchen sinks, wtf?)  
-1. [Angband](angband.md) - don't know which variation I played, but it had huge maps, swarms of identical monsters, ugly tiles. Bleargh...  
+1. [Nethack](nethack.md) - I don't like the interface and the flavor is totally non-existant with seemingly random classes and items (samurais, valkyries, tourists, kitchen sinks, wtf?)
+1. [Angband](angband.md) - don't know which variation I played, but it had huge maps, swarms of identical monsters, ugly tiles. Bleargh...
 
 ## erisdiscordia
 
 ---
 
-1. [Crawl](linleys_dungeon_crawl.md) - beautiful in how much time one spends truly playing and how little doing things that resemble playing, but aren't.  
-1. [ADOM](adom.md) - my first roguelike addiction, so always a special place in my heart, despite many flaws.  
-1. [POWDER](powder.md) - still a little rough around the edges, but seems to be well on the way to being a an extremely fun little roguelike  
-1. [ToME](tome.md) - so much variety, funkiness, and, well, fun that it bamboozled me into playing it intensely for several months despite its being a non-persistent-levels roguelike.  
-1. [DoomRL](doomrl.md) - I never really got into it, but it did seem like it could be a lot of fun per minute of play.  
-1. [Nethack](nethack.md) - it feels like it really may be a decent game, but I just can't swallow e.g. the ID mini-game. There also seems to be a lot of ways to do things that resemble playing, but aren't really play.  
-1. [Angband](angband.md) - I've played it, so it had to go *somewhere* on the list...  
+1. [Crawl](linleys_dungeon_crawl.md) - beautiful in how much time one spends truly playing and how little doing things that resemble playing, but aren't.
+1. [ADOM](adom.md) - my first roguelike addiction, so always a special place in my heart, despite many flaws.
+1. [POWDER](powder.md) - still a little rough around the edges, but seems to be well on the way to being a an extremely fun little roguelike
+1. [ToME](tome.md) - so much variety, funkiness, and, well, fun that it bamboozled me into playing it intensely for several months despite its being a non-persistent-levels roguelike.
+1. [DoomRL](doomrl.md) - I never really got into it, but it did seem like it could be a lot of fun per minute of play.
+1. [Nethack](nethack.md) - it feels like it really may be a decent game, but I just can't swallow e.g. the ID mini-game. There also seems to be a lot of ways to do things that resemble playing, but aren't really play.
+1. [Angband](angband.md) - I've played it, so it had to go _somewhere_ on the list...
 
 ## Chris Morris
 
@@ -53,24 +53,24 @@ I'm having great difficulty putting an actual ranking together. However, in no p
 
 ### best
 
-* [Crawl](linleys_dungeon_crawl.md) - well-balanced, rewards thoughtful play, excellent religion system, real variety between winners, and while almost all dire situations after the first few levels are survivable, a lot of thought, preparation, and recognising things going wrong before they get to a critical stage is needed to do that.
+- [Crawl](linleys_dungeon_crawl.md) - well-balanced, rewards thoughtful play, excellent religion system, real variety between winners, and while almost all dire situations after the first few levels are survivable, a lot of thought, preparation, and recognising things going wrong before they get to a critical stage is needed to do that.
 
 ### good
 
-* [Rogue](rogue.md) - very well designed and balanced. Simple but not dull gameplay.
-* [Letter Hunt](letter_hunt.md) - see [Rogue](rogue.md), and a great implementation of an original idea.
-* [ADOM](adom.md) - the first roguelike I played. Lots of variety, interesting quests, and an interesting character advancement mechanism. On the downside, game balance between the early and late game needs tweaking, and it has too many insta-escapes from bad situations.
-* Various other enjoyable 'coffee-break' roguelikes, mainly from 7DRL competitions. See [Rogue](rogue.md) again.
+- [Rogue](rogue.md) - very well designed and balanced. Simple but not dull gameplay.
+- [Letter Hunt](letter_hunt.md) - see [Rogue](rogue.md), and a great implementation of an original idea.
+- [ADOM](adom.md) - the first roguelike I played. Lots of variety, interesting quests, and an interesting character advancement mechanism. On the downside, game balance between the early and late game needs tweaking, and it has too many insta-escapes from bad situations.
+- Various other enjoyable 'coffee-break' roguelikes, mainly from 7DRL competitions. See [Rogue](rogue.md) again.
 
 ### neutral
 
-* [Nethack](nethack.md) - I never really got far enough into this to decide whether I liked it or not. From what I've heard about later bits of the game, I suspect I wouldn't, though.
+- [Nethack](nethack.md) - I never really got far enough into this to decide whether I liked it or not. From what I've heard about later bits of the game, I suspect I wouldn't, though.
 
 ### bad
 
-* [Angband](angband.md) - after clearing a few levels and fighting various differently coloured centipedes I lost the will to continue.
+- [Angband](angband.md) - after clearing a few levels and fighting various differently coloured centipedes I lost the will to continue.
 
-* My current in-dev game: It needs some fun content. Hopefully I can do that over the weekend and then I'll have some motivation to continue writing it. At the moment, I add a feature, debug it for hours, and then don't get any reward in terms of 'fun game to play'. If (when) I get past that barrier I should be much more motivated to actually do the development work.
+- My current in-dev game: It needs some fun content. Hopefully I can do that over the weekend and then I'll have some motivation to continue writing it. At the moment, I add a feature, debug it for hours, and then don't get any reward in terms of 'fun game to play'. If (when) I get past that barrier I should be much more motivated to actually do the development work.
 
 ## lemuel pitkin
 
@@ -81,7 +81,7 @@ I'm having great difficulty putting an actual ranking together. However, in no p
 1. [Nethack](nethack.md) (pre-1996) - best interactions between game elements of any roguelike (owes as much to old Infocom text adventures as to rogue) and complex, persistent dungeons. Horrible balance, identical characters past the midgame, and test-adventure elements limit replayability.
 1. [ChessRogue](chessrogue.md) - the only roguelike I know of that treats the grid as a central game element rather than an inconvenience. It would be great to see some "real" roguelike develop this idea.
 1. [Angband](angband.md) - the slot machine of roguelikes. Engrossing but dull.
-1. [Nethack](nethack.md) (post-1996) - the changes have weakened the good elements (e.g. diluting the quirky flavor with boring D&Disms like class/race rather than role) and made the balance problems even worse.  
+1. [Nethack](nethack.md) (post-1996) - the changes have weakened the good elements (e.g. diluting the quirky flavor with boring D&Disms like class/race rather than role) and made the balance problems even worse.
 
 ## lochok
 
@@ -89,9 +89,9 @@ I'm having great difficulty putting an actual ranking together. However, in no p
 
 1. [ADOM](adom.md) - my first, and current RL addiction. I'll probably never win but the game, its backstory and its engulf me and my imagination. I like most of its combat system and its sense of morals
 1. [DoomRL](doomrl.md) - the most fun I have ever had playing a roguelike... I'm not much of a player and will probably never finish it but its great fun. MIDI and SOUND and BLOOD SPLATTER = GOOOOOD!
-1. [Letter Hunt](letter_hunt.md) - YA Untraditional RL - I play it in small bursts, play for half an hour and shelf for a while. Its a great minigame (no offense meant by the term).  
+1. [Letter Hunt](letter_hunt.md) - YA Untraditional RL - I play it in small bursts, play for half an hour and shelf for a while. Its a great minigame (no offense meant by the term).
 
-Neither nethack nor the bands ever got it for me - I tried zangband for a bit and it had my attention for a little while, but [ADOM](adom.md) came straight back out...  
+Neither nethack nor the bands ever got it for me - I tried zangband for a bit and it had my attention for a little while, but [ADOM](adom.md) came straight back out...
 
 ## [SZDev](szdev.md)
 
@@ -109,18 +109,18 @@ Neither nethack nor the bands ever got it for me - I tried zangband for a bit an
 
 ### Liked
 
-* [Dungeon Crawl](linleys_dungeon_crawl.md) - fast play, constant tension and lost of beautiful spells. I am almost addicted to it
-* [Xenocide](xenocide.md) - for cool concept of DNA merging and total freedom developing your character
-* [ADOM](adom.md) - lots of classes each with its own different special abilities. Everything is cute except the plot which subtracts from replayability IMO
-* [DoomRL](doomrl.md) - FEEL MY WRATH! That's the one I pick when berserking in real world. Just gimme double shotgun
-* ZapM - just like NetHack with shorter learning curve. A bit too easy though
-* [ChessRogue](chessrogue.md) - almost won it, interesting game where luck plays minimal role
+- [Dungeon Crawl](linleys_dungeon_crawl.md) - fast play, constant tension and lost of beautiful spells. I am almost addicted to it
+- [Xenocide](xenocide.md) - for cool concept of DNA merging and total freedom developing your character
+- [ADOM](adom.md) - lots of classes each with its own different special abilities. Everything is cute except the plot which subtracts from replayability IMO
+- [DoomRL](doomrl.md) - FEEL MY WRATH! That's the one I pick when berserking in real world. Just gimme double shotgun
+- ZapM - just like NetHack with shorter learning curve. A bit too easy though
+- [ChessRogue](chessrogue.md) - almost won it, interesting game where luck plays minimal role
 
 ### Not liked
 
-* [NetHack](nethack.md) - many tricks and lots of humor, but I find it too hard to learn and strange events are all around
-* [Angband](angband.md) - simply I don't like it. Often waitng for right item to show up bores me horribly
-* [DeadCold](deadcold.md) - not enough activities other than killing
+- [NetHack](nethack.md) - many tricks and lots of humor, but I find it too hard to learn and strange events are all around
+- [Angband](angband.md) - simply I don't like it. Often waitng for right item to show up bores me horribly
+- [DeadCold](deadcold.md) - not enough activities other than killing
 
 ## Risto Saarelma
 
@@ -132,29 +132,29 @@ Neither nethack nor the bands ever got it for me - I tried zangband for a bit an
 1. [Zangband](zangband.md) - occasionally other variants. I don't really get [Angband](angband.md). The vanilla version seems very bland but at least the variants have enough weird starting options to be initially interesting. Of course adding several layers of features makes a horrible mess out of the game design. But what all [Angband](angband.md)s end up being is a large number of huge, confusing and boring dungeon levels with rags and broken sticks in them. Still, I've played [Zangband](zangband.md) enough to add it here. The scripted quests and the overworld make it a lot more interesting.
 1. [Omega](omega.md) I tried to play this a long time ago, but it was pretty confusing. With a better interface and a bit less of the "good RPG = lots of ways to mess up the player" -attitude from the 80's, this might have developed into something quite interesting.
 
-Unfortunately none of the more modern roguelikes have really hooked me yet. [POWDER](powder.md) and [GearHead](gearhead.md) are nice, but I haven't gotten very far in either.  
+Unfortunately none of the more modern roguelikes have really hooked me yet. [POWDER](powder.md) and [GearHead](gearhead.md) are nice, but I haven't gotten very far in either.
 
-Some ideas about what might make me like a game:  
+Some ideas about what might make me like a game:
 
-* Thought-out game mechanics. Don't just design from realism or mindlessly copy existing games. If you give me numbers to track, make them something that has a significant impact in the game. Don't have a charisma stat unless the game really makes use of the charisma and don't put the stat on the status panel unless it's really important that I can tell the stat at a glance at any moment ([Nethack](nethack.md) and [ADOM](adom.md) fail at this). Use a sensible degree of detail in the stats. When playing [ADOM](adom.md), I really don't care whether I have 48 % ventriloquism skill or 63 % ventriloquism skill. I'd be quite happy if ventriloquism would be just a skill that you either have or you don't have, no ranks whatsoever. Even somewhat more useful skills can probably do with something like 10 ranks.
+- Thought-out game mechanics. Don't just design from realism or mindlessly copy existing games. If you give me numbers to track, make them something that has a significant impact in the game. Don't have a charisma stat unless the game really makes use of the charisma and don't put the stat on the status panel unless it's really important that I can tell the stat at a glance at any moment ([Nethack](nethack.md) and [ADOM](adom.md) fail at this). Use a sensible degree of detail in the stats. When playing [ADOM](adom.md), I really don't care whether I have 48 % ventriloquism skill or 63 % ventriloquism skill. I'd be quite happy if ventriloquism would be just a skill that you either have or you don't have, no ranks whatsoever. Even somewhat more useful skills can probably do with something like 10 ranks.
 
-* Some hand-made flavor. Random dungeons are never the same, but most of the time they're pretty boring. [Zangband](zangband.md)'s overworld is generated, so it ends up being mostly random mush. [ADOM](adom.md) has a fixed overworld, so you learn its geography just like you learn [Nethack](nethack.md)'s recurring dungeon features. Some repeating elements give your game identity.
+- Some hand-made flavor. Random dungeons are never the same, but most of the time they're pretty boring. [Zangband](zangband.md)'s overworld is generated, so it ends up being mostly random mush. [ADOM](adom.md) has a fixed overworld, so you learn its geography just like you learn [Nethack](nethack.md)'s recurring dungeon features. Some repeating elements give your game identity.
 
-* Have interesting choices. Maybe character types with a genuinely different gameplay feel, maybe different routes through the game world, in which different obstacles are faced, maybe different tactical options for various situations. Choices are interesting if they are genuinely different and there isn't a single choice that is clearly better than all the others.
+- Have interesting choices. Maybe character types with a genuinely different gameplay feel, maybe different routes through the game world, in which different obstacles are faced, maybe different tactical options for various situations. Choices are interesting if they are genuinely different and there isn't a single choice that is clearly better than all the others.
 
-* Either support hjklyubn movement keys or only have movement in the 4 cardinal directions. I've configured my numpad to navigate in my window manager, so it's not useful for games. Other people use laptops with no numpad. This seems to be rare in new roguelikes.
+- Either support hjklyubn movement keys or only have movement in the 4 cardinal directions. I've configured my numpad to navigate in my window manager, so it's not useful for games. Other people use laptops with no numpad. This seems to be rare in new roguelikes.
 
-* Have a Linux version. Or release the source so that people can build their own.
+- Have a Linux version. Or release the source so that people can build their own.
 
-* Random nastiness needs a balance. If death is literally lurking around every corner, the game will wear me down. If things are too easy, it might be boring. Of course short games can be more intense than long ones.
+- Random nastiness needs a balance. If death is literally lurking around every corner, the game will wear me down. If things are too easy, it might be boring. Of course short games can be more intense than long ones.
 
-* It's nice if I can learn new things about the game without dying or ruining my game every time. Of course some learning by death is a part of the roguelike charm, but the player should be able to blame himself afterwards. Deadly surprises late in the game are particularly unfortunate. The player should be able to encounter many deadly mechanics early in the game, when losing the game isn't such a big deal.
+- It's nice if I can learn new things about the game without dying or ruining my game every time. Of course some learning by death is a part of the roguelike charm, but the player should be able to blame himself afterwards. Deadly surprises late in the game are particularly unfortunate. The player should be able to encounter many deadly mechanics early in the game, when losing the game isn't such a big deal.
 
-* Making me obsess over the ultimate character build is a great way to get me hooked to a game. For this obsession to come about, there needs to be some mutually exclusive decisions in character development, not just grinding until I have the ultimate spellcaster tank. And I need to have good control over character development, it's better to have a point allocation or a class level system than skills that develop when used. Baldur's Gate 2 has quite a warped and nonsensical character development system, but it really makes you obsess over figuring out some obscenely powerful build. And of course to really pull this off, make sure there isn't a real ultimate character build, just a lot of mediocre ones, some good ones and a few evilly powerful ones that require some deviousness to achieve, not just putting all the character points in speed.
+- Making me obsess over the ultimate character build is a great way to get me hooked to a game. For this obsession to come about, there needs to be some mutually exclusive decisions in character development, not just grinding until I have the ultimate spellcaster tank. And I need to have good control over character development, it's better to have a point allocation or a class level system than skills that develop when used. Baldur's Gate 2 has quite a warped and nonsensical character development system, but it really makes you obsess over figuring out some obscenely powerful build. And of course to really pull this off, make sure there isn't a real ultimate character build, just a lot of mediocre ones, some good ones and a few evilly powerful ones that require some deviousness to achieve, not just putting all the character points in speed.
 
-* Simple game mechanics with lots of uses are good. Using the same mechanic in different contexts might be interesting. For example, suppose living things have stats like skill, power and health. Maybe equipment has the same stats. The equipment's stats are just added to the character's stats when used, but if hit with an Animate Object spell, the equipment can turn into a creature with the same stats. I think this is more interesting complexity than a huge bundle of ad hoc mechanics.
+- Simple game mechanics with lots of uses are good. Using the same mechanic in different contexts might be interesting. For example, suppose living things have stats like skill, power and health. Maybe equipment has the same stats. The equipment's stats are just added to the character's stats when used, but if hit with an Animate Object spell, the equipment can turn into a creature with the same stats. I think this is more interesting complexity than a huge bundle of ad hoc mechanics.
 
-* It's good to have some idea about what the final goal is and have a sense that I might actually accomplish it. Having subgoals on the way helps this. I'm a lot less likely to get overwhelmed if my initial task is to go see whether a shrine on dungeon level 5 has been desecrated than if it is to travel to dungeon level 200 and slay the Greater Avatar of Ultimate Chaos, even though the former might be the first quest in a chain which eventually leads down level 200.
+- It's good to have some idea about what the final goal is and have a sense that I might actually accomplish it. Having subgoals on the way helps this. I'm a lot less likely to get overwhelmed if my initial task is to go see whether a shrine on dungeon level 5 has been desecrated than if it is to travel to dungeon level 200 and slay the Greater Avatar of Ultimate Chaos, even though the former might be the first quest in a chain which eventually leads down level 200.
 
 ## Flubsicle
 
@@ -209,25 +209,25 @@ There are others which I am sure are worthy of note, but the above are the ones 
 1. [Crawl](linleys_dungeon_crawl.md) - the perfect arcade RL, battle, battle, battle
 1. [Nethack](nethack.md) - so crazy it is interesting, needs seriours spoiler help though, still play it occasionaly
 1. [GearHead](gearhead.md) - one of the best games I've played, consistent, interesting quests, unique world
-1. [CastlevaniaRL](castevaniarl.md) - as a fan of the Castlevania universe, it is quite interesting with some nice ideas (2.5D areas, day/night, etc)
+1. [CastlevaniaRL](castlevaniarl.md) - as a fan of the Castlevania universe, it is quite interesting with some nice ideas (2.5D areas, day/night, etc)
 
 ## kalikiana
 
 ---
 
 1. [ADOM](adom.md) - This is the first RL I ever played. My girlfriend recommended it to me once and it's at the same time the hardest, most coplex and most interesting with more features than I could explore on my own.
-1. [CastlevaniaRL](castevaniarl.md) - A very unique game in my opinion with several uncommon aspects. Much more of a quick game, but not comparable and certainly not less fun.
+1. [CastlevaniaRL](castlevaniarl.md) - A very unique game in my opinion with several uncommon aspects. Much more of a quick game, but not comparable and certainly not less fun.
 1. [DungeonBash](martins_dungeon_bash.md) - Exactly the kind of game where you don't have to worry about doing too much wrong. The game for a quick session. I'm looking forward to the planned version with more complex elements.
 
 ## Corremn
 
 ---
 
-Order of first played (50 games or more):  
+Order of first played (50 games or more):
 
-1. [Moria](moria.md) - The first roguelike experience, great game to start with, very repetitive though as are all *band games. Only finished it once after i realised the slower you decend the easier it is to win. 3/5
+1. [Moria](moria.md) - The first roguelike experience, great game to start with, very repetitive though as are all \*band games. Only finished it once after i realised the slower you decend the easier it is to win. 3/5
 
-1. *band - Not that better than [Moria](moria.md) and I rarely play them. Although NPP and [Quickband](quickband.md) are exeptions. 3/5
+1. \*band - Not that better than [Moria](moria.md) and I rarely play them. Although NPP and [Quickband](quickband.md) are exeptions. 3/5
 
 1. [Alphaman](alphaman.md) - First and only post-apoc RL game i've played. Some interesting ideas. 1.5/5
 
@@ -245,7 +245,7 @@ Order of first played (50 games or more):
 
 ---
 
-I've played Crawl, Nethack, Slash'EM and ADOM(to a lesser extent) extensively. Ranking them in order:  
+I've played Crawl, Nethack, Slash'EM and ADOM(to a lesser extent) extensively. Ranking them in order:
 
 1. [Crawl](linleys_dungeon_crawl.md) - By far the best [Rogue](rogue.md)like out there. Variety, challenging and fast paced. The thing I love most is that it nearly eliminates scumming. There are avenues for scummers--Nemelex, Mummies and Pandemonium, though all of these have "complications" even for the most skilled scummers, but for the most part descent is driven by the need for food and the low monster respawn rates. Did I mention that food is at the heart of what makes the game work? It powers spellcasting, invocations, HP/MP regeneration and various special abilities. That's why the Amulet of the Gourmand is such a coveted item--it lets you eat when you're not Hungry/Starving and it lets you eat rotten meat with no ill effects. There are lots of other reasons to love this game, but I'll stop here. If you're having trouble succeeding at it, Google "a the human fighter" and "b the deep elf conjurer". Both are chronicles of two successful [Crawl](linleys_dungeon_crawl.md) characters and go into the different strategy and tactics integral to success. I don't think you should sit around casting magic dart a wall with all skills but Spellcasting turned off like he recommends in "b" though... it's unnecessary tedium IMO.
 2. [Nethack](nethack.md)/[Slash'EM](slash'em.md) - Pretty decent as roguelikes go. The early game is challenging, but nothing on the level of [Crawl](linleys_dungeon_crawl.md)(I read that Marvin ascended ~12 times in a row in [Nethack](nethack.md)... 2 in a row would take a lot of luck even for an expert in [Crawl](linleys_dungeon_crawl.md). I'd like to see how he fares at [Crawl](linleys_dungeon_crawl.md), actually!). [Nethack](nethack.md) has a high barrier to entry for new players--you have to learn an overwhelming amount of wacky, nonsensical information to succeed. The real problems with [Nethack](nethack.md), though, are character homogeneity, an easy and tedious end game and rewards for scumming(Alchemy, Altar Saccing, Foocubi, Reverse Genocide Wraiths, Stealing from Shops...).
@@ -257,9 +257,9 @@ I've dabbled in [Angband](angband.md) variants... the most promising looks to be
 
 ---
 
-1. [Crawl](linleys_dungeon_crawl.md) - In my opinion best RL. It's hard. It's cruel. I love it. There are lot dangerous situations but they can be (sometimes) solved. Problem is that istead YASD from another you have  
+1. [Crawl](linleys_dungeon_crawl.md) - In my opinion best RL. It's hard. It's cruel. I love it. There are lot dangerous situations but they can be (sometimes) solved. Problem is that istead YASD from another you have
 
-Yet Another Unavoidable Death wasp without poison res, /paralyzed by eye and killed by nearbly ogre  
+Yet Another Unavoidable Death wasp without poison res, /paralyzed by eye and killed by nearbly ogre
 
 1. [Nethack](nethack.md) SLASH'EM - It's designed with spoilers in mind.
 1. [ADOM](adom.md) - Is too repetive. Quests are great first time but when you play it 1000 time its quite boring. Another issue is that without scumming its insane hard and with it's insane easy. Only early game is challenging,midgame turns insane easy or impossible(Play spellcaster swich to coward and you are invicible.)
@@ -268,53 +268,53 @@ Yet Another Unavoidable Death wasp without poison res, /paralyzed by eye and kil
 
 ---
 
-The [UnReal World](unreal_world.md) -- The scope and the survival(/)simulation aspects rule! This has lots of things going for it but some bugs/exploit possibilities and more missed potential are a bit frustrating if you shell out the money for the unrestricted full game.  
+The [UnReal World](unreal_world.md) -- The scope and the survival(/)simulation aspects rule! This has lots of things going for it but some bugs/exploit possibilities and more missed potential are a bit frustrating if you shell out the money for the unrestricted full game.
 
-[ADOM](adom.md) -- It's all been said already.  
+[ADOM](adom.md) -- It's all been said already.
 
-[GearHead](gearhead.md): Arena -- I miss perma-death and the hunt for good equipment (rather than racking up kills for money and revisiting a shop till they suddenly have the item in stock sort of in a blink of an eye) the rest is ace, though!  
+[GearHead](gearhead.md): Arena -- I miss perma-death and the hunt for good equipment (rather than racking up kills for money and revisiting a shop till they suddenly have the item in stock sort of in a blink of an eye) the rest is ace, though!
 
-[Slaves to Armok II: Dwarf Fortress](slaves_to_armok_II_dwarf_fortress.md) -- Oh so promising!  
+[Slaves to Armok II: Dwarf Fortress](slaves_to_armok_II_dwarf_fortress.md) -- Oh so promising!
 
-[IVAN](ivan.md) -- Where else do the enemies use the scattered equipment so well? I like the graphics (sue me)! Body parts damage system and dismemberment! It's heaps of fun.  
+[IVAN](ivan.md) -- Where else do the enemies use the scattered equipment so well? I like the graphics (sue me)! Body parts damage system and dismemberment! It's heaps of fun.
 
-(I-/)U[Larn](larn.md) -- Haven't played this, too much but: Quite some stuff to figure out and the process is fun. The time limit (which can be prolonged) adds a welcome feel of urgency. As has been said the dungeon generator produces nice layouts. You get to bring your money to the bank and there's dealer Mc Dope.  
+(I-/)U[Larn](larn.md) -- Haven't played this, too much but: Quite some stuff to figure out and the process is fun. The time limit (which can be prolonged) adds a welcome feel of urgency. As has been said the dungeon generator produces nice layouts. You get to bring your money to the bank and there's dealer Mc Dope.
 
-[Crawl](linleys_dungeon_crawl.md) -- It's all been said already. Though I don't think it's that polished and balanced(the classes and spells).  
+[Crawl](linleys_dungeon_crawl.md) -- It's all been said already. Though I don't think it's that polished and balanced(the classes and spells).
 
-[DoomRL](doomrl.md) -- Doom + Roguelike!  
+[DoomRL](doomrl.md) -- Doom + Roguelike!
 
-[Nethack](nethack.md) -- It's all been said already. Though I like the classes and stuff even if they don't fit/mix. More variety=Yay I say!  
+[Nethack](nethack.md) -- It's all been said already. Though I like the classes and stuff even if they don't fit/mix. More variety=Yay I say!
 
-[Angband](angband.md)/[Moria](moria.md) thingies -- Repititive/bland no pressure to move on.  
+[Angband](angband.md)/[Moria](moria.md) thingies -- Repititive/bland no pressure to move on.
 
 ## Crypt
 
 ---
 
-I don't list RLs i didn't like enough because, obviously, i didn't play a lot those i didn't like...(i'm not masochist)  
+I don't list RLs i didn't like enough because, obviously, i didn't play a lot those i didn't like...(i'm not masochist)
 
-[UnReal World](unreal_world.md) -- The only survival RL i know. And a very unique setting.  
+[UnReal World](unreal_world.md) -- The only survival RL i know. And a very unique setting.
 
-[ADOM](adom.md) -- Nice skills, nice adventure feeling, but i don't like the non-permanence of dungeons.  
+[ADOM](adom.md) -- Nice skills, nice adventure feeling, but i don't like the non-permanence of dungeons.
 
-[Nethack](nethack.md) -- Mainly Slash'Em, in fact. I know no other RL with so many interactions possibilities (on a tactical scale only).  
+[Nethack](nethack.md) -- Mainly Slash'Em, in fact. I know no other RL with so many interactions possibilities (on a tactical scale only).
 
-[IVAN](ivan.md) -- Gory, humorous, fun. IMO, it looks like a modern [Nethack](nethack.md).  
+[IVAN](ivan.md) -- Gory, humorous, fun. IMO, it looks like a modern [Nethack](nethack.md).
 
-[Sword of Fargoal](sword_of_fargoal.md) -- Quick and simple gameplay. It could be defined as an arcade RL.  
+[Sword of Fargoal](sword_of_fargoal.md) -- Quick and simple gameplay. It could be defined as an arcade RL.
 
-Mordor -- IMO, this is a RL. The most old-school dungeon crawling CRPG ever made.  
+Mordor -- IMO, this is a RL. The most old-school dungeon crawling CRPG ever made.
 
-[CastlevaniaRL](castevaniarl.md) -- While being very hard this is one of the most enjoyable "coffee-break" RLs.  
+[CastlevaniaRL](castlevaniarl.md) -- While being very hard this is one of the most enjoyable "coffee-break" RLs.
 
-[DoomRL](doomrl.md) -- copy/paste what i said about CastlevaniaRL. (but easier)  
+[DoomRL](doomrl.md) -- copy/paste what i said about CastlevaniaRL. (but easier)
 
 ## arocoun
 
 ---
 
-I hope these aren't too long, but I tried to be descriptive of the positives and negatives I saw in these games.  
+I hope these aren't too long, but I tried to be descriptive of the positives and negatives I saw in these games.
 
 1. [Crawl](linleys_dungeon_crawl.md)--My favorite roguelike, and one of my favorite games, period. [Crawl](linleys_dungeon_crawl.md) is fun and addicting, for sure. And challenging. This game is frustrating sometimes for someone like me, who usually plays at a slow pace--you HAVE to move on after exploring a level, or you'll starve. Oddly enough, though, this is part of the reason I like the game. It forces me to move on, whether I feel ready or not, into new and dangerous territory. This game also rewards good strategy and good tactics, while punnishing scumming and other cheap tactics. And, this game succeeds in creating the need and desire to experiment in developing powerful characters. One thing which causes difficulty for me is that [Crawl](linleys_dungeon_crawl.md) isn't kind to Jack of All Trades characters--but I think of it as a challenge rather than a punishment.
 
@@ -324,7 +324,7 @@ I hope these aren't too long, but I tried to be descriptive of the positives and
 
 1. [GearHead](gearhead.md)--Also fun and addicting. Many of its best features are shared with [Crawl](linleys_dungeon_crawl.md). It's parts system is great--everything (most notably, mecha) has parts and components, and all of those parts have unique functions and abilities. If you want to disable someone's attack, attack the arm that's holding the weapon. If a mecha's too fast for you, bust one of its legs. Some big problems I have with [GearHead](gearhead.md), though: It doesn't have permadeath (instead, an annoying Wangtta trait builds up when you die); and experience gain is much too supportive of having minimalist equipment, meaning that a martial artist who doesn't carry any equipment will gain experience rediculously fast, while someone using decent equipment will have difficulties gaining exp. And the stories and character interactions can be described as filling in the blank with random stuff. That can be funny, but it's mostly kinda cold and dull.
 
-1. [IVAN](ivan.md)--An addicting, but very frustrating game. [IVAN](ivan.md) punnishes ALMOST EVERYTHING. Scumming, improving you character in any way, slow playing, fast playing, having bad equipment, having good equipment, having bad stats, having good stats, etc. The ONLY thing [IVAN](ivan.md) doesn't punish is good tactics--but it sure as heck won't reward good tactics, either. No matter what thing you do that are normally considered good in RLs, you'll just be given harder enemies, and no breaks. The lack of rewards for effort really bugged me. Not even the NPCs will give you a pat on the back for any of your efforts. It's nearly impossible to tell how close your enemies are to death, so you don't know whether to flee or fight a little longer in a tough situation (and believe me, there'll be tough situations left and right). And gameplay is almost entirely fighter oriented--if you'd like to play a magic user, ranger, monk, or rogue character for variety, you're out of luck. But there are positives to [IVAN](ivan.md), which are what make it addicting and interesting (though still unrewarding) to begin with. First off, every character, especially your own, has the potential to develop or deteriorate according to their actions. If you fight with one knife, your knife hand will get faster and a tad stronger, you'll gain experience in fighting with knives in general and that specific knife, and your other hand will atrophy due to disuse. If you fight with a big sword, you gain lots of strength, and become a good swordfigter. And if you run like a wuss in the face of danger, you'll become a faster, more agile wuss with experience. Also, EVERYTHING in the game is interactive. Depending on your foot strength and your boots' enchantment, you can have difficulty kicking down a cheap wooden door, or bust down rock walls with ease. If a metal room with a locked metal door can't be opened, throw some acid at it (or if you must, vomit on it), and it'll eventually corrode. And, very notable for a roguelike, [IVAN](ivan.md) uses graphics pretty effectively.  
+1. [IVAN](ivan.md)--An addicting, but very frustrating game. [IVAN](ivan.md) punnishes ALMOST EVERYTHING. Scumming, improving you character in any way, slow playing, fast playing, having bad equipment, having good equipment, having bad stats, having good stats, etc. The ONLY thing [IVAN](ivan.md) doesn't punish is good tactics--but it sure as heck won't reward good tactics, either. No matter what thing you do that are normally considered good in RLs, you'll just be given harder enemies, and no breaks. The lack of rewards for effort really bugged me. Not even the NPCs will give you a pat on the back for any of your efforts. It's nearly impossible to tell how close your enemies are to death, so you don't know whether to flee or fight a little longer in a tough situation (and believe me, there'll be tough situations left and right). And gameplay is almost entirely fighter oriented--if you'd like to play a magic user, ranger, monk, or rogue character for variety, you're out of luck. But there are positives to [IVAN](ivan.md), which are what make it addicting and interesting (though still unrewarding) to begin with. First off, every character, especially your own, has the potential to develop or deteriorate according to their actions. If you fight with one knife, your knife hand will get faster and a tad stronger, you'll gain experience in fighting with knives in general and that specific knife, and your other hand will atrophy due to disuse. If you fight with a big sword, you gain lots of strength, and become a good swordfigter. And if you run like a wuss in the face of danger, you'll become a faster, more agile wuss with experience. Also, EVERYTHING in the game is interactive. Depending on your foot strength and your boots' enchantment, you can have difficulty kicking down a cheap wooden door, or bust down rock walls with ease. If a metal room with a locked metal door can't be opened, throw some acid at it (or if you must, vomit on it), and it'll eventually corrode. And, very notable for a roguelike, [IVAN](ivan.md) uses graphics pretty effectively.
 
 ## [Stoolmaker](stoolmaker.md)
 
@@ -338,7 +338,7 @@ I hope these aren't too long, but I tried to be descriptive of the positives and
 
 4. [Nethack](nethack.md)/[Crawl](linleys_dungeon_crawl.md): Yet again, games I haven't "[p]layed a lot". Both are interesting. Nethack in its mind-boggling complexity! Crawl has a drawn back quality that appeals to me. The pantheon is interesting, for instance.
 
-5. [Angband](angband.md): Well, you never forget your first love. (Could I put "Bard's Tale" for C64 on the list?) Still, playing Angband today just doesn't do it for me. Although sometimes I'll smile, maybe just at the memory of selling a particularly bad, unindentified object at a particularly high price.  
+5. [Angband](angband.md): Well, you never forget your first love. (Could I put "Bard's Tale" for C64 on the list?) Still, playing Angband today just doesn't do it for me. Although sometimes I'll smile, maybe just at the memory of selling a particularly bad, unindentified object at a particularly high price.
 
 ## jnecros
 
@@ -350,7 +350,7 @@ I hope these aren't too long, but I tried to be descriptive of the positives and
 
 1. [POWDER](powder.md)--Very cool game, has some nice looking tiles. Class development is conducted while playing rather than being limited during character creation, which is a nice feature if you like having more freedom. Nice concepts revolve around item sets, which may not provide the uber armor factor, but rather serve to impress your deity. I like that gods reward snappy dressers. There is not a lot of story to it, which for me limits the re-playability somewhat, not that I have beaten it or anything, because it is very RL and challenging.
 
-1. [CastlevaniaRL](castevaniarl.md)--A lot of work was placed into making this a homage to the series, which really does an excellent job at immersing you into the game world. Same weapons, heart-based health system, music and enemies packaged up with a killer tile set and intro to the game exactly like the console games. Wicked, I consider this a coffee break game, not a in depth roleplaying experience, simply due to the nature of the game series. There are several classes to play however.
+1. [CastlevaniaRL](castlevaniarl.md)--A lot of work was placed into making this a homage to the series, which really does an excellent job at immersing you into the game world. Same weapons, heart-based health system, music and enemies packaged up with a killer tile set and intro to the game exactly like the console games. Wicked, I consider this a coffee break game, not a in depth roleplaying experience, simply due to the nature of the game series. There are several classes to play however.
 
 1. [Stone Soup](dungeon_crawl_stone_soup.md) and [Crawl](linleys_dungeon_crawl.md)--Of the Traditional RL these are the ones I have spent the most time in attempting to beat. Classics, excellent race and classes to pick from. Basic story line guides your decent, persistent levels, nice tile sets and some excellent butchering of corpses for food make this a game to try out.
 
@@ -368,8 +368,8 @@ I hope these aren't too long, but I tried to be descriptive of the positives and
 
 1. [ADOM](adom.md) - My first roguelike. It is currently my second favorite RL of all time. My favorite features are the class-dependent abilities and the quests. I think it is one of the most balanced RLs I've ever played and doesn't require much grinding except right before the Tower since you generally find adequate equipment as you move towards your goal. I think the only feature I would want to see improved would be the religion system. All the deities are essentially the same with the chaotic ones (in my opinion) slightly worse.
 2. [Dungeon Crawl](linleys_dungeon_crawl.md) - This is currently my number one favorite RL. I love the huge variety of races and classes, the spell system, and most particularly the religion system which has unique gods. I like how it is a fast paced RL with a completely random dungeon with specific types of sub-dungeons. The only thing I would want to see improved would be the addition of any kind of story.
-3. [Angband](angband.md) + [variants](list_of_angband_variants.md) - I played Angband, ToME, Zangband+, and a few other *bands, and I enjoyed most of them for a little while with ToME and Zangband+ being my favorites. I thought they were decent, although they don't seem as polished as ADOM and Crawl. It might be the non-persistent levels, which I don't particularly mind after my start with [ADOM](adom.md)'s infinite dungeon.
-4. [NetHack](nethack.md) - Eh. I played this for a while since it was one of the Major RLs, but I couldn't get into it. I liked all the different things you could do, and I liked how many features seemed completely ridiculous but I think that that ultimately detracted from its value. I liked the Sokoban levels but never got much farther than that, so I can't say much about the other special levels.  
+3. [Angband](angband.md) + [variants](list_of_angband_variants.md) - I played Angband, ToME, Zangband+, and a few other \*bands, and I enjoyed most of them for a little while with ToME and Zangband+ being my favorites. I thought they were decent, although they don't seem as polished as ADOM and Crawl. It might be the non-persistent levels, which I don't particularly mind after my start with [ADOM](adom.md)'s infinite dungeon.
+4. [NetHack](nethack.md) - Eh. I played this for a while since it was one of the Major RLs, but I couldn't get into it. I liked all the different things you could do, and I liked how many features seemed completely ridiculous but I think that that ultimately detracted from its value. I liked the Sokoban levels but never got much farther than that, so I can't say much about the other special levels.
 
 ## Pteriforever
 
@@ -396,7 +396,7 @@ I hope these aren't too long, but I tried to be descriptive of the positives and
 1. [TreeBurner](treeburner.md) - See below. Mindless real-time hack-'n'-slash fun.
 1. [Pyromancer](pyromancer.md) - Okay, maybe this is just a demo and it doesn't have much replay value, but this one was mindlessly fun. The graphics are amazing for simple text, and the interface is pleasantly intuitive. If this is the combat system planned for TCOD, then I can't wait for the full release.
 1. [NetHack](nethack.md) - This is one of the most difficult games I've ever played. I'm very bad at it, but I enjoy it anyway. The bizarre collection of items and monsters plus the insane multitasking (fighting hordes of monsters while playing the identification minigame and keeping yourself from starving) have me coming back every time. Maybe I'm just a masochist, but NetHack is hecka fun.
-1. [Tombs of Asciiroth](tombs_of_asciiroth.md) - This is more of a grid-based puzzle game than a roguelike. I feel that ToA's combat system needs a lot of refinement; I find myself spending more time running back and forth across a huge map exchanging keys and doors than bashing helmets into metal pancakes. Puzzles are nice, but they don't seem to work well in a real-time roguelike.  
+1. [Tombs of Asciiroth](tombs_of_asciiroth.md) - This is more of a grid-based puzzle game than a roguelike. I feel that ToA's combat system needs a lot of refinement; I find myself spending more time running back and forth across a huge map exchanging keys and doors than bashing helmets into metal pancakes. Puzzles are nice, but they don't seem to work well in a real-time roguelike.
 
 ## Bluescreenofdeath
 
@@ -412,10 +412,10 @@ I hope these aren't too long, but I tried to be descriptive of the positives and
 8. [SLASH'EM](slash'em.md) - at first I had lots of trouble getting anywhere in this fork. But then I started modding (with a hex editor at first since I didn't have a compiler at that time) and suddenly I was doing better than in UnNetHack.
 9. [Angband](angband.md) - discovered by reading about NetHack. I gave it a try but it pales compared to NetHack. Still has some nice ideas though.
 10. [ADOM](adom.md) - My first character died so quickly and I felt like being totally unable to do anything, it wasn't even funny. But the worst part is the designer is actively trying to prevent modding. So, no. Time to move on.
-11. [CastlevaniaRL](castevaniarl.md) - didn't get far yet, but I like the music of that game.
+11. [CastlevaniaRL](castlevaniarl.md) - didn't get far yet, but I like the music of that game.
 12. [Unangband](unangband.md) - this is actually fun, but I still prefer NetHack's ASCII over [Angband](angband.md)'s ASCII characters, and bands don't have persistent dungeons unfortunately.
-13. [ToME](tome.md) - tried both version 2.2.3 (or something like that) with the LostSoul birth option, and MajEyal; both of them are borderline unplayable IMHO. My MajEyal character only had the options to either clear out a ritch-infested dungeon or an underwater one, both of which were impossible to beat for a level 1 character, and the interface is confusing as hell. And my Middle Earth characters just never seem to be able to kill anything, no matter what I do; it seems every character I try to play has a 10% or lower chance to hit the monsters, and they have a 95% chance to hit me. No chance to get anywhere, the only thing I can do is run away from every monster because fighting them isn't winnable.  
+13. [ToME](tome.md) - tried both version 2.2.3 (or something like that) with the LostSoul birth option, and MajEyal; both of them are borderline unplayable IMHO. My MajEyal character only had the options to either clear out a ritch-infested dungeon or an underwater one, both of which were impossible to beat for a level 1 character, and the interface is confusing as hell. And my Middle Earth characters just never seem to be able to kill anything, no matter what I do; it seems every character I try to play has a 10% or lower chance to hit the monsters, and they have a 95% chance to hit me. No chance to get anywhere, the only thing I can do is run away from every monster because fighting them isn't winnable.
 
-Then I picked up the C programming language, and since I was enjoying SLASH'EM the most, decided to make it into something even better. This led to the birth of...  
+Then I picked up the C programming language, and since I was enjoying SLASH'EM the most, decided to make it into something even better. This led to the birth of...
 
-* [Slash'EM Extended](slash'em_extended.md) - which gradually integrated lots of features from other NetHack variants, and also incorporated ideas from other roguelikes. The LostSoul option from [ToME](tome.md) is in there, too! Currently I'm still actively developing this variant, and it already has everything and the kitchen sink as well as lots more, but I'm not done yet. Of course, being the dev team and all, I'll always state that Slash'EM Extended is the best roguelike ever, but [Diablo](diablo.md) 2 is great too, and some of the others get played occasionally for a change of pace. And of course I won't forget the nostalgic Castle of the Winds, which I even honored with a role-specific Slash'EM Extended quest (the "Spacewars Fighter" role that also has similar starting equipment to CoW).  
+- [Slash'EM Extended](slash'em_extended.md) - which gradually integrated lots of features from other NetHack variants, and also incorporated ideas from other roguelikes. The LostSoul option from [ToME](tome.md) is in there, too! Currently I'm still actively developing this variant, and it already has everything and the kitchen sink as well as lots more, but I'm not done yet. Of course, being the dev team and all, I'll always state that Slash'EM Extended is the best roguelike ever, but [Diablo](diablo.md) 2 is great too, and some of the others get played occasionally for a change of pace. And of course I won't forget the nostalgic Castle of the Winds, which I even honored with a role-specific Slash'EM Extended quest (the "Spacewars Fighter" role that also has similar starting equipment to CoW).

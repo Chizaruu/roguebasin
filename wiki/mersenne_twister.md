@@ -2,7 +2,7 @@
 
 ---
 
-The **Mersenne twister** is a fast, efficient pseudo-random number generator with a very long period. It is unsuitable for cryptographic uses, but it is more than adequate for computer games. Due to its speedy and effective generation of pseudo-random numbers, a few languages (e.g. [FreePascal](freepascal.md) and [Python](python.md)) have already begun using the Mersenne twister as its default algorithm for its own [RNG](random_number_generator.md).
+The **Mersenne twister** is a fast, efficient pseudo-random number generator with a very long period. It is unsuitable for cryptographic uses, but it is more than adequate for computer games. Due to its speedy and effective generation of pseudo-random numbers, a few languages (e.g. [FreePascal](free_pascal.md) and [Python](python.md)) have already begun using the Mersenne twister as its default algorithm for its own [RNG](random_number_generator.md).
 
 It is not necessary to understand how the Mersenne twister works in order to use it.
 

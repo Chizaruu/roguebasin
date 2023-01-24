@@ -104,7 +104,7 @@ Source code does not have to be released, but it is strongly encouraged that you
 
 ---
 
-You'll note under the "winners" section that the author is encouraged not to release another version. This isn't because we don't want to see bug fixes, or don't want to see the framework written for the **7DRL** extended into an even better game. It is to try and push the participants to have something done and polished on day seven rather than "that will be added later..." It is quite sensible and good if people want to take their 7DRL (or, license depending, someone else's!) and extend/modify it into a full-fledged roguelike. For example, [Martin Read](martin_read.md)'s **MPR7DRL** formed the basis for [Martin's Dungeon Bash](martins_dungeon_bash.md) and [Slash](slash.md)'s [CastlevaniaRL:Prelude](castlevaniarl-prelude.md) evolved into [CastlevaniaRL](castevaniarl.md).
+You'll note under the "winners" section that the author is encouraged not to release another version. This isn't because we don't want to see bug fixes, or don't want to see the framework written for the **7DRL** extended into an even better game. It is to try and push the participants to have something done and polished on day seven rather than "that will be added later..." It is quite sensible and good if people want to take their 7DRL (or, license depending, someone else's!) and extend/modify it into a full-fledged roguelike. For example, [Martin Read](martin_read.md)'s **MPR7DRL** formed the basis for [Martin's Dungeon Bash](martins_dungeon_bash.md) and [Slash](slash.md)'s [CastlevaniaRL:Prelude](castlevaniarl-prelude.md) evolved into [CastlevaniaRL](castlevaniarl.md).
 
 ## How many 7DRLs have been done?
 
@@ -112,33 +112,33 @@ You'll note under the "winners" section that the author is encouraged not to rel
 
 Quite a few! See the following detailed lists:
 
-* [Pre-challenge 7DRLs](pre-challenge_7drls.md)
-* [7DRLs made out of challenge](7drls_made_out_of_challenge.md)
-* [7DRL Contest 2005](7drl_contest_2005.md)
-* [2005 Out of Challenge 7DRLs](2005_out_of_challenge_7drls.md)
-* [7DRL Contest 2006](7drl_contest_2006.md)
-* [Orange October Minigun 7DRL Contest 2006](orange_october_minigun_7drl_contest_2006.md)
-* [7DRL Contest 2007](7drl_contest_2007.md)
-* [7DRL Contest 2008](7drl_contest_2008.md)
-* [2008 Out of Challenge 7DRLs](2008_out_of_challenge_7drls.md)
-* [7DRL Contest 2009](7drl_contest_2009.md)
-* [2009 Out of Challenge 7DRLs](2009_out_of_challenge_7drls.md)
-* [7DRL Contest 2010](7drl_contest_2010.md)
-* [2010 Out of Challenge 7DRLs](2010_out_of_challenge_7drls.md)
-* [7DRL Contest 2011](7drl_contest_2011.md)
-* [7DRL Challenge 2012](7drl_challenge_2012.md)
-* [7DRL Challenge 2013](7drl_challenge_2013.md)
-* [7DRL Challenge 2014](7drl_challenge_2014.md)
-* [7DRL Challenge 2015](7drl_challenge_2015.md)
-* [7DRL Challenge 2016](7drl_challenge_2016.md)
-* [7DRL Challenge 2017](7drl_challenge_2017.md)
-* [7DRL Challenge 2018](7drl_challenge_2018.md)
-* [7DRL Challenge 2019](7drl_challenge_2019.md)
+- [Pre-challenge 7DRLs](pre-challenge_7drls.md)
+- [7DRLs made out of challenge](7drls_made_out_of_challenge.md)
+- [7DRL Contest 2005](7drl_contest_2005.md)
+- [2005 Out of Challenge 7DRLs](2005_out_of_challenge_7drls.md)
+- [7DRL Contest 2006](7drl_contest_2006.md)
+- [Orange October Minigun 7DRL Contest 2006](orange_october_minigun_7drl_contest_2006.md)
+- [7DRL Contest 2007](7drl_contest_2007.md)
+- [7DRL Contest 2008](7drl_contest_2008.md)
+- [2008 Out of Challenge 7DRLs](2008_out_of_challenge_7drls.md)
+- [7DRL Contest 2009](7drl_contest_2009.md)
+- [2009 Out of Challenge 7DRLs](2009_out_of_challenge_7drls.md)
+- [7DRL Contest 2010](7drl_contest_2010.md)
+- [2010 Out of Challenge 7DRLs](2010_out_of_challenge_7drls.md)
+- [7DRL Contest 2011](7drl_contest_2011.md)
+- [7DRL Challenge 2012](7drl_challenge_2012.md)
+- [7DRL Challenge 2013](7drl_challenge_2013.md)
+- [7DRL Challenge 2014](7drl_challenge_2014.md)
+- [7DRL Challenge 2015](7drl_challenge_2015.md)
+- [7DRL Challenge 2016](7drl_challenge_2016.md)
+- [7DRL Challenge 2017](7drl_challenge_2017.md)
+- [7DRL Challenge 2018](7drl_challenge_2018.md)
+- [7DRL Challenge 2019](7drl_challenge_2019.md)
 
 ## See also
 
 ---
 
-* [Community Blog](http://7drl.org/)
-* [1DRL Challenge, December 2011](1drl_challenge_december_2011.md)
-* [4DRL Contest 2010](4drl_contest_2010.md)
+- [Community Blog](http://7drl.org/)
+- [1DRL Challenge, December 2011](1drl_challenge_december_2011.md)
+- [4DRL Contest 2010](4drl_contest_2010.md)
