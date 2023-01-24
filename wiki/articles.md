@@ -159,7 +159,7 @@ RogueBasin has articles about these [programming languages](programming_language
 - [D](d.md)
 - [Fortran](fortran.md)
 - [FreeBasic](freebasic.md)
-- [FreePascal](freepascal.md)
+- [FreePascal](free_pascal.md)
 - [Haskell](haskell.md)
 - [JavaScript](javascript.md)
 - [Java](java.md)
