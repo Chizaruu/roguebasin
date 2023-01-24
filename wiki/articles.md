@@ -253,7 +253,7 @@ RogueBasin has articles about these [programming languages](programming_language
 
 - [Line of Sight](line_of_sight.md) is used to determine when a specific destination square is visible from a source square. This can be used to determine whether a player is visible to a monster, the path an arrow takes to a particular enemy, and as a building block for a field of vision algorithm.
 - [Field of Vision](field_of_vision.md) determines all squares visible from a particular source. This is useful when determining which squares to show a player, what squares are lit up by a light source, etc.
-- [Using the libtcod library for FOV, and implementing fog-of-war], part of the python+libtcod tutorial.
+- [Using the libtcod library for FOV, and implementing fog-of-war](complete_roguelike_tutorial,_using_python+libtcod,_part_4.md), part of the python+libtcod tutorial.
 - [C# implementation of field of vision using recursive shadow casting](http://www.evilscience.co.uk/?p=225)
 - [Grid based shadow casting / field of vision](https://gist.github.com/zloedi/9551625)
 
