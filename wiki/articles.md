@@ -181,7 +181,7 @@ RogueBasin has articles about these [programming languages](programming_language
 
 ### Extensibility
 
-- [Roguelike engines](roguelike_engines.md)
+- [Roguelike engine](roguelike_engine.md)
 - [Info Files](info_files.md)
 - [Info File Variant - Compile-to-Code](info_file_variant_compile-to-code.md)
 - [Lua makes info files obsolete](lua_makes_info_files_obsolete.md)
