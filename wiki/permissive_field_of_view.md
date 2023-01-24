@@ -2,7 +2,7 @@
 
 ---
 
-Permissive field of view defines visibility more loosely than other [Field of Vision](field_of_view.md) methods. A destination square is visible from a source square if there is any unobstructed line from some point in the source square to some point in the destination square. This means that players and monsters will automatically 'peek' around corners, for example. It also means that field of view is symmetric. That is to say that if a destination square is visible from a source square, then that source square is also visible from the destination square. Some approximation algorithms might lose the property of guaranteed symmetry.
+Permissive field of view defines visibility more loosely than other [Field of Vision](field_of_vision.md) methods. A destination square is visible from a source square if there is any unobstructed line from some point in the source square to some point in the destination square. This means that players and monsters will automatically 'peek' around corners, for example. It also means that field of view is symmetric. That is to say that if a destination square is visible from a source square, then that source square is also visible from the destination square. Some approximation algorithms might lose the property of guaranteed symmetry.
 
 One tricky corner case are literally the corners. There are two questions that must be answered. Are corners of squares valid points in the source and destination squares for determining visibility? And do corners of walls obstruct line of sight? Different algorithms may answer these questions in different ways.
 
@@ -28,7 +28,7 @@ There are a number of articles describing different methods:
 - [Isaac_s_fast_beamcasting_LOS](isaac_s_fast_beamcasting_los.md) -- An approximate algorithm using 'wide beams' sent out at fixed slopes. The larger the radius, the more beams must be sent out to avoid artifacts.
 - [Mutual_Visibility_Field_Of_View](mutual_visibility_field_of_view.md) -- Uses the corners of squares to determine visibility. In some cases, it does not precisely capture Permissive Field of View. However, the algorithm guarantees symmetry in the field of view.
 - A fast algorithm using pre-cached dependencies is described in the source code for [Dungeon Crawl Stone Soup](dungeon_crawl_stone_soup.md)
-- [^](precise_permissive_field_of_view.md) -- A fast and, in theory, artifact free variation.
+- [Precise Permissive Field of View](precise_permissive_field_of_view.md) -- A fast and, in theory, artifact free variation.
 
 ## Games using Permissive Field of View
 
