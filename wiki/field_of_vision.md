@@ -14,7 +14,7 @@ Some of the most common approaches to field of vision are:
 
 - Light whole level. Just make everything visible, or at least everything close to the player. Many games use this approach and it seems to work.
 - Light whole room. This is the approach used by the original [Rogue](rogue.md). You just make the whole room in which the player character is visible, and all other parts of map not visible. When the character is in a corridor, it can only see one square from where he stands, this doesn't require any sophisticated calculations.
-- [Extremely fast simplified LOS](extremely_fast_simplified_los.mdd) -- Take advantage of the way most roguelike maps are drawn (square rooms connected with corridors).
+- [Extremely fast simplified LOS](extremely_fast_simplified_los.md) -- Take advantage of the way most roguelike maps are drawn (square rooms connected with corridors).
 - [FastLOS](fastlos.md) -- precalculated approximate LOS using a bitwise AND.
 - [Ray casting](ray_casting.md)
 - [Shadow casting](shadow_casting.md)
