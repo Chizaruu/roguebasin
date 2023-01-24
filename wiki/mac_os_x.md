@@ -2,7 +2,7 @@
 
 ---
 
-Developed by Apple Inc. as a successor to [Mac OS](mac_os.md) 9.
+Developed by Apple Inc. as a successor to [Mac OS](mac.md) 9.
 
 See also other [platforms](platforms.md).
 

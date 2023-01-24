@@ -23,7 +23,7 @@ The purpose of this article is to collect portability issues often encountered b
 ---
 
 - Some [Operating systems](platforms.md) (such as any that derive from or pattern [UNIX](unix.md) or follow POSIX standards) are case-sensitive as far as filenames are concerned. Others (like [DOS](dos.md) or [Windows](windows.md)) are case-insensitive. Still others (like HFS , in common use on [OS X](mac_os_x.md)) preserve case but are insensitive to it. One shouldn't rely on any one case behavior to achieve maximum portability.
-- There are [Operating systems](platforms.md) that forbid use of certain characters within file names, most often path separators (e.g., colons in Classic [Mac OS](mac_os.md)). Other characters may require "escaping" in filename references.
+- There are [Operating systems](platforms.md) that forbid use of certain characters within file names, most often path separators (e.g., colons in Classic [Mac OS](mac.md)). Other characters may require "escaping" in filename references.
 - [Operating systems](platforms.md) may also restrict filename length or the total length of an absolute filepath.
 - [DOS](dos.md) and [Windows](windows.md) use backslash as their path separator while [UNIX](unix.md) uses slash. Most Windows APIs will understand the forward slash as a path separator, however.
 

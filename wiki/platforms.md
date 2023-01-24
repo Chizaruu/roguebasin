@@ -8,7 +8,7 @@ Common platforms are:
 
 - [Windows](windows.md)
 - [Linux](linux.md) - Going to support lesser [unices](unix.md) also if [Open Source](open_source.md).
-- [Mac OS](mac_os.md)
+- [Mac OS](mac.md)
 - [Mac OS X](mac_os_x.md)
 - [DOS](dos.md) - More portable than you think, thanks to [DosBOX](http://dosbox.org/), which runs on anything with support for [SDL](sdl.md). However, DOS can be painful to develop for (djgpp compiler, no scripting, no nothing, poor implementation of random()).
 - [Browser](browser.md) - Roguelikes running in a browser through either [JavaScript](javascript.md), [Flash](actionscript.md) or other runtimes.
