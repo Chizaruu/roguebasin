@@ -10,7 +10,7 @@ This article aim for developers looking for an uncommon elegant line of sight so
 
 When looking for line of sight and field of view algorithms i was sure hoping there was the "simple and obvious way" to do things. There is not. In fact, there is close to a dozen of fov implementations to choose from in the wiki only, trying to emulate three main definitions (see next chapter).
 
-Choice must depend of your programming skills of the RL programmer, and the desired behavior of your algorithm. There is several desired behaviors. If you haven't yet, check out [Comparative_study_of_field_of_view_algorithms_for_2D_grid_based_worlds](comparative_study_of_field_of_view_algorithms_for_2D_grid_based_worlds.md) which is a great article to start with.
+Choice must depend of your programming skills of the RL programmer, and the desired behavior of your algorithm. There is several desired behaviors. If you haven't yet, check out [Comparative_study_of_field_of_view_algorithms_for_2D_grid_based_worlds](comparative_study_of_field_of_view_algorithms_for_2d_grid_based_worlds.md) which is a great article to start with.
 
 In this article, we are going to focus on the corner-peeking behavior, as it's a core problem of line of sight algorithmic.
 
