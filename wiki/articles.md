@@ -142,7 +142,6 @@ Ideas for roguelikes are posted regularly on [rgrd](rgrd.md), but over time are 
 - [New Roguelike Tutorial, using Lua+Gideros Mobile](https://programmingbymoonlight.com/roguelike-intro/)
 - [Ananas aus Caracas: rot.js tutorial](rotjs_tutorial.md)
 - [Code design basics](code_design_basics.md)
-- [Portability Issues](portability_issues.md)
 - [Things which are hard to code](things_which_are_hard_to_code.md)
 - [Language in Roguelikes](language_in_roguelikes.md)
 - [Save Files](save_files.md)
