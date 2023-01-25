@@ -378,7 +378,7 @@ Really liked the look of the caves generated with this algorithm, but thought I 
 
 // This saves us from making a bunch of similar conditionals
 // inside our Maze function.
-int dirList[4][2] = {{0, -1}, {1, 0}, {0, 1}, {-1, 0}};
+int dirList[4][2] = { {0, -1}, {1, 0}, {0, 1}, {-1, 0} };
 
 int map[MAZE_W][MAZE_H];
 int cell[MAX_C_W][MAX_C_H];
