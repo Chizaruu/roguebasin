@@ -216,8 +216,6 @@ RogueBasin has articles about these [programming languages](programming_language
 - [C# implementation of simple map builder](http://www.evilscience.co.uk/?p=553)
 - [Random Walk Cave Generation](random_walk_cave_generation.md)
 
-- See also: [Category:WorldGeneration](worldgeneration.md)
-
 ### Combat
 
 - [Simple Combat in the Dungeon](simple_combat_in_the_dungeon.md)
