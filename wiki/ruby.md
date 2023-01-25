@@ -40,7 +40,7 @@ That's it! You can now use ncurses (see the zdennis's ncurses examples at <http:
 
 ### Field of View
 
-A few [field of view](field_of_view.md) algorithms have been implemented in Ruby
+A few [field of view](field_of_vision.md) algorithms have been implemented in Ruby
 
 - [Ruby shadowcasting implementation](ruby_shadowcasting_implementation.md)
 - [Ruby precise permissive FOV implementation](ruby_precise_permissive_FOV_implementation.md)

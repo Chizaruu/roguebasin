@@ -209,14 +209,12 @@ RogueBasin has articles about these [programming languages](programming_language
 - [PHP dungeon generator using tile masks](http://frogasaurus.wordpress.com/)
 - [Simple maze](simple_maze.md)
 - [Wilderness generation using Voronoi diagrams](http://roguelikedeveloper.blogspot.com/2007/07/wilderness-generation-using-voronoi.html)
-- [A Python map structure] and [a simple dungeon generator], part of the python+libtcod tutorial.
+- [A Python map structure](complete_roguelike_tutorial_using_python+libtcod_part_2.md#The_Map) and [a simple dungeon generator](complete_roguelike_tutorial_using_python+libtcod_part_3.md), part of the python+libtcod tutorial.
 - [Winding ways](winding_ways.md)
 - [Simple Rogue levels](simple_rogue_levels.md)
 - [Random Zone Generation](random_zone_generation.md)
 - [C# implementation of simple map builder](http://www.evilscience.co.uk/?p=553)
 - [Random Walk Cave Generation](random_walk_cave_generation.md)
-
-- See also: [Category:WorldGeneration](worldgeneration.md)
 
 ### Combat
 
