@@ -90,7 +90,7 @@ D = Door
 W = Wall under consideration
 ```
 
-1. The first room
+`1. The first room`
 
 ```text
 #####
@@ -98,7 +98,7 @@ W = Wall under consideration
 #####
 ```
 
-2. Select a random wall
+`2. Select a random wall`
 
 ```text
 #####
@@ -106,7 +106,7 @@ W = Wall under consideration
 #####
 ```
 
-3. Scan area for new corridor (including space on all sides)
+`3. Scan area for new corridor (including space on all sides)`
 
 ```text
 #####**********
@@ -114,7 +114,7 @@ W = Wall under consideration
 #####**********
 ```
 
-4. It's clear, so add new feature
+`4. It's clear, so add new feature`
 
 ```text
 #####
@@ -122,7 +122,7 @@ W = Wall under consideration
 #####
 ```
 
-5. Pick another wall:
+`5. Pick another wall:`
 
 ```text
 #####     W
@@ -130,7 +130,7 @@ W = Wall under consideration
 #####
 ```
 
-6. Scan area for new Room
+`6. Scan area for new Room`
 
 ```text
        ******
@@ -143,7 +143,7 @@ W = Wall under consideration
 #####
 ```
 
-7. Area is OK, so add new room. Throw in a chest (C) for good measure
+`7. Area is OK, so add new room. Throw in a chest (C) for good measure`
 
 ```text
         ####
@@ -155,7 +155,7 @@ W = Wall under consideration
 #####
 ```
 
-8. Add another corridor as before
+`8. Add another corridor as before`
 
 ```text
              #
@@ -169,7 +169,7 @@ W = Wall under consideration
 #####
 ```
 
-9. This time, we try to add corridor to the second room.
+`9. This time, we try to add corridor to the second room.`
 
 ```text
              #
@@ -183,7 +183,7 @@ W = Wall under consideration
 #####
 ```
 
-10. This fails since the area being scanned is already used.
+`10. This fails since the area being scanned is already used.`
 
 ```text
              #
@@ -197,7 +197,7 @@ W = Wall under consideration
 #####
 ```
 
-11. Fancy features. Add an octagonal room
+`11. Fancy features. Add an octagonal room`
 
 ```text
              #
@@ -211,7 +211,7 @@ W = Wall under consideration
 #####
 ```
 
-12. A secret door hides a fiendishly trapped corridor:
+`12. A secret door hides a fiendishly trapped corridor:`
 
 ```text
              #
@@ -225,7 +225,7 @@ W = Wall under consideration
 #####
 ```
 
-13. Hey, I could go on and on...
+`13. Hey, I could go on and on...`
 
 ## Conclusion
 
