@@ -53,12 +53,12 @@ This is a topic that has caused vehement debates in the [rec.games.roguelike.dev
 
 Let's see about the features of rogue:
 
-* Single player
-* [Text based](ascii.md)
-* [Randomly](random.md) generated [dungeon](dungeon.md) levels
-* Turn based (i.e. nothing happens until you press a key that does something)
-* The emphasis is on good gameplay rather than good graphics
-* [Death is permanent](permadeath.md). No loading saved games, no coming back to life. Once you die, you can only start from the beginning with a new character.
+- Single player
+- [Text based](ascii.md)
+- [Randomly](random.md) generated [dungeon](dungeon.md) levels
+- Turn based (i.e. nothing happens until you press a key that does something)
+- The emphasis is on good gameplay rather than good graphics
+- [Death is permanent](permadeath.md). No loading saved games, no coming back to life. Once you die, you can only start from the beginning with a new character.
 
 Firstly, you have to realise that games are not as easy to classify into genres as books or films are. There are a lot of games that don't belong into any one genre. Purists may argue that any game that is graphical and real-time (as opposed to turn-based) cannot be a roguelike, but not everyone agrees.
 
@@ -66,10 +66,10 @@ There is some overlap between roguelikes and role-playing games, adventure games
 
 Briefly then, "roguelike" is more of a feeling you get in a game rather than a set of criteria that have to be followed. Just to make things more confusing, here are some more things that can be found in modern roguelikes:
 
-* "Dungeons and dragons" style of skills
-* The maker is usually 1 person. The more popular games have "dev teams" which work on them later
-* [Magic](magic.md) systems usually implemented
-* Usually set in [fantasy](fantasy.md) middle ages (exceptions exist; sci-fi roguelikes do exist, see [Theme](setting-story-and-mood/themes.md)
+- "Dungeons and dragons" style of skills
+- The maker is usually 1 person. The more popular games have "dev teams" which work on them later
+- [Magic](magic.md) systems usually implemented
+- Usually set in [fantasy](fantasy.md) middle ages (exceptions exist; sci-fi roguelikes do exist, see [Theme](setting-story-and-mood/themes.md)
 
 ### What are the major roguelikes today?
 
@@ -101,39 +101,39 @@ Dungeon Crawl is a roguelike with a strong emphasis on the "rogue" part of the g
 ### What roguelike websites / newsgroups are there?
 
 rec.games.roguelike.angband
-    Discusses Angband and its variants.
+Discusses Angband and its variants.
 
 rec.games.roguelike.nethack
-    Discusses NetHack and its variants.
+Discusses NetHack and its variants.
 
 rec.games.roguelike.adom
-    Discusses ADOM.
+Discusses ADOM.
 
 rec.games.roguelike.misc
-    Discusses all roguelikes which don't have a newsgroup of their own yet.
+Discusses all roguelikes which don't have a newsgroup of their own yet.
 
 [rec.games.roguelike.development](rgrd.md)
-    Discusses all topics which are related to the development of roguelikes.
+Discusses all topics which are related to the development of roguelikes.
 
 rec.games.roguelike.announce
-    A moderated group for announcements about roguelikes.
+A moderated group for announcements about roguelikes.
 
 rec.games.roguelike.moria
-    Discusses Moria, the parent of Angband. This newsgroup is almost dead.
+Discusses Moria, the parent of Angband. This newsgroup is almost dead.
 
 rec.games.roguelike.rogue
-    Discusses Rogue, the original roguelike. This newsgroup is almost dead.
+Discusses Rogue, the original roguelike. This newsgroup is almost dead.
 
 alt.games.omega
-    Discusses Omega. This newsgroup is almost dead, but there's a Yahoo Group for discussing Omega's development and maintenance.
+Discusses Omega. This newsgroup is almost dead, but there's a Yahoo Group for discussing Omega's development and maintenance.
 
 ### What should I know when first posting to r.g.r.d?
 
 Some places are more newbie-friendly than others. The developers at rec.games.roguelike.development may sometimes show little patience with questions that have been asked many times before. Here are two simple things you can do to ensure that you get off to a good start:
 
-* Do some research before you ask a question. If the answer is available via a search engine, why ask here? If the research does not turn up a satisfactory answer, then by all means ask, and you will be able to ask a better, more focused question as a result of your earlier work. Demonstrate that you have some initiative, and you will get a much more helpful response. As well as searching the web in general, search r.g.r.d.
+- Do some research before you ask a question. If the answer is available via a search engine, why ask here? If the research does not turn up a satisfactory answer, then by all means ask, and you will be able to ask a better, more focused question as a result of your earlier work. Demonstrate that you have some initiative, and you will get a much more helpful response. As well as searching the web in general, search r.g.r.d.
 
-* Don't ask what the best programming language for a roguelike is, or if a particular language is suitable for roguelike programming. If you want to know why, search r.g.r.d via Google Groups for "best programming language" and you will find many flamewars sparked by that question and its variants. The topic has been done to death, and many developers are tired of it.
+- Don't ask what the best programming language for a roguelike is, or if a particular language is suitable for roguelike programming. If you want to know why, search r.g.r.d via Google Groups for "best programming language" and you will find many flamewars sparked by that question and its variants. The topic has been done to death, and many developers are tired of it.
 
 ## GENERAL DEVELOPMENT QUESTIONS
 
@@ -161,7 +161,7 @@ Firstly, a variant is a roguelike based on the source code of another roguelike,
 
 Making a variant isn't easy for several reasons. Most roguelike sources that are out there are VERY badly written-- lots of poor programming techniques, hacks (more than 1600 in Angband), lack of comments, difficult to understand variable and function names, and so on. However, making a variant is much easier than starting from the beginning by yourself.
 
-Firstly, make sure that it is allowed for the particular roguelike you are interested in, and that you aren't breaking any law by making this variant. You will most likely need to change the name of the game, to comment every source file you change with something like "Changed by ___ on ___", and log the changes you make in the history file. Employing version control (like Git) will save you the pain of differentiating between existing bugs and bugs introduced by your changes.
+Firstly, make sure that it is allowed for the particular roguelike you are interested in, and that you aren't breaking any law by making this variant. You will most likely need to change the name of the game, to comment every source file you change with something like "Changed by **_ on _**", and log the changes you make in the history file. Employing version control (like Git) will save you the pain of differentiating between existing bugs and bugs introduced by your changes.
 
 Secondly, play the game A LOT. Decide what exactly you would like to change. Make a list of things to change. Then obtain a copy of the source code, and see which compilers will compile it. Get one of those. Compile the game without changing anything. If it doesn't compile, get it to compile before changing anything.
 
@@ -185,24 +185,24 @@ Often when you start to make a roguelike game, you won't even know what the desi
 
 ### Why do many roguelikes later undergo a major rewrite?
 
-* Poor design. If you planned enough from the beginning, you would cater for everything, or at least most of the things, that you want to implement. Then you might only need a small rewrite.
-* Change of maintainer. Most popular roguelikes go through long chains of maintainers and dev teams. As soon as one guy gets the source code, the first thing he does is rewrite it so that it fits his ideas.
-* Poor programming techniques. I would say most of the rewrites are there to fix bugs. Some programming languages are better structured and better suited for use for long programs like roguelikes. It has been shown that when your code exceeds 100000 lines, the cost of maintaining it and debugging it exceeds the cost of programming new things. Object Oriented programming, functions and splitting up into files help to reduce this problem.
-* The developer has gained knowledge about designing roguelikes from the initial effort and has undertaken a rewrite in order to put it to use.
-* When the developer decides to extend the game in an unanticipated way it often requires fundamental redesign. For example, an extension like having spells take effect after some delay may require a complete redesign and rewrite of the scheduling system.
+- Poor design. If you planned enough from the beginning, you would cater for everything, or at least most of the things, that you want to implement. Then you might only need a small rewrite.
+- Change of maintainer. Most popular roguelikes go through long chains of maintainers and dev teams. As soon as one guy gets the source code, the first thing he does is rewrite it so that it fits his ideas.
+- Poor programming techniques. I would say most of the rewrites are there to fix bugs. Some programming languages are better structured and better suited for use for long programs like roguelikes. It has been shown that when your code exceeds 100000 lines, the cost of maintaining it and debugging it exceeds the cost of programming new things. Object Oriented programming, functions and splitting up into files help to reduce this problem.
+- The developer has gained knowledge about designing roguelikes from the initial effort and has undertaken a rewrite in order to put it to use.
+- When the developer decides to extend the game in an unanticipated way it often requires fundamental redesign. For example, an extension like having spells take effect after some delay may require a complete redesign and rewrite of the scheduling system.
 
 ### What needs to be planned in advance?
 
-* The [story](story.md), [theme](setting-story-and-mood/themes.md) and setting. These determine practically everything.
-* The world. How it will look. How big it will be.
-* The [terrain](terrain.md) (e.g. town, wilderness, dungeons, special places...)
-* The Scheduling system (eg, how turns and speed work, whether and how actions can be interrupted by other actions, etc).
-* The [items](items.md). Major categories (e.g. weapons, armour, potions, scrolls, food...). Leave detail (e.g. how much the minor healing potion heals you by) for later. Think about how the items will be used and by whom. Plan the basic rules (e.g. you can only wield 2 weapons if you are a fighter, you need space for arrows if you equip a bow, how many rings can someone wear, etc).
-* The [magic](magic.md) system. Spell types. Who uses spells and when. How you learn spells. What they cost. Which classes can use them. How to implement permanent spells (e.g. enchantments that last, like recharging a staff).
-* Shopping. If your game will have shops, how will they work? Will the Player be able to rob them? If so how does that work?
-* Interaction with other creatures (maybe negotiating your way out of battles?).
-* Saving and restoring games Level loading system.
-* Win Conditions How to finish the game and what happens when you do.
+- The [story](story.md), [theme](setting-story-and-mood/themes.md) and setting. These determine practically everything.
+- The world. How it will look. How big it will be.
+- The [terrain](terrain.md) (e.g. town, wilderness, dungeons, special places...)
+- The Scheduling system (eg, how turns and speed work, whether and how actions can be interrupted by other actions, etc).
+- The [items](items.md). Major categories (e.g. weapons, armour, potions, scrolls, food...). Leave detail (e.g. how much the minor healing potion heals you by) for later. Think about how the items will be used and by whom. Plan the basic rules (e.g. you can only wield 2 weapons if you are a fighter, you need space for arrows if you equip a bow, how many rings can someone wear, etc).
+- The [magic](magic.md) system. Spell types. Who uses spells and when. How you learn spells. What they cost. Which classes can use them. How to implement permanent spells (e.g. enchantments that last, like recharging a staff).
+- Shopping. If your game will have shops, how will they work? Will the Player be able to rob them? If so how does that work?
+- Interaction with other creatures (maybe negotiating your way out of battles?).
+- Saving and restoring games Level loading system.
+- Win Conditions How to finish the game and what happens when you do.
 
 ### What do people like about roguelikes?
 
@@ -230,11 +230,11 @@ It depends on preference. [Utumno](utumno.md) is an [Angband](angband.md) varian
 
 If roguelikes don't need to be in ASCII, why are most of them?
 
-* Text is very portable.
-* It's ~~ridiculous~~ traditional. Most people programming roguelikes come from a tradition of playing other roguelikes, and they are done the same way.
-* It's fast. A museum style computer can probably show text at the same speed as the latest one.
-* It's quick and easy to make. You don't have to have lots of artist friends to draw for you. You don't have to spend hours modeling.
-* Letters are very readable, even when they are small - they were designed for just that. They are more readable than (most) graphical tiles, especially isometric ones. Real 3D models successfully compete with letters, but only if the dungeon view can be freely rotated, tilted and zoomed.
+- Text is very portable.
+- It's ~~ridiculous~~ traditional. Most people programming roguelikes come from a tradition of playing other roguelikes, and they are done the same way.
+- It's fast. A museum style computer can probably show text at the same speed as the latest one.
+- It's quick and easy to make. You don't have to have lots of artist friends to draw for you. You don't have to spend hours modeling.
+- Letters are very readable, even when they are small - they were designed for just that. They are more readable than (most) graphical tiles, especially isometric ones. Real 3D models successfully compete with letters, but only if the dungeon view can be freely rotated, tilted and zoomed.
 
 ### How do you add graphics?
 
@@ -278,9 +278,9 @@ In general, role playing games are the ones where story is important. For a rogu
 
 Some unexplored ideas that would be good for a roguelike might be:
 
-* You are trapped in an out-of-control computer, and it's making deadly monsters. The goal is to stay alive and find a way out.
+- You are trapped in an out-of-control computer, and it's making deadly monsters. The goal is to stay alive and find a way out.
 
-* You are in a post-apocalyptic future (no/limited guns). There is a war between humans and robots. You are on the losing side...
+- You are in a post-apocalyptic future (no/limited guns). There is a war between humans and robots. You are on the losing side...
 
 ### What [themes](setting-story-and-mood/themes.md) and settings are possible for a roguelike?
 
@@ -290,12 +290,12 @@ Most roguelikes are set in the middle ages. There are ones in a science fiction 
 
 Relatively unexplored themes are:
 
-* The Wild West
-* The Far East
-* The distant past (stone ages)
-* Alternative histories (e.g. Atlantis)
-* The modern era
-* Science fiction settings
+- The Wild West
+- The Far East
+- The distant past (stone ages)
+- Alternative histories (e.g. Atlantis)
+- The modern era
+- Science fiction settings
 
 ### What is / how do I make a good atmosphere?
 
@@ -311,18 +311,18 @@ A [quest](quests.md) is a set of actions you have to do in order for something t
 
 ### What are the standard types of quests?
 
-* Assassination quests:
-  * "Kill X"
-  * "Capture X alive"
-* Searching quests:
-  * "Find X"
-  * "Get to X"
-  * "Gather X of gold"
-* Competition quests:
-  * Do any of the above quests, but before your adversary (e.g. get to a town before your adversary)
-* Story quests:
-  * "Talk to X"
-* Any of the above, but they do something special (e.g. there is a story associated with finding a special item)
+- Assassination quests:
+  - "Kill X"
+  - "Capture X alive"
+- Searching quests:
+  - "Find X"
+  - "Get to X"
+  - "Gather X of gold"
+- Competition quests:
+  - Do any of the above quests, but before your adversary (e.g. get to a town before your adversary)
+- Story quests:
+  - "Talk to X"
+- Any of the above, but they do something special (e.g. there is a story associated with finding a special item)
 
 ### How do I make good quests?
 
@@ -346,11 +346,11 @@ Firstly, dungeons are made of rows and columns of tiles. If you plan to have var
 
 The tiles store:
 
-* The type of tile (e.g. wall, grass, floor, river)
-* The properties of the tile (Can you walk through it? Is it illuminated? Has it been explored by the player?)
-* A list of items on the tile
-* The monster on the tile
-* Any other data (e.g. a trap, a hole in the floor, stairs)
+- The type of tile (e.g. wall, grass, floor, river)
+- The properties of the tile (Can you walk through it? Is it illuminated? Has it been explored by the player?)
+- A list of items on the tile
+- The monster on the tile
+- Any other data (e.g. a trap, a hole in the floor, stairs)
 
 You should keep your tiles as small as possible. Angband has around 16 bytes per tile. Don't go much further than that; you'll see why in a moment.
 
@@ -389,7 +389,7 @@ The improved "digging rectangle" algorithm would then look like this:
 3. Select a random location in the dungeon (x, y).
 4. Randomly select the room length (RoomLength).
 5. Randomly select the room height (RoomHeight).
-6. If the area of this room (calculated by RoomLength*RoomHeight) is greater than the maximum area for a room, go back to step 4.
+6. If the area of this room (calculated by RoomLength\*RoomHeight) is greater than the maximum area for a room, go back to step 4.
 7. If the room cannot fit in the dungeon, or overlaps with other rooms, go back to step 3.
 8. Fill the rectangle given by (x, y) and (x + RoomLength, y + RoomHeight) with empty space.
 9. Go back to step 3 until all the rooms are created.
@@ -448,7 +448,7 @@ bool AreAllRoomsFilled(void)
 }
 ```
 
-In some cases you might *want* a secret room or passage which is cut off from the rest of the dungeon, and to which you can only get through a special spell or complicated digging. If so, make provisions for it.
+In some cases you might _want_ a secret room or passage which is cut off from the rest of the dungeon, and to which you can only get through a special spell or complicated digging. If so, make provisions for it.
 
 ### How do you make a town?
 
@@ -460,10 +460,10 @@ Depending on how you want to interact with the stores, stepping on a shop doorwa
 
 There are a wide variety of different wilderness generation algorithms. However, the simplest is to create wilderness levels is to have a variety of different terrain types, such as trees, water and sand, and use these in combination to create a wilderness level.
 
-* Pick one terrain type that the player can move through and fill a dungeon level completely with this terrain type.
-* Then pick an impassable terrain type, and draw this around the edge of the dungeon level. You may want this terrain type to have rough edges. In this case, pick a y for the top left hand corner. Fill the first column from the edge to the y with the impassable terrain. Then move east in one grid increments and randomly increase or decrease y by one at each step, filling in the columns as you do. Limit y between 1 and some maximum value that ensures that your map is not completely filled with impassable terrain. As you reach the top right hand corner, you'll do the same, but working the rows going south, then columns going west from the bottom right corner, then rows going north from the bottom left corner.
-* Pick two to three more terrain types, and drunken walk these around the map, to create natural looking terrain. It is not important at this stage that you worry about connectivity.
-* Finally, to ensure connectivity, place the dungeon entrance, the player's starting point and other interesting areas on the map, and connect these using the tunnelling algorithm you used for building the dungeon. You'll need to change terrain differently than you would for the tunnelling algorithm through the dungeon: for instance, tunnelling through ice might result in snow. This can still result in disconnected areas on the map, but all the interesting points should be connected. Getting into these disconnected areas should just serve as a reminder that the player shouldn't risk getting lost in the wilderness.
+- Pick one terrain type that the player can move through and fill a dungeon level completely with this terrain type.
+- Then pick an impassable terrain type, and draw this around the edge of the dungeon level. You may want this terrain type to have rough edges. In this case, pick a y for the top left hand corner. Fill the first column from the edge to the y with the impassable terrain. Then move east in one grid increments and randomly increase or decrease y by one at each step, filling in the columns as you do. Limit y between 1 and some maximum value that ensures that your map is not completely filled with impassable terrain. As you reach the top right hand corner, you'll do the same, but working the rows going south, then columns going west from the bottom right corner, then rows going north from the bottom left corner.
+- Pick two to three more terrain types, and drunken walk these around the map, to create natural looking terrain. It is not important at this stage that you worry about connectivity.
+- Finally, to ensure connectivity, place the dungeon entrance, the player's starting point and other interesting areas on the map, and connect these using the tunnelling algorithm you used for building the dungeon. You'll need to change terrain differently than you would for the tunnelling algorithm through the dungeon: for instance, tunnelling through ice might result in snow. This can still result in disconnected areas on the map, but all the interesting points should be connected. Getting into these disconnected areas should just serve as a reminder that the player shouldn't risk getting lost in the wilderness.
 
 If you want multiple wilderness areas, allow the player to travel from one of these wilderness areas to another. This could be done by having a travel command which presents a choice of adjacent wilderness locations to travel to, when you are near the edge of the map, or by having stairs which connect to different adjacent wilderness locations depending on which edge of the map they are on.
 
@@ -504,7 +504,7 @@ In other words, small quantities of data with lots of variety will not work well
 
 Since most things in your roguelike should be stored as structures or classes, it might seem like you should compress / store structures as a whole. But there are usually a lot more differences between structures as a whole than there are between the fields those structures contain. In this case, it is better to RLE compress and store the fields separately. On the other hand, in some cases it is better to compress whole structures. You have to try it out and see what works better.
 
-If there is a lot of similar data, with very few exceptions, leave out those exceptions and store them later with the location they should be at. For instance, if the string was "-*-------", you could just store "9- 2*", which means the string contains 9 minus signs, and the sign at the second position is a star. If you decide to use this, find some way to separate the exceptions from the rest of the data. In this case I used a space. You could just assume that the exceptions will be read in when the string has been filled completely. Remember to count the exceptions and write the count to the file before them so that you know how many to expect.
+If there is a lot of similar data, with very few exceptions, leave out those exceptions and store them later with the location they should be at. For instance, if the string was "-_-------", you could just store "9- 2_", which means the string contains 9 minus signs, and the sign at the second position is a star. If you decide to use this, find some way to separate the exceptions from the rest of the data. In this case I used a space. You could just assume that the exceptions will be read in when the string has been filled completely. Remember to count the exceptions and write the count to the file before them so that you know how many to expect.
 
 One last tip. You can use a bit-packed array, with 1's where there are unusual values, followed by those values, in order. If you want, you can compress those values or even the bit-packed array, but remember to decompress them somewhere before you try to decipher them.
 
@@ -548,7 +548,7 @@ The exact monster processing will be discussed later.
 
 ### What is LoS, and why and how do you do it?
 
-LoS ([Line of Sight](line_of_sight.md)) algorithms are ways to determine whether a particular place is visible to the player / monster. These are related to FoV ([Field of Vision](field_of_view.md)) algorithms, which are used to determine every place which is visible to a player / monster. The former may be a subroutine of the latter.
+LoS ([Line of Sight](line_of_sight.md)) algorithms are ways to determine whether a particular place is visible to the player / monster. These are related to FoV ([Field of Vision](field_of_vision.md)) algorithms, which are used to determine every place which is visible to a player / monster. The former may be a subroutine of the latter.
 
 The most common use of these algorithms is to determine what the player or monsters can currently see. The second most common use of these algorithms is to determine what is lit given a light source at a particular location. In most roguelikes, the dungeon starts in complete darkness. When you walk around, you reveal some of it. But you only see monsters or terrain that are lit and within your FoV.
 
@@ -592,11 +592,11 @@ A linked list is a more advanced programming structure. It consists of a bunch o
 
 ### How do you make randomly generated items?
 
-* Decide what percentage of items in the game should be random
-* Decide what categories of items should be randomly generated
-* Decide what things should be random in each category
-* Decide what the range for those random values should be
-* At the start of a game, generate the random items and put them in the big item array
+- Decide what percentage of items in the game should be random
+- Decide what categories of items should be randomly generated
+- Decide what things should be random in each category
+- Decide what the range for those random values should be
+- At the start of a game, generate the random items and put them in the big item array
 
 ### Which kinds of monsters should I use in my roguelike?
 
@@ -626,7 +626,7 @@ Of course, it would be a lot more complicated. There is far more decisions to be
 ```text
             ATTACK        APPROACH              RUN
 ATTACK                    Player runs away      Likely to die
-APPROACH    Close enough                       
+APPROACH    Close enough
 RUN                       Healthy again
 ```
 
@@ -658,21 +658,21 @@ Tracking by sound also works. For each action that makes a sound, start with a n
 
 Monsters who remember the sound then go in the direction of the tiles with the highest amount of sound. Maybe every time they hear sound, they start listening better for new sounds, and becoming more aware of smells? What is nice about sound and smell is how you magic and items which change them bring in all kinds of new strategies (e.g. an invisibility spell isn't enough any more, because some monsters can sniff you out and attack anyway).
 
-You may want to do pathfinding with a general pathfinding algorithm like A* or Dijkstra. These will find the shortest path (if any) between two points on the map. You might want to use these for some special monsters that know the location of the player (through magic or something). The problem with general pathfinding algorithms is that they are slow, and may be difficult to learn and program (unless you know a lot of Graph Theory). Also, since the player is moving, and monsters are moving, and new obstacles are coming around, you would have to trace a path every few turns to make sure it is still possible (no new obstacles). This is very computationally expensive, so like I said, it isn't good to use for every single monster, only for some. It can also be used for moving the player; in some games (a.k.a. Diablo/2), you click with the mouse where you want the player to go, and he walks there using the shortest path and avoiding obstacles and everything else in the way.
+You may want to do pathfinding with a general pathfinding algorithm like A\* or Dijkstra. These will find the shortest path (if any) between two points on the map. You might want to use these for some special monsters that know the location of the player (through magic or something). The problem with general pathfinding algorithms is that they are slow, and may be difficult to learn and program (unless you know a lot of Graph Theory). Also, since the player is moving, and monsters are moving, and new obstacles are coming around, you would have to trace a path every few turns to make sure it is still possible (no new obstacles). This is very computationally expensive, so like I said, it isn't good to use for every single monster, only for some. It can also be used for moving the player; in some games (a.k.a. Diablo/2), you click with the mouse where you want the player to go, and he walks there using the shortest path and avoiding obstacles and everything else in the way.
 
 A quick algorithm and explanation of pathfinding (since I couldn't find any and had to learn the hard way): This is something like Djkstra's algorithm. What happens is there are 2 lists: OPEN and CLOSED. The OPEN list stores a list of tiles which are possible candidates for a shortest path, and the CLOSED list stores the tiles we've been through, so they aren't unnecessarily repeated. The "movement cost" is the number of steps the monster has to take to get to that tile, walking on the path associated with that tile. New tiles are only added to the OPEN list if they don't exist, and tiles only replace other tiles if they have shorter paths. Anyway, the algorithm is:
 
 1. Find the destination tile (where the player is).
 2. Put the starting tile (where the monster is) on the OPEN list. It's starting cost is zero.
 3. While the OPEN list is not empty, and a path isn't found:
-    1. Get the tile from the OPEN list with the lowest movement cost. Let's call it the CURRENT tile.
-    2. If this is the destination tile, the path has been found. Exit the loop now.
-    3. Find the tiles to which you can immediately walk to from this tile. These would the tiles around this tile, which don't contain obstacles. Call these tiles "successors".
-    4. For each successor:
-        1. Set the successor's parent to the CURRENT tile.
-        2. Set the successor's movement cost to the parent's movement cost, plus 1 (for diagonal movements, add more if it takes longer to go diagonally in your game).
-        3. If the successor doesn't exist on either the OPEN list or the CLOSED list, add it to the OPEN list. Otherwise, if the successor's movement cost is lower than the movement cost of the same tile on one of the lists, delete the occurrences of the successor from the lists add the successor to the OPEN list Otherwise, if the successor's movement cost is higher than that of the same tile on one of the lists, get rid of the successor
-    5. Delete the CURRENT tile from the OPEN list, and put it on the CLOSED list.
+   1. Get the tile from the OPEN list with the lowest movement cost. Let's call it the CURRENT tile.
+   2. If this is the destination tile, the path has been found. Exit the loop now.
+   3. Find the tiles to which you can immediately walk to from this tile. These would the tiles around this tile, which don't contain obstacles. Call these tiles "successors".
+   4. For each successor:
+      1. Set the successor's parent to the CURRENT tile.
+      2. Set the successor's movement cost to the parent's movement cost, plus 1 (for diagonal movements, add more if it takes longer to go diagonally in your game).
+      3. If the successor doesn't exist on either the OPEN list or the CLOSED list, add it to the OPEN list. Otherwise, if the successor's movement cost is lower than the movement cost of the same tile on one of the lists, delete the occurrences of the successor from the lists add the successor to the OPEN list Otherwise, if the successor's movement cost is higher than that of the same tile on one of the lists, get rid of the successor
+   5. Delete the CURRENT tile from the OPEN list, and put it on the CLOSED list.
 4. If the while loop has been ended because the OPEN list is empty, there is no path.
 5. If this is not the case, the last tile pulled from the OPEN list, and its parents, describe the shortest path (in reverse order - i.e. from the player to the monster - you should read the list of tiles back to front).
 
@@ -690,17 +690,17 @@ Neural nets are a way for a computer to learn. They are a difficult and complica
 
 The inputs to a monster neural net could be:
 
-* Current state of health (hit point percentage)
-* Current opponent's state of health (probably also a percentage)
-* Distance from opponent
-* Damage done by previous attack
+- Current state of health (hit point percentage)
+- Current opponent's state of health (probably also a percentage)
+- Distance from opponent
+- Damage done by previous attack
 
 The outputs:
 
-* Movement towards the opponent
-* Movement away from the opponent (running away :-)
-* Some or other attack
-* A spell
+- Movement towards the opponent
+- Movement away from the opponent (running away :-)
+- Some or other attack
+- A spell
 
 You train the net by comparing the damage done to the opponent, with the damage received from the opponent. With a little practise, the neural net would learn to run when it is near dead, to go closer to the opponent when it is far, to use attacks which do the most damage and so on. One thing to remember, is that if you plan to have neural nets for each creature, don't destroy the net when the creature dies. Then all the learning is lost. Rather use a net for all kinds of that creature (e.g. a neural net for all orcs).
 
@@ -762,10 +762,10 @@ Of course you can. Look at "Dungeon Hack" or "Diablo" for example. Real-time com
 
 ---
 
-* David Damarell (NetHack description, question about money from roguelikes)
-* Bridget (list of newsgroups)
-* Jens Baader (list of roguelikes and newsgroups)
-* Philip Swartzleonard (who makes roguelikes)
-* [Kornel Kisielewicz](kornel_kisielewicz.md) (wikified)
+- David Damarell (NetHack description, question about money from roguelikes)
+- Bridget (list of newsgroups)
+- Jens Baader (list of roguelikes and newsgroups)
+- Philip Swartzleonard (who makes roguelikes)
+- [Kornel Kisielewicz](kornel_kisielewicz.md) (wikified)
 
 If your name isn't here, and you see your text somewhere on this, please raise an issue, with what you wrote, so I can add you in.
