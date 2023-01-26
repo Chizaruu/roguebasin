@@ -56,4 +56,4 @@ Comments, questions? I'm open and ready for discussion. Oh, and sorry for my rea
 ---
 
 * [Kornel Kisielewicz](kornel_kisielewicz.md)
-* [Horror in Roguelike Games, Part 1 : Gore](gore.md#Horror)
+* [Horror in Roguelike Games, Part 1 : Gore](gore.md)

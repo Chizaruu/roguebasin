@@ -19,7 +19,7 @@ One tricky corner case are literally the corners. There are two questions that m
 - The most complicated method to understand and implement (and therefore debug).
 - The player cannot sneak up on monsters more easily.
 - May ruin play balance of current games.
-- It is more difficult for the player to withdraw from ranged combat (but easier to stay out of range, see [Retreating is safe](discussion_field_of_vision.md#Extra_visibility_properties)).
+- It is more difficult for the player to withdraw from ranged combat (but easier to stay out of range, see [Retreating is safe](discussion_field_of_vision.md#extra-visibility-properties)).
 
 ## Algorithms
 

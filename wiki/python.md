@@ -24,34 +24,34 @@ Python's rapid speed of development and human-readable code makes it an excellen
 
 ---
 
-General:
+### General
 
 - [Complete Roguelike Tutorial, using python+libtcod](complete_roguelike_tutorial_using_python+libtcod.md)
 
-Field of View and Line of Sight:
+### Field of View and Line of Sight
 
 - [Python shadowcasting implementation](python_shadowcasting_implementation.md) - Python code for field-of-view calculation using Bjorn Bergstrom's excellent [recursive shadowcasting algorithm](fov_using_recursive_shadowcasting.md).
 - [Permissive Field of View in Python](permissive_field_of_view_in_python.md) - An implementation of the [precise Permissive Field of View](precise_permissive_field_of_view.md) algorithm in Python.
 - [Raycasting_in_python](raycasting_in_python.md) - A python implementation of brute force raycasting.
-- [Bresenham's_Line_Algorithm#Python](breshenhams_line_algorithm.md#Python) - Bresenham's Line Algorithm for line of sight.
+- [Bresenham's_Line_Algorithm#Python](breshenhams_line_algorithm.md#python) - Bresenham's Line Algorithm for line of sight.
 
-Pathfinding
+### Pathfinding
 
 - [A Python 3 and 2 Pathfinder with Pygame Example](a_python_3_and_2_pathfinder_with_pygame_example.md) - A Python 3 and 2 pathfinder that uses A\* and Dijkstra pathfinding with a Pygame example.
 
-Map Generation:
+### Map Generation
 
 - [Dungeon builder written in Python](dungeon_builder_written_in_python.md) - A dungeon builder.
 - [A Simple Dungeon Generator for Python 2 or 3](a_simple_dungeon_generator_for_python_2_or_3.md) - A simple and adaptable python 2 or 3 dungeon generator.
 - [Python_Curses_Example_of_Dungeon-Building_Algorithm](python_curses_example_of_dungeon-building_algorithm.md) - An example of a dungeon building algorithm.
 - [An_Implementation_of_City_Generation_by_Leaf_Venation](an_implementation_of_city_generation_by_leaf_venation.md) - A city generator in Tk.
 
-Scheduling:
+### Scheduling
 
 - [A simple turn scheduling system -- Python implementation](a_simple_turn_scheduling_system_--_python_implementation.md) - A simple time system for Roguelikes.
 - [A_priority_queue_based_turn_scheduling_system](a_priority_queue_based_turn_scheduling_system.md) - A turn scheduling system that uses a priority queue.
 
-Name Generation:
+### Name Generation
 
 - [Markov_chains_name_generator_in_Python](markov_chains_name_generator_in_python.md) - Example code used to generate random names.
 - [Names_from_a_high_order_Markov_Process_and_a_simplified_Katz_back-off_scheme](names_from_a_high_order_markov_process_and_a_simplified_katz_back-off_scheme.md) - High quality Markov process random name generation.

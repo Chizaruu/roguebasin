@@ -16,7 +16,7 @@ C++ also performs more type checking than C in several cases.
 
 Comments starting with two slashes ("//") were originally part of [C](c.md)'s predecessor, BCPL, and were reintroduced in C++.
 
-Several features of C++ were later adopted by C, including `const`, `inline`, declarations in `for` loops, and C++-style comments (using the `//` symbol). However, [C99](c.md#C99) also introduced features that do not exist in C++, such as variadic macros and better handling of arrays as parameters.
+Several features of C++ were later adopted by C, including `const`, `inline`, declarations in `for` loops, and C++-style comments (using the `//` symbol). However, [C99](c.md) also introduced features that do not exist in C++, such as variadic macros and better handling of arrays as parameters.
 
 ## Design of C++
 

@@ -91,7 +91,7 @@ And draw them like this:
 
 Ok, that's all! A fully generic object system. Later, this class can be modified to have all the special info that items, monsters and all that will require. But we can add that as we go along!
 
-[Here](complete_roguelike_tutorial_using_python+libtcod_part_2_code.md#Generalizing)'s the code so far.
+[Here](complete_roguelike_tutorial_using_python+libtcod_part_2_code.md#generalizing)'s the code so far.
 
 ### The Map
 
@@ -170,7 +170,7 @@ Still in the same function, we can now go through all the tiles and draw them to
 
 Also, move the _console_blit_ call to the end of _render_all()_ since it's part of the rendering code, just to keep things tidy.
 
-A little note on customization: if you want a more old-school look, using characters like ' . ' and ' # ' to represent floor and wall tiles, [check out this Extra](complete_roguelike_tutorial_using_python+libtcod_extras.md#Old-school_wall_and_floor_tiles).
+A little note on customization: if you want a more old-school look, using characters like ' . ' and ' # ' to represent floor and wall tiles, [check out this Extra](complete_roguelike_tutorial_using_python+libtcod_extras.md#old-school-wall-and-floor-tiles).
 
 Ok! Don't forget to call make_map() before the main loop, to set it up before the game begins. You should be able to see the two pillars and walk around the map now!
 
@@ -180,6 +180,6 @@ But wait, there's something wrong. The pillars show up, but the player can walk 
 if not map[self.x + dx][self.y + dy].blocked:
 ```
 
-[Here](complete_roguelike_tutorial_using_python+libtcod_part_2_code.md#The_Map)'s the code so far.
+[Here](complete_roguelike_tutorial_using_python+libtcod_part_2_code.md#the-map)'s the code so far.
 
 [Go on to the next part](complete_roguelike_tutorial_using_python+libtcod_part_3.md).

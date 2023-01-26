@@ -122,7 +122,7 @@ create_h_tunnel(25, 55, 23)
 
 That concludes the test for the carving functions! It's really starting to look better by the minute. You can create different dungeon configurations with them, but it's tricky defining the coordinates by hand and we're going to rush right away to the most interesting bit: random dungeon generation!
 
-You can find the whole code for this part [here](complete_roguelike_tutorial_using_python+libtcod_part_3_code.md#Dungeon_building_blocks).
+You can find the whole code for this part [here](complete_roguelike_tutorial_using_python+libtcod_part_3_code.md#dungeon-building-blocks).
 
 ### Dungeon generator
 
@@ -234,7 +234,7 @@ So we're going to code that, and you'll see that this not only covers extreme ca
 
 You made it through all that in one piece, eh? Let's test it out! With some luck, some of the dungeons you get can be pretty amazing. Not too shabby for our own little algorithm!
 
-The final code for the dungeon generator is [here](complete_roguelike_tutorial_using_python+libtcod_part_3_code.md#Dungeon_generator).
+The final code for the dungeon generator is [here](complete_roguelike_tutorial_using_python+libtcod_part_3_code.md#dungeon-generator).
 
 ## Optional part: Visualizing the dungeon
 
