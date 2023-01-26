@@ -2,7 +2,7 @@
 
 ---
 
-This is part of a series of tutorials; the main page can be found here.
+This is part of a series of tutorials; the main page can be found [here](complete_roguelike_tutorial_using_python+libtcod.md).
 
 The tutorial uses libtcod version 1.6.0 and above.
 
