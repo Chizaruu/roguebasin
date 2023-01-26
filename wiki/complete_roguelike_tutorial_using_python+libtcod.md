@@ -105,39 +105,35 @@ Follow the first link to get started!
 
 Some stuff that is entirely optional and didn't make it in; check this out if you finished the tutorial and are looking for some modifications and improvements to your game -- some are easy, others are more advanced.
 
-- [A neat Python shortcut for Notepad++](complete_roguelike_tutorial_using_python+libtcod_extras.md#A_neat_Python_shortcut_for_Notepad++)
+- [A neat Python shortcut for Notepad++](complete_roguelike_tutorial_using_python+libtcod_extras.md#a-neat-python-shortcut-for-notepad)
 
   For Notepad++ users, how to set up a shortcut to help you debugging.
 
-- [Old-school wall and floor tiles](complete_roguelike_tutorial_using_python+libtcod_extras.md#Old-school_wall_and_floor_tiles)
+- [Old-school wall and floor tiles](complete_roguelike_tutorial_using_python+libtcod_extras.md#old-school-wall-and-floor-tiles)
 
   Using characters in tiles, without getting weird graphical glitches. This is actually very simple.
 
-- [Real-time combat](complete_roguelike_tutorial_using_python+libtcod_extras.md#Real-time_combat)
+- [Real-time combat](complete_roguelike_tutorial_using_python+libtcod_extras.md#real-time-combat)
 
   A speed system to change the tutorial's turn-based combat to real-time!
 
-- [Mouse-driven menus](complete_roguelike_tutorial_using_python+libtcod_extras.md#Mouse-driven_menus)
+- [Mouse-driven menus](complete_roguelike_tutorial_using_python+libtcod_extras.md#mouse-driven-menus)
 
   Add basic mouse support to your menus!
 
-- [Scrolling maps](complete_roguelike_tutorial_using_python+libtcod_extras.md#Scrolling_maps)
-
-  Placeholder page for the scrolling map code. Tutorial text will be written soon.
-
-- [Creating a Binary](complete_roguelike_tutorial_using_python+libtcod_extras.md#Creating_a_Binary)
+- [Creating a Binary](complete_roguelike_tutorial_using_python+libtcod_extras.md#creating-a-binary)
 
   Package and deliver your game the nice way!
 
-- [A\* Pathfinding](complete_roguelike_tutorial_using_python+libtcod_extras.md#A*_Pathfinding)
+- [A\* Pathfinding](complete_roguelike_tutorial_using_python+libtcod_extras.md#a*-pathfinding)
 
   A good pathfinding system
 
-- [Using Graphical Tiles](complete_roguelike_tutorial_using_python+libtcod_extras.md#Using_Graphical_Tiles)
+- [Using Graphical Tiles](complete_roguelike_tutorial_using_python+libtcod_extras.md#using-graphical-tiles)
 
   An alternative to solid colors or ASCII graphics
 
-- [BSP Dungeon Generator](complete_roguelike_tutorial_using_python+libtcod_extras.md#BSP_Dungeon_Generator)
+- [BSP Dungeon Generator](complete_roguelike_tutorial_using_python+libtcod_extras.md#bsp-dungeon-generator)
 
   Binary Space Partitioning Dungeon Generator
 

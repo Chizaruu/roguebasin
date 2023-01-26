@@ -33,7 +33,7 @@ color_dark_ground = libtcod.Color(50, 50, 150)
 color_light_ground = libtcod.Color(200, 180, 50)
 ```
 
-These are taken straight away from the libtcod sample that comes with the library, and you may want to change them to give your game a more unique feel (see the [earlier notes](complete_roguelike_tutorial,_using_python+libtcod,_part_2.md#The_Map) about colors).
+These are taken straight away from the libtcod sample that comes with the library, and you may want to change them to give your game a more unique feel (see the [earlier notes](complete_roguelike_tutorial_using_python+libtcod_part_2.md#the-map) about colors).
 
 The libtcod FOV module needs to know which tiles block sight. So, we create a map that libtcod can understand (fov_map), and fill it with the appropriate values from the tiles' own block_sight and blocked properties. Well, actually, only block_sight will be used; the blocked value is completely irrelevant for FOV! It will be useful only for the pathfinding module, but it doesn't hurt to provide that value anyway. Also, libtcod asks for values that are the opposite of what we defined, so we toggle them with the not operator. This goes in the body of the script, before entering the main game loop.
 
@@ -112,7 +112,7 @@ if libtcod.map_is_in_fov(fov_map, self.x, self.y):
 
 Apart from defining the newly used global values in render_all and handle_keys (they're fov_map and fov_recompute), that's all there is to it. This is actually one aspect that can take a long time to get right in a roguelike, fortunately we were able to do it with a modest amount of work!
 
-The whole code for this section is [here](complete_roguelike_tutorial_using_python+libtcod_part_4_code.md#field_of_view).
+The whole code for this section is [here](complete_roguelike_tutorial_using_python+libtcod_part_4_code.md#field-of-view-fov).
 
 ### Exploration
 
@@ -143,6 +143,6 @@ map[x][y].explored = True
 
 And that is all. The level will start black, but you'll slowly uncover it. Explored regions are still visible but are in a different color and won't reveal any objects (such as lurking monsters)! It's an exploration game now.
 
-The whole code is available [here](complete_roguelike_tutorial_using_python+libtcod_part_4_code.md#Exploration).
+The whole code is available [here](complete_roguelike_tutorial_using_python+libtcod_part_4_code.md#exploration).
 
 [Go on to the next part](complete_roguelike_tutorial,_using_python+libtcod,_part_5.md).

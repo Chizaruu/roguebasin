@@ -30,7 +30,7 @@ Digital Field of View is a method of determining [Field of Vision](field_of_visi
 
 ## What games use it?
 
-- Kusemono ([7DRL_Contest_2011_Reviews#Oohara_Yuuma.27s_Kusemono](7drl_contest_2011_reviews.md#Oohara_Yuuma.27s_Kusemono), DFOV is good for sneaking in wide corridors)
+- Kusemono ([7DRL_Contest_2011_Reviews#Oohara_Yuuma.27s_Kusemono](7drl_contest_2011_reviews.md#oohara-yuuma.27s-kusemono), DFOV is good for sneaking in wide corridors)
 - [Allure of the Stars](allure_of_the_stars.md)
 
 ## What libraries implement it?

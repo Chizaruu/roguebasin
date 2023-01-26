@@ -153,7 +153,7 @@ Now you're ready to start.
 
 If you're just starting out with Python, you'll find that many Python coders just use a simple editor and run their scripts from a console to see any debugging output. Most Python coders don't feel the need to use a fancy IDE! On Windows, Notepad++ is an excellent bet; most Linux programmers already have an editor of choice. Almost all editors allow you to configure shortcut keys (like F5 for instance) to quickly run the script you're editing, without having to switch to a console.
 
-[See this page](complete_roguelike_tutorial_using_python+libtcod_extras.md#A_neat_Python_shortcut_for_Notepad++) if you want to set up a Notepad++ shortcut with a couple of nice features for debugging, or if you tried to roll your own and hit the infamous "module not found" error.
+[See this page](complete_roguelike_tutorial_using_python+libtcod_extras.md#a-neat-python-shortcut-for-notepad) if you want to set up a Notepad++ shortcut with a couple of nice features for debugging, or if you tried to roll your own and hit the infamous "module not found" error.
 
 Another quick note, if you're using IDLE. It doesn't seem to let libtcod clean up properly on exit, so it crashes when you end a script. This seems to be more of an IDLE problem than a libtcod problem so there's no fix in sight, for now. Using any of the setups recommended above will work just fine.
 
@@ -240,7 +240,7 @@ Ta-da! You're done. Run that code and give yourself a pat on the back!
 
 Note that since we don't have any input handling code, the game may crash on exit (it won't process the OS's requests to close). Oops! Don't worry though, this problem will go away as soon as we add keyboard support.
 
-[Here](complete_roguelike_tutorial_using_python+libtcod_part_1_code.md#Showing_the_40_on_screen)'s the complete code so far.
+[Here](complete_roguelike_tutorial_using_python+libtcod_part_1_code.md#showing-the--on-screen)'s the complete code so far.
 
 ## Moving around
 
@@ -324,6 +324,6 @@ One more thing! If you try that, you'll see that moving you leave around a trail
     libtcod.console_put_char(0, playerx, playery, ' ', libtcod.BKGND_NONE)
 ```
 
-[Here](complete_roguelike_tutorial_using_python+libtcod_part_1_code.md#Moving_around)'s a rundown of the whole code so far.
+[Here](complete_roguelike_tutorial_using_python+libtcod_part_1_code.md)'s a rundown of the whole code so far.
 
 [Go on to the next part](complete_roguelike_tutorial_using_python+libtcod_part_2.md).

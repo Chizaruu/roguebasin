@@ -305,8 +305,8 @@ And call it somewhere in the _monster_death_ function:
 
 It's finally ready to play, and it actually feels like a game! It was a long journey since we first printed the @ character, but we've got random dungeons, FOV, exploration, enemies, AI, and a true combat system. You can now beat those pesky monsters into a pulp and walk over them! (Ugh!) See if you can finish off all of them before they do the same to you.
 
-You may have noticed that this is fine and dandy for a turn-based game, but in a real-time game the monsters are just too fast! If that happens to be the case with your game, [check out this Extra](complete_roguelike_tutorial_using_python+libtcod_extras.md#Real-time_combat) on real-time combat.
+You may have noticed that this is fine and dandy for a turn-based game, but in a real-time game the monsters are just too fast! If that happens to be the case with your game, [check out this Extra](complete_roguelike_tutorial_using_python+libtcod_extras.md#real-time-combat) on real-time combat.
 
-The whole code is available [here](complete_roguelike_tutorial_using_python+libtcod_part_6_code.md#Untimely_deaths).
+The whole code is available [here](complete_roguelike_tutorial_using_python+libtcod_part_6_code.md#untimely-deaths).
 
 [Go on to the next part](complete_roguelike_tutorial_using_python+libtcod_part_7.md).

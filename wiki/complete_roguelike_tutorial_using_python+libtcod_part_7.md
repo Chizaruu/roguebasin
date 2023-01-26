@@ -203,7 +203,7 @@ Won't our game stop being turn-based then? It's funny, but surprisingly it won't
 
 When the player doesn't take a turn (doesn't press a movement/attack key), _handle_keys_ returns a special string ( _'didnt-take-turn'_ ). You'll notice that the main loop only allows enemies to take their turns if the value returned from _handle_keys_ is not _'didnt-take-turn'_ ! The main loop goes on, but the monsters don't move. The only real distinction between a real-time game and a turn-based game is that, in a turn-based game, the monsters wait until the player moves to make their move. Makes sense!
 
-If you hadn't before, you now need to call _libtcod.sys_set_fps(LIMIT_FPS)_ before the main loop to limit the game's speed. You'll also probably find the movement keys respond too rapidly for a turn-based game where every key press should count as only one turn (see the earlier discussion about this in [Part 1](complete_roguelike_tutorial_using_python+libtcod_part_1.md#Moving_around)). Just replace the calls to _console_is_key_pressed_ in _handle_keys_ with calls like:
+If you hadn't before, you now need to call _libtcod.sys_set_fps(LIMIT_FPS)_ before the main loop to limit the game's speed. You'll also probably find the movement keys respond too rapidly for a turn-based game where every key press should count as only one turn (see the earlier discussion about this in [Part 1](complete_roguelike_tutorial_using_python+libtcod_part_1.md#moving-around)). Just replace the calls to _console_is_key_pressed_ in _handle_keys_ with calls like:
 
 ```python
         if key.vk == libtcod.KEY_UP:
