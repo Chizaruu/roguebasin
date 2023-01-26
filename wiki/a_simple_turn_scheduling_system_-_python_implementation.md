@@ -60,10 +60,10 @@ class Ticker(object):
 
 # Example main program
 
-if **name**== "**main**":
+if __name__== "__main__":
 class Monster(object):
 """Fake monster for demo."""
-def **init**(self, ticker):
+def __init__(self, ticker):
 self.ticker = ticker
 self.speed = 6 + random.randrange(1, 6) # random speed in 7 - 12
 self.ticker.schedule_turn(self.speed, self) # schedule monsters 1st move
@@ -87,7 +87,7 @@ self.ticker.schedule_turn(self.speed, self) # schedule monsters 1st move
         ticker.next_turn()
 ```
 
-Class Ticker has three methods (in this minimal implementation): **init**, which initializes the empty schedule and the ticks variable; schedule turn, which is called by the monster to insert its next turn into the schedule; and next_turn, which finds the next tick with scheduled items and runs them.
+Class Ticker has three methods (in this minimal implementation): __init__, which initializes the empty schedule and the ticks variable; schedule turn, which is called by the monster to insert its next turn into the schedule; and next_turn, which finds the next tick with scheduled items and runs them.
 
 The main loop just increments the ticks and calls next_turn to make the next moves.
 
@@ -99,26 +99,26 @@ Some sample output looks like this:
 9: [<__main__.Monster instance at 0xb8056e0c>],
 11: [<__main__.Monster instance at 0xb8056dec>],
 7: [<__main__.Monster instance at 0xb8056d8c>, <__main__.Monster instance at 0xb8056e2c>]}
-<**main**.Monster instance at 0xb8056d8c> gets a turn at 7
-<**main**.Monster instance at 0xb8056e2c> gets a turn at 7
-<**main**.Monster instance at 0xb8056dcc> gets a turn at 8
-<**main**.Monster instance at 0xb8056e0c> gets a turn at 9
+<__main__.Monster instance at 0xb8056d8c> gets a turn at 7
+<__main__.Monster instance at 0xb8056e2c> gets a turn at 7
+<__main__.Monster instance at 0xb8056dcc> gets a turn at 8
+<__main__.Monster instance at 0xb8056e0c> gets a turn at 9
 {11: [<__main__.Monster instance at 0xb8056dec>],
 14: [<__main__.Monster instance at 0xb8056d8c>, <__main__.Monster instance at 0xb8056e2c>],
 16: [<__main__.Monster instance at 0xb8056dcc>],
 18: [<__main__.Monster instance at 0xb8056e0c>]}
-<**main**.Monster instance at 0xb8056dec> gets a turn at 11
-<**main**.Monster instance at 0xb8056d8c> gets a turn at 14
-<**main**.Monster instance at 0xb8056e2c> gets a turn at 14
-<**main**.Monster instance at 0xb8056dcc> gets a turn at 16
-<**main**.Monster instance at 0xb8056e0c> gets a turn at 18
+<__main__.Monster instance at 0xb8056dec> gets a turn at 11
+<__main__.Monster instance at 0xb8056d8c> gets a turn at 14
+<__main__.Monster instance at 0xb8056e2c> gets a turn at 14
+<__main__.Monster instance at 0xb8056dcc> gets a turn at 16
+<__main__.Monster instance at 0xb8056e0c> gets a turn at 18
 {21: [<__main__.Monster instance at 0xb8056d8c>, <__main__.Monster instance at 0xb8056e2c>],
 22: [<__main__.Monster instance at 0xb8056dec>],
 24: [<__main__.Monster instance at 0xb8056dcc>],
 27: [<__main__.Monster instance at 0xb8056e0c>]}
-<**main**.Monster instance at 0xb8056d8c> gets a turn at 21
-<**main**.Monster instance at 0xb8056e2c> gets a turn at 21
-<**main**.Monster instance at 0xb8056dec> gets a turn at 22
+<__main__.Monster instance at 0xb8056d8c> gets a turn at 21
+<__main__.Monster instance at 0xb8056e2c> gets a turn at 21
+<__main__.Monster instance at 0xb8056dec> gets a turn at 22
 ...
 ```
 

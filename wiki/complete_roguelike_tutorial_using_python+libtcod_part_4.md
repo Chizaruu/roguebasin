@@ -120,7 +120,7 @@ The whole code for this section is [here](complete_roguelike_tutorial_using_pyth
 
 The last detail after FOV is exploration, a.k.a Fog of War. You made it this far, so this will be a piece of cake! What, you may say, fog of war can't possibly be the easiest thing to code in a roguelike! Well, it is. Wait and see.
 
-First, all tiles will store whether they're explored or not. They start unexplored. This is in the Tile 's **init** method.
+First, all tiles will store whether they're explored or not. They start unexplored. This is in the Tile 's __init__ method.
 
 ```python
 self.explored = False
