@@ -19,3 +19,28 @@
 - [Roguelike Intelligence](roguelike_intelligence_series_of_articles.md)
 - [The Incredible Power of Dijkstra Maps](the_incredible_power_of_dijkstra_maps.md)
 - [Tracking by Scent and Sound](tracking_by_scent_and_sound.md)
+
+## Monsters
+
+---
+
+- [Angel](angel.md)
+- [Cat](cat.md)
+- [Cockatrice](cockatrice.md)
+- [Dog](dog.md)
+- [Dragon](dragon.md)
+- [Golem](golem.md)
+- [Human](human.md)
+- [Humanoid](humanoid.md)
+- [Hydra](hydra.md)
+- [Lion](lion.md)
+- [Monster](monster.md)
+- [Monster attacks](monster_attacks.md)
+- [Orc](orc.md)
+- [Quadruped](quadruped.md)
+- [Rat](rat.md)
+- [Termite](termite.md)
+- [Tiger](tiger.md)
+- [Troll](troll.md)
+- [Undead](undead.md)
+- [Yeti](yeti.md)
