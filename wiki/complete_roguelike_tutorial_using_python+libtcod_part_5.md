@@ -70,7 +70,7 @@ There! I also removed the dummy NPC from the initial objects list (before the ma
 
 ---
 
-Here, we'll add a few bits that are necessary before we can move on. First, blocking objects. We don't want more than one monster standing in the same tile, because only one will show up and the rest will be hidden! Some objects, especially items, don't block (it would be silly if you couldn't stand right next to a healing potion!), so each object will have an extra "blocks" property. We'll also take the opportunity to allow each object to have a name, which will be useful for game messages and the Graphical User Interface (GUI), which we'll go over later. Just add these two properties to the beginning of the Object 's _**init**_ method:
+Here, we'll add a few bits that are necessary before we can move on. First, blocking objects. We don't want more than one monster standing in the same tile, because only one will show up and the rest will be hidden! Some objects, especially items, don't block (it would be silly if you couldn't stand right next to a healing potion!), so each object will have an extra "blocks" property. We'll also take the opportunity to allow each object to have a name, which will be useful for game messages and the Graphical User Interface (GUI), which we'll go over later. Just add these two properties to the beginning of the Object 's ___init___ method:
 
 ```python
     def __init__(self, x, y, char, name, color, blocks=False):
