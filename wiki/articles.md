@@ -229,6 +229,7 @@ RogueBasin has articles about these [programming languages](programming_language
 - [Emergent Behaviour in Unangband Monster AI](http://roguelikedeveloper.blogspot.com/2007/10/unangband-monster-ai-part-one-history.html)
 - [Implementing interesting townsfolk AI](implementing_interesting_townsfolk_ai.md)
 - [Need driven AI](need_driven_ai.md)
+- [Need-based AI in JavaScript](need-based_ai_in_javascript.md)
 - [Pathfinding](pathfinding.md)
 - [A_Python_3_and_2_Pathfinder_with_Pygame_Example](a_python_3_and_2_pathfinder_with_pygame_example.md)
 - [Plug-In Monster AI](plug-in_monster_ai.md)
