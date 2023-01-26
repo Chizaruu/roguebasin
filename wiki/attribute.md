@@ -19,7 +19,7 @@ An _attribute_ is a measurable property of a given [character](character.md). Ge
 
 Some attributes are constantly changing, depending on the situations in the game:
 
-- Health: Also "[hit points](hit_points.md)". A measure of how much damage a character can sustain. Death almost always occurs after health falls to a certain point. Health can usually be regained by using [potions](potions.md) or [spells](spell.md), or through regeneration.
+- Health: Also "[hit points](hit_points.md)". A measure of how much damage a character can sustain. Death almost always occurs after health falls to a certain point. Health can usually be regained by using [potions](potion.md) or [spells](spell.md), or through regeneration.
 - [Mana](mana.md): A measure of the character's ability to perform magic or other skills. Mana can usually be recovered by using potions or regeneration, similar to health.
 - [Hunger](hunger.md): A measure of how "hungry" a character is. Usually this describes how inept a character is to perform a given action, or might cause death once reaching a critical point. [Food](food.md) will decrease the amount of hunger a character has, but the availability of it may or may not be scarce.
 - Fatigue: A measure of how physically and mentally able a character is, and how the character is affected in-game.
