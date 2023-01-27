@@ -196,3 +196,15 @@
 - [Themes](themes.md)
 - [What a RL should be](what_a_rl_should_be.md)
 - [Wild West](wild_west.md)
+
+## Magic
+
+---
+
+- [Magic](magic.md)
+- [Magic systems](magic_systems.md)
+- [Mana](mana.md)
+- [Programming Roguelike Magic](programming_roguelike_magic.md)
+- [Representing Magic Skills](representing_magic_skills.md)
+- [Spell](spell.md)
+- [The Gramarye A Magic System for FUDGE](the_gramarye_a_magic_system_for_fudge.md)
