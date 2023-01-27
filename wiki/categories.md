@@ -151,3 +151,61 @@
 - [Simple and accurate LOS function for BlitzMax](simple_and_accurate_los_function_for_blitzmax.md)
 - [Spiral Path FOV](spiral_path_fov.md)
 - [Strict Field of View](strict_field_of_view.md)
+
+## Game ideas
+
+---
+
+F
+
+    Fire Brigade RL
+
+G
+
+    GalaxyRL
+
+M
+
+    Magic Tower
+    Magical Dungeon
+    Modern Dungeon Exploration
+    Murder Mystery RL
+
+O
+
+    OrcRL
+
+R
+
+    Roguelike DM
+
+S
+
+    Shopkeeper RL
+
+T
+
+    Time-gate roguelike
+    TraderRL
+
+W
+
+    World of Rogue
+
+Z
+
+    Zombie survival RL
+
+- [Fire Brigade RL](fire_brigade_rl.md)
+- [GalaxyRL](galaxyrl.md)
+- [Magic Tower](magic_tower.md)
+- [Magical Dungeon](magical_dungeon.md)
+- [Modern Dungeon Exploration](modern_dungeon_exploration.md)
+- [Murder Mystery RL](murder_mystery_rl.md)
+- [OrcRL](orcrl.md)
+- [Roguelike DM](roguelike_dm.md)
+- [Shopkeeper RL](shopkeeper_rl.md)
+- [Time-gate roguelike](time-gate_roguelike.md)
+- [TraderRL](traderrl.md)
+- [World of Rogue](world_of_rogue.md)
+- [Zombie survival RL](zombie_survival_rl.md)
