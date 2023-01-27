@@ -278,3 +278,24 @@
 - [Rust](rust.md)
 - [Smalltalk](smalltalk.md)
 - [Visual Basic](visual_basic.md)
+
+## Reviews
+
+---
+
+- [Roguelike Reviews](roguelike_reviews.md)
+- [7DRL Contest 2011 Reviews](7drl_contest_2011_reviews.md)
+- [Avanor Reviews](avanor_reviews.md)
+- [Doryen library Reviews](doryen_library_reviews.md)
+- [Dungeon Monkey Reviews](dungeon_monkey_reviews.md)
+- [Fast Light Toolkit Reviews](fast_light_toolkit_reviews.md)
+- [H-World Reviews](h-world_reviews.md)
+- [KING Reviews](king_reviews.md)
+- [Links Reviews](links_reviews.md)
+- [PyQt Reviews](pyqt_reviews.md)
+- [Qt Reviews](qt_reviews.md)
+- [SDL Reviews](sdl_reviews.md)
+- [Slash's Roguelike Reviews](slash's_roguelike_reviews.md)
+- [The Woods of Torbin Reviews](the_woods_of_torbin_reviews.md)
+- [Tower of Doom Reviews](tower_of_doom_reviews.md)
+- [ZapM Reviews](zapm_reviews.md)
