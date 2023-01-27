@@ -115,9 +115,10 @@
 - [Weapon](weapon.md)
 - [Wood](wood.md)
 
-## FOV
+## FOV/LOS
 
 - [A Bucket Of LOS](a_bucket_of_los.md)
+- [An Efficient Observation Algorithm](an_efficient_observation_algorithm.md)
 - [C++ shadowcasting implementation](c++_shadowcasting_implementation.md)
 - [Comparative study of field of view algorithms for 2D grid based worlds](comparative_study_of_field_of_view_algorithms_for_2d_grid_based_worlds.md)
 - [Computing LOS for Large Areas](computing_los_for_large_areas.md)
@@ -130,7 +131,7 @@
 - [FOV using recursive shadowcasting](fov_using_recursive_shadowcasting.md)
 - [FOV using recursive shadowcasting - improved](fov_using_recursive_shadowcasting_-_improved.md)
 - [Improved Shadowcasting in Java](improved_shadowcasting_in_java.md)
-- [Isaac s fast beamcasting LOS](isaac_s_fast_beamcasting_los.md)
+- [Isaac's fast beamcasting LOS](isaac_s_fast_beamcasting_los.md)
 - [Libfov](libfov.md)
 - [Line of Sight - Tobias Downer](line_of_sight_-_tobias_downer.md)
 - [LOS by Odd](los_by_odd.md)
@@ -149,6 +150,7 @@
 - [Ruby shadowcasting implementation](ruby_shadowcasting_implementation.md)
 - [Shadow casting](shadow_casting.md)
 - [Simple and accurate LOS function for BlitzMax](simple_and_accurate_los_function_for_blitzmax.md)
+- [Simple Line of Sight](simple_line_of_sight.md)
 - [Spiral Path FOV](spiral_path_fov.md)
 - [Strict Field of View](strict_field_of_view.md)
 
