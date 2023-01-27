@@ -291,7 +291,6 @@
 - [Fast Light Toolkit Reviews](fast_light_toolkit_reviews.md)
 - [H-World Reviews](h-world_reviews.md)
 - [KING Reviews](king_reviews.md)
-- [Links Reviews](links_reviews.md)
 - [PyQt Reviews](pyqt_reviews.md)
 - [Qt Reviews](qt_reviews.md)
 - [SDL Reviews](sdl_reviews.md)
