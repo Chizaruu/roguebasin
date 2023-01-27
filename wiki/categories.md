@@ -277,5 +277,4 @@
 - [Ruby](ruby.md)
 - [Rust](rust.md)
 - [Smalltalk](smalltalk.md)
-- [Turbo Pascal](turbo_pascal.md)
 - [Visual Basic](visual_basic.md)

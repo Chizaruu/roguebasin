@@ -34,7 +34,7 @@ More features are added by Object Pascal.
 Implementations of Pascal used by roguelike games:
 
 - VMS Pascal
-- [Turbo Pascal](turbo_pascal.md)
+- Turbo Pascal
 - Delphi
 - [Free Pascal](free_pascal.md)
 
