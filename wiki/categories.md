@@ -233,3 +233,12 @@
 - [Scrolling map](scrolling_map.md)
 - [Terrain](terrain.md)
 - [The Incredible Power of Dijkstra Maps](the_incredible_power_of_dijkstra_maps.md)
+
+## Name Generators
+
+---
+
+- [Finite state name generator](finite_state_name_generator.md)
+- [Markov chains name generator in Python](markov_chains_name_generator_in_python.md)
+- [Markov chains-based name generation](markov_chains-based_name_generation.md)
+- [Syllable-based name generation](syllable-based_name_generation.md)
