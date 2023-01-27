@@ -256,7 +256,6 @@
 - [C++](c++.md)
 - [Common Lisp](common_lisp.md)
 - [D](d.md)
-- [Delphi](delphi.md)
 - [Factor](factor.md)
 - [Fortran](fortran.md)
 - [Free Pascal](free_pascal.md)
