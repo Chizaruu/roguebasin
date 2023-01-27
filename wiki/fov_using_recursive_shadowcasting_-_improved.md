@@ -149,7 +149,7 @@ private void castLight(int row, float start, float end, int xx, int xy, int yx, 
 
 ---
 
-The following code excerpt comes from my own implementation in [Turbo Pascal](turbo_pascal.md):
+The following code excerpt comes from my own implementation in [Turbo Pascal](pascal.md):
 
 - mv -> global describing view distance
 - mw -> mv \* mv

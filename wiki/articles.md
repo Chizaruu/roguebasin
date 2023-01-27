@@ -148,7 +148,7 @@ Ideas for roguelikes are posted regularly on [rgrd](rgrd.md), but over time are 
 
 ### Programming languages
 
-RogueBasin has articles about these [programming languages](programming_languages.md). That doesn't mean that you can't use other languages. The best language for your roguelike is the one you know well (or want to learn).
+RogueBasin has articles about these [programming languages](categories.md#programming-languages). That doesn't mean that you can't use other languages. The best language for your roguelike is the one you know well (or want to learn).
 
 - [BASIC](basic.md)
 - [C](c.md)
