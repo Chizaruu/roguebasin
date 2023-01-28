@@ -135,13 +135,13 @@ inc_after_scripts:
 inc_before_styles:
 inc_after_styles:
 inc_before_header:
-inc_after_header:
+inc_after_header: sidebar.html
 inc_before_tail:
 inc_after_tail:
 inc_before_tools:
 inc_after_tools:
 
-inc_before_page_list: sidebar.html
+inc_before_page_list:
 inc_after_page_list:
 inc_before_post_list:
 inc_after_post_list:
